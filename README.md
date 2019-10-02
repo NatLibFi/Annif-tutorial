@@ -2,7 +2,7 @@
 
 Instructions, exercises and example data sets for Annif hands-on tutorial.
 
-The tutorial will be initially organized at [SWIB19]() but the materials are also made more widely available for self-study.
+The tutorial will be initially organized at [SWIB19](http://swib.org/swib19/programme.html) but the materials are also made more widely available for self-study.
 
 ## Prerequisites
 
