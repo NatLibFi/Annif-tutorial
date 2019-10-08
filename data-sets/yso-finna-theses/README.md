@@ -12,7 +12,9 @@ directories:
 * Training data set based on metadata records from the Finna.fi discovery
   service
   * [yso-cicero-finna-eng.tsv.gz](yso-cicero-finna-eng.tsv.gz) TSV format,
-    gzipped (90MB)
+    ca. 2 million rows, gzipped (90 MB)
+  * [yso-cicero-finna-eng-small.tsv.gz](yso-cicero-finna-eng.tsv.gz) Small
+    subset of the above for testing, with 100,000 rows, gzipped (5 MB)
 * Example documents: English language Master's and doctoral theses from the
   University of Jyväskylä (JYX repository)
   * See [docs](docs) subdirectory for details
