@@ -9,5 +9,5 @@ from metadata records from the Finna.fi discovery service, and some 2000
 English language Master's and doctoral theses from the University of
 Jyväskylä.
 
-2. [stw-zbw](stw-econstor) contains the [STW theasaurus for economics](http://zbw.eu/stw/version/latest/about),
+2. [stw-zbw](stw-zbw) contains the [STW theasaurus for economics](http://zbw.eu/stw/version/latest/about),
 metadata used in the [ZBW](https://zbw.eu) retrieval system [EconBiz](https://www.econbiz.de) and full texts of working papers in economics uploaded to [EconStor](https://www.econstor.eu).
