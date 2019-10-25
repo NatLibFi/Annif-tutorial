@@ -1,7 +1,8 @@
 # Working Papers in Economics from EconStor
 
-This directory contains a corpus of Working Papers in Economics from [EconStor](https://www.econstor.eu).
-Theyr are divided into train(70%), validation(15%) and test(15%) folds.
+This directory contains a corpus of 4200 Working Papers in Economics from
+the Open Access repository [EconStor](https://www.econstor.eu).  They are
+divided into train(70%), validation(15%) and test(15%) folds.
 
 Only the URLs and subject metadata are stored in this Git repository. Actual
 PDF documents must be downloaded separately.
