@@ -1,4 +1,4 @@
-# Lesson 1: Install and setup Annif
+# Lesson 1: Install Annif
 
 ## 1. Install Annif
 
