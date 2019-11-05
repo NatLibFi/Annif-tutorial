@@ -1,0 +1,6 @@
+train/*.pdf
+train/*.txt
+validate/*.pdf
+validate/*.txt
+test/*.pdf
+test/*.txt
