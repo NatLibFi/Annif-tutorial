@@ -37,6 +37,7 @@ If you use the `yso-finna-theses` data set, use the following contents:
     language=en
     backend=tfidf
     vocab=yso-en
+    analyzer=snowball(english)
 
 If you use the `stw-zbw` data set, use the following contents:
 
@@ -45,6 +46,7 @@ If you use the `stw-zbw` data set, use the following contents:
     language=en
     backend=tfidf
     vocab=stw-en
+    analyzer=snowball(english)
 
 ## 3. Test that Annif can read the `projects.cfg` file
 
