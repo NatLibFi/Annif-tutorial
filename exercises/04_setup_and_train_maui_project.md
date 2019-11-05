@@ -56,20 +56,20 @@ as similar as possible in structure to the documents it will later be
 applied on.
 
 We will therefore use full text documents to train Maui. For the
-`yso-finna-theses` data set, we will use around 1400 Master's and doctoral
+`yso-finna-theses` data set, we will use around 350 Master's and doctoral
 theses in the
-[`yso-finna-theses/docs/train/`](../data-sets/yso-finna-theses/docs/train)
-directory. For the `stw-zbw` data set, we will use around 3000 articles
+[`yso-finna-theses/docs/validate/`](../data-sets/yso-finna-theses/docs/validate)
+directory. For the `stw-zbw` data set, we will use around 600 articles
 in the corresponding
-[`stw-zbw/docs/train/`](../data-sets/stw-zbw/docs/train)directory.
+[`stw-zbw/docs/validate/`](../data-sets/stw-zbw/docs/validate)directory.
 
 If you use the `yso-finna-theses` data set, run this command:
 
-    annif train yso-maui-en data-sets/yso-finna-theses/docs/train/
+    annif train yso-maui-en data-sets/yso-finna-theses/docs/validate/
 
 If you use the `stw-zbw` data set, run this command:
 
-    annif train stw-maui-en data-sets/stw-zbw/docs/train/
+    annif train stw-maui-en data-sets/stw-zbw/docs/validate/
 
 Training should take around a minute.
 
