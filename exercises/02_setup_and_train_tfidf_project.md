@@ -1,4 +1,4 @@
-# Lesson 2: Set up and train a TFIDF project
+# Exercise 2: Set up and train a TFIDF project
 
 Annif requires you to set up one or more **projects** before you can use it.
 A project is a set of configuration settings and (usually) some data files
@@ -102,4 +102,4 @@ If you use the `stw-zbw` data set, run this command:
 
 After retraining, you can try the `suggest` command again.
 
-Congratulations, you've completed Lesson 2 and you have a working project!
+Congratulations, you've completed Exercise 2 and you have a working project!

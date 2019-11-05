@@ -1,4 +1,4 @@
-# Lesson 3: Annif web user interface
+# Exercise 3: Annif web user interface
 
 Testing on the command line can be tedious, so Annif also provides a simple
 web user interface.
@@ -29,5 +29,5 @@ Press the Analyze button.
 
 You should see a list of results on the bottom right.
 
-Congratulations! You've completed Lesson3 and you can now easily test your
+Congratulations! You've completed Exercise 3 and you can now easily test your
 project with different input texts using the web UI. 
