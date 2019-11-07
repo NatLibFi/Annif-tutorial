@@ -57,7 +57,25 @@ file) and run this command:
 
 You should see a list with one entry, which is your defined project.
 
-## 4. Train the project using sample data
+## 4. Load the vocabulary
+
+Annif needs to know the vocabulary to use. We will load it from a SKOS file.
+
+If you use the `yso-finna-theses` data set, run this command:
+
+    annif loadvoc yso-tfidf-en data-sets/yso-finna-theses/yso-ysoplaces-cicero-skos.ttl
+
+If you use the `stw-zbw` data set, run this command:
+
+    annif loadvoc stw-tfidf-en data-sets/stw-zbw/stw-skos.ttl
+
+This should take a minute or two. No output means the operation was
+succesful.
+
+You only have to do this once for a particular vocabulary. You can now reuse
+the same vocabulary (by using the same `vocab=` value) in other projects.
+
+## 5. Train the project using sample data
 
 Now we can train the project. We will use training files that contain titles
 and subjects extracted from metadata records (around 2 million for
@@ -75,7 +93,7 @@ If you use the `stw-zbw` data set, run this command:
 
 Training should take around a minute.
 
-## 5. Test the project
+## 6. Test the project
 
 Once training is completed, we can try the model on some example sentence.
 
@@ -89,7 +107,7 @@ If you use the `stw-zbw` data set, run this command:
 
 You can of course try any sentence or even just a single word.
 
-## 6. Train the project using the full training data
+## 7. Train the project using the full training data
 
 Now that the basic model works, you can retrain it using the complete
 training data sets. This should take around 10 minutes.
