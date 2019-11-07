@@ -13,7 +13,7 @@ directories:
   service
   * [stw-econbiz.tsv.gz](stw-econbiz.tsv.gz) TSV format,
     ca. 1 million rows, gzipped (53M)
-  * [stw-econbiz-small.tsv.gz] small subset of the above for testing, with 100,000 rows, gzipped
+  * [stw-econbiz-small.tsv.gz](stw-econbiz-small.tsv.gz) small subset of the above for testing, with 100,000 rows, gzipped
 * Example documents: Working papers in economics
   * See [docs](docs) subdirectory for details
 
