@@ -1,4 +1,6 @@
 digraph "Annif-tutorial exercises" {
+  dpi=100;
+  ranksep=0.3;
   install -> TFIDF -> "Web UI" -> evaluate -> Maui -> ensemble [style=bold];
   ensemble -> "NN ensemble";
   "Web UI" -> "REST API";
