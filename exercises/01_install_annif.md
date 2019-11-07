@@ -14,10 +14,29 @@ getting Annif up and running with all the extra features enabled.
 
 ### 1.1. Docker based install
 
-TBD
+Copy the `Annif-tutorial` directory from the USB stick to your computer's home directory.
 
-See [Usage with Docker](https://github.com/NatLibFi/Annif/wiki/Usage-with-Docker) in the
-Annif wiki
+Using a terminal of your system (i.e. PowerShell in _Windows_), go to `Annif-tutorial` directory and load the Docker images in Docker:
+
+    docker load -i annif-0.43.1.tar
+
+and 
+
+    docker load -i mauiserver.tar
+
+You can check with `docker images` that the images `quay.io/natlibfi/annif:0.43.1` and `mauiserver` are now available.
+
+Start the bash shell in a Docker container:
+
+_Linux/OSX_:
+
+    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 -it --rm -u $(id -u):$(id -g) quay.io/natlibfi/annif:0.43.1 bash
+
+_Windows_:
+
+    docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 -it --rm quay.io/natlibfi/annif:0.43.1 bash
+
+In the shell you now have the Annif installation ready.
 
 ## 1.2. VirtualBox based install
 
