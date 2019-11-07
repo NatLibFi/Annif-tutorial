@@ -13,7 +13,7 @@ directories:
   service
   * [yso-cicero-finna-eng.tsv.gz](yso-cicero-finna-eng.tsv.gz) TSV format,
     ca. 2 million rows, gzipped (90 MB)
-  * [yso-cicero-finna-eng-small.tsv.gz](yso-cicero-finna-eng.tsv.gz) Small
+  * [yso-cicero-finna-eng-small.tsv.gz](yso-cicero-finna-eng.tsv.gz) small
     subset of the above for testing, with 100,000 rows, gzipped (5 MB)
 * Example documents: English language Master's and doctoral theses from the
   University of Jyväskylä (JYX repository)
