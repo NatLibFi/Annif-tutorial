@@ -1,0 +1,15 @@
+digraph "Annif-tutorial exercises" {
+  install -> TFIDF -> "Web UI" -> evaluate -> Maui -> ensemble [style=bold];
+  ensemble -> "NN ensemble";
+  "Web UI" -> "REST API";
+  evaluate -> fastText -> "Hogwarts";
+  "NN ensemble" -> "incremental learning";
+
+  install [style=filled,fillcolor=lightblue,penwidth=2];
+  TFIDF [style=filled,fillcolor=lightblue,penwidth=2];
+  "Web UI" [style=filled,fillcolor=lightblue,penwidth=2];
+  evaluate [style=filled,fillcolor=lightblue,penwidth=2];
+  Maui [style=filled,fillcolor=lightblue,penwidth=2];
+  ensemble [style=filled,fillcolor=lightblue,penwidth=2];
+
+}
