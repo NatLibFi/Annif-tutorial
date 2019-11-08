@@ -14,9 +14,9 @@ getting Annif up and running with all the extra features enabled.
 
 ### 1.1. Docker based install
 
-Copy the `Annif-tutorial` directory from the USB stick to your computer's home directory.
+Copy the `Annif-tutorial` directory from the USB stick to your home directory.
 
-Using a terminal of your system (i.e. PowerShell in _Windows_), go to `Annif-tutorial` directory and load the Docker images in Docker:
+Using a terminal of your system (i.e. PowerShell in _Windows_), go to `Annif-tutorial` directory and load the Annif and Maui Server images to Docker:
 
     docker load -i annif-0.43.1.tar
 
@@ -40,7 +40,7 @@ In the shell you now have the Annif installation ready, and the `Annif-tutorial`
 
 In case the directory is empty or other problems, try replacing the `-v ...` option in above command with `-v Annif-tutorial-volume:/Annif-tutorial`. Then, in another shell window, go to `Annif-tutorial` directory and run `docker cp data-sets/ annif:/Annif-tutorial`. In the container, check with `ls` that the `data-sets` directory is now  copied there.
 
-## 1.2. VirtualBox based install
+### 1.2. VirtualBox based install
 
 First make sure that you have the [VirtualBox](https://www.virtualbox.org/)
 host software for your operating system installed. You only need the basic
@@ -60,7 +60,7 @@ while, you should see a Linux (Xubuntu) desktop. Open a terminal window (by
 double-clicking on the Terminal desktop icon). You can also change the
 keyboard layout now from the upper right corner (click the US flag).
 
-## 1.3. Local install
+### 1.3. Local install
 
 For this to work, you will need a Linux operating system (preferably Ubuntu
 or Debian based) and Python 3.5, 3.6 or 3.7. This option is only recommended
