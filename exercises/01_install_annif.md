@@ -34,7 +34,7 @@ _Linux/OSX_:
 
 _Windows_ (replace `your_user_name` appropriately):
 
-    docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 -w /Annif-tutorial --name annif -it --rm quay.io/natlibfi/annif:0.43.1 bash
+    docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 -w /Annif-tutorial --name annif -it --rm -u root quay.io/natlibfi/annif:0.43.1 bash
 
 In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents should be available. List the contents with `ls`.
 
