@@ -7,7 +7,7 @@ web user interface.
 
 Run the command:
 
-    annif run
+    annif run --host 0.0.0.0
 
 Annif will start up and keep running until you stop it (by pressing Ctrl-C).
 
@@ -17,6 +17,8 @@ Use your browser to access the URL
 [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 You should see a simple user interface with a big empty text field.
+
+In case of connection problems and you are using Docker, try using [http://192.168.99.100:5000/](http://192.168.99.100:5000/) instead of `localhost`. 
 
 ## 3. Test your project using the UI
 
