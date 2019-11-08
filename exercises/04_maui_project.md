@@ -16,7 +16,15 @@ directory of Tomcat.
 
 ## 1. Make sure Maui Server is up and running
 
-TBD - how to do this with dockerized Maui Server?
+If you are running Annif with Docker, start up Maui Server with:
+
+_Linux/OSX_:
+
+    docker run -v Maui-data-volume:/mauidata -p 8080:8080 --name mauiserver --rm -e MAUI_SERVER_DATA_DIR=/mauidata -e MY_UID=$(id -u) -e MY_GID=$(id -g) mauiserver
+
+_Windows_:
+
+    docker run -v Maui-data-volume:/mauidata -p 8080:8080 --name mauiserver --rm -e "MAUI_SERVER_DATA_DIR=/mauidata" -e "MY_UID=0" -e "MY_GID=0" mauiserver
 
 If you have Maui Server running under Tomcat, you can access the URL
 [http://localhost:8080/mauiserver/](http://localhost:8080/mauiserver/) using
