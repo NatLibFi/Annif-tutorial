@@ -36,7 +36,7 @@ _Windows_:
 
     docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 -w /Annif-tutorial --name annif -it --rm quay.io/natlibfi/annif:0.43.1 bash
 
-In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents should be available. List the contents with `ls` to see the contents. In case the directory is empty or other problems, try replacing the `-v ...` option in above command with `-v Annif-tutorial-volume:/Annif-tutorial` and then, in another shell window, run     `docker cp data-sets/ annif:/Annif-tutorial` and check `ls` that the `data-sets` directory is now copied to the container (only it is needed for the exercises).
+In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents should be available. List the contents with `ls` to see the contents. In case the directory is empty or other problems, try replacing the `-v ...` option in above command with `-v Annif-tutorial-volume:/Annif-tutorial`. Then, in another shell window, run `docker cp data-sets/ annif:/Annif-tutorial` (in the `Annif-tutorial/`), and check with `ls` that the `data-sets` directory should now be copied to the container (only the `data-sets` is needed for the exercises).
 
 ## 1.2. VirtualBox based install
 
