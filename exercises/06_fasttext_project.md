@@ -24,7 +24,7 @@ If you use the `yso-finna-theses` data set, use the following snippet:
     backend=fasttext
     vocab=yso-en
     analyzer=snowball(english)
-    dim=390
+    dim=300
     epoch=100
     lr=0.75
     minCount=1
