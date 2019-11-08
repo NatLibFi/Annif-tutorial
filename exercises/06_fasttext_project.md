@@ -24,7 +24,12 @@ If you use the `yso-finna-theses` data set, use the following snippet:
     backend=fasttext
     vocab=yso-en
     analyzer=snowball(english)
-    # ... TODO hyperparameters
+    dim=390
+    epoch=100
+    lr=0.75
+    minCount=1
+    minn=5
+    maxn=6
 
 If you use the `stw-zbw` data set, use the following snippet:
 
@@ -34,7 +39,7 @@ If you use the `stw-zbw` data set, use the following snippet:
     backend=fasttext
     vocab=stw-en
     analyzer=snowball(english)
-    # ... TODO hyperparameters
+    # ... TODO hyperparameters for STW
 
 ## 2. Train the project using sample data
 
