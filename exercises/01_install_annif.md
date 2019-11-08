@@ -21,7 +21,23 @@ Annif wiki
 
 ## 1.2. VirtualBox based install
 
-TBD
+First make sure that you have the [VirtualBox](https://www.virtualbox.org/)
+host software for your operating system installed. You only need the basic
+install; the Extension Pack or SDK modules are not necessary.
+
+You will be given a USB stick with a `VirtualBox VMs` folder. Inside this
+folder is another folder called `annif-tutorial`. You need to copy this
+folder into the `VirtualBox VMs` folder below your home directory. If it
+doesn't exist yet, you can create it yourself.
+
+Start up the VirtualBox software.  From the menu bar of the main window,
+select Machine -> Add... and navigate to the `annif-tutorial` folder on your
+hard drive (not the USB stick) and open the `annif-tutorial.vbox` file. The
+`annif-tutorial` machine should now appear at the list of VMs on the left
+side. Select it and press Start. A new window should appear and after a
+while, you should see a Linux (Xubuntu) desktop. Open a terminal window (by
+double-clicking on the Terminal desktop icon). You can also change the
+keyboard layout now from the upper right corner (click the US flag).
 
 ## 1.3. Local install
 
@@ -38,8 +54,9 @@ in the Annif wiki.
 
 ## 2. Verify that you can run Annif
 
-Once you have installed Annif, check that it runs using the command:
+Once you have installed Annif and have opened a command line terminal
+window, check that Annif runs using the command:
 
-    annif --help
+    annif
 
 If you get a usage message, congratulations - you're up and running!
