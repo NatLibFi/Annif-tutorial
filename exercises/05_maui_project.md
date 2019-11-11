@@ -36,7 +36,7 @@ begins with `title: "Maui Server"`, you're good to go!
 Use a text editor to add a new project definition to the end of the
 `projects.cfg` file.
 
-If you use the `yso-finna-theses` data set, use the following snippet:
+If you use the `yso-nlf` data set, use the following snippet:
 
     [yso-maui-en]
     name=YSO Maui project
@@ -64,16 +64,16 @@ as similar as possible in structure to the documents it will later be
 applied on.
 
 We will therefore use full text documents to train Maui. For the
-`yso-finna-theses` data set, we will use around 350 Master's and doctoral
+`yso-nlf` data set, we will use around 350 Master's and doctoral
 theses in the
-[`yso-finna-theses/docs/validate/`](../data-sets/yso-finna-theses/docs/validate)
+[`yso-nlf/docs/validate/`](../data-sets/yso-nlf/docs/validate)
 directory. For the `stw-zbw` data set, we will use around 600 articles
 in the corresponding
 [`stw-zbw/docs/validate/`](../data-sets/stw-zbw/docs/validate)directory.
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
-    annif train yso-maui-en data-sets/yso-finna-theses/docs/validate/
+    annif train yso-maui-en data-sets/yso-nlf/docs/validate/
 
 If you use the `stw-zbw` data set, run this command:
 
@@ -85,7 +85,7 @@ Training should take around a minute.
 
 Once training is completed, we can try the model on some example sentence.
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
     echo "frequently occurring or otherwise salient terms in the document are matched with terms in the vocabulary" | annif suggest yso-maui-en
 

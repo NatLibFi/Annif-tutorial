@@ -16,7 +16,7 @@ subjects that we used for the TFIDF project.
 Use a text editor to add a new project definition to the end of the
 `projects.cfg` file.
 
-If you use the `yso-finna-theses` data set, use the following snippet:
+If you use the `yso-nlf` data set, use the following snippet:
 
     [yso-fasttext-en]
     name=YSO fastText project
@@ -43,9 +43,9 @@ If you use the `stw-zbw` data set, use the following snippet:
 
 ## 2. Train the project using sample data
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
-    annif train yso-fasttext-en data-sets/yso-finna-theses/yso-cicero-finna-eng-small.tsv.gz
+    annif train yso-fasttext-en data-sets/yso-nlf/yso-finna-small.tsv.gz
 
 If you use the `stw-zbw` data set, run this command:
 
@@ -55,7 +55,7 @@ If you use the `stw-zbw` data set, run this command:
 
 Once training is completed, we can try the model on some example sentence.
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
     echo "library for efficient learning of word representations and sentence classification" | annif suggest yso-fasttext-en
 
@@ -70,9 +70,9 @@ You can also try the Web UI with this fastText based project.
 Now retrain it using the complete training data sets. This should take
 around 10 minutes.
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
-    annif train yso-fasttext-en data-sets/yso-finna-theses/yso-cicero-finna-eng.tsv.gz
+    annif train yso-fasttext-en data-sets/yso-nlf/yso-finna.tsv.gz
 
 If you use the `stw-zbw` data set, run this command:
 
@@ -80,9 +80,9 @@ If you use the `stw-zbw` data set, run this command:
 
 ## 5. Evaluate the fastText project on a collection of documents
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
-    annif eval yso-maui-en data-sets/yso-finna-theses/docs/test/
+    annif eval yso-maui-en data-sets/yso-nlf/docs/test/
 
 If you use the `stw-zbw` data set, run this command:
 

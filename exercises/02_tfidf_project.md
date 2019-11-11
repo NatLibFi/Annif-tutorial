@@ -16,7 +16,7 @@ uses a TFIDF model, which needs to be trained on example documents and/or
 metadata records before it can be used. 
 
 You need to choose which data set you want to use: either the
-[yso-finna-theses](../data-sets/yso-finna-theses) data set from the National
+[yso-nlf](../data-sets/yso-nlf) data set from the National
 Library of Finland or the [stw-zbw](../data-sets/stw-zbw) data set from ZBW.
 Either one will work, but you need to be consistent.
 
@@ -25,7 +25,7 @@ Either one will work, but you need to be consistent.
 Use a text editor to create a `projects.cfg` file within the Annif-tutorial 
 directory.
 
-If you use the `yso-finna-theses` data set, use the following contents:
+If you use the `yso-nlf` data set, use the following contents:
 
     [yso-tfidf-en]
     name=YSO TFIDF project
@@ -56,9 +56,9 @@ You should see a list with one entry, which is your defined project.
 
 Annif needs to know the vocabulary to use. We will load it from a SKOS file.
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
-    annif loadvoc yso-tfidf-en data-sets/yso-finna-theses/yso-ysoplaces-cicero-skos.ttl
+    annif loadvoc yso-tfidf-en data-sets/yso-nlf/yso-skos.ttl
 
 If you use the `stw-zbw` data set, run this command:
 
@@ -74,13 +74,13 @@ the same vocabulary (by using the same `vocab=` value) in other projects.
 
 Now we can train the project. We will use training files that contain titles
 and subjects extracted from metadata records (around 2 million for
-`yso-finna-theses` and 1 million for `stw-zbw). However, we will first try
+`yso-nlf` and 1 million for `stw-zbw). However, we will first try
 with just a small training file based on 100,000 records to test the
 process.
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
-    annif train yso-tfidf-en data-sets/yso-finna-theses/yso-cicero-finna-eng-small.tsv.gz
+    annif train yso-tfidf-en data-sets/yso-nlf/yso-finna-small.tsv.gz
 
 If you use the `stw-zbw` data set, run this command:
 
@@ -92,7 +92,7 @@ Training should take around a minute.
 
 Once training is completed, we can try the model on some example sentence.
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
     echo "Machine learning algorithms build a mathematical model based on sample data" | annif suggest yso-tfidf-en
 
@@ -107,9 +107,9 @@ You can of course try any sentence or even just a single word.
 Now that the basic model works, you can retrain it using the complete
 training data sets. This should take around 10 minutes.
 
-If you use the `yso-finna-theses` data set, run this command:
+If you use the `yso-nlf` data set, run this command:
 
-    annif train yso-tfidf-en data-sets/yso-finna-theses/yso-cicero-finna-eng.tsv.gz
+    annif train yso-tfidf-en data-sets/yso-nlf/yso-finna.tsv.gz
 
 If you use the `stw-zbw` data set, run this command:
 
