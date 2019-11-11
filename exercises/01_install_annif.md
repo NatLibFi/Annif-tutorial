@@ -18,27 +18,38 @@ Copy the `Annif-tutorial` directory from the USB stick to your home directory.
 
 Using a terminal of your system (i.e. PowerShell in _Windows_), go to `Annif-tutorial` directory and load the Annif and Maui Server images to Docker:
 
-    docker load -i annif-0.43.1.tar
+    docker load -i annif-tutorial.tar
 
 and 
 
     docker load -i mauiserver.tar
 
-You can check with `docker images` that the images `quay.io/natlibfi/annif:0.43.1` and `mauiserver` are now available.
+You can check with `docker images` that the images `annif-tutorial` and `mauiserver` are now available.
 
 Start the bash shell in a Docker container:
 
-_Linux/OSX_:
+_Linux/Mac_:
 
-    docker run -v ~/Annif-tutorial-volume:/Annif-tutorial -p 5000:5000 -w /Annif-tutorial --name annif -it --rm -u $(id -u):$(id -g) quay.io/natlibfi/annif:0.43.1 bash
+    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u $(id -u):$(id -g) annif-tutorial
 
 _Windows_ (replace `your_user_name` appropriately):
 
-    docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 -w /Annif-tutorial --name annif -it --rm -u root quay.io/natlibfi/annif:0.43.1 bash
+    docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root annif-tutorial
 
-In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents should be available. List the contents with `ls`.
+In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available. Check this with `ls`, and if you see the same contents, you are ready with the install!
 
-In case the directory is empty or other problems, try replacing the `-v ...` option in above command with `-v Annif-tutorial-volume:/Annif-tutorial`. Then, in another shell window, go to `Annif-tutorial` directory and run `docker cp data-sets/ annif:/Annif-tutorial`. In the container, check with `ls` that the `data-sets` directory is now  copied there.
+#### Alternative approach using [named volume](https://docs.docker.com/storage/volumes/)
+In case the directory is empty or other problems occur, try
+
+    docker run -v Annif-tutorial-volume:/Annif-tutorial -p 5000:5000 --name annif -it --rm annif-tutorial
+    
+Then, in another shell window on the host system, go to the `Annif-tutorial` directory, and copy the `data-sets` directory to the container's volume with
+
+    `docker cp data-sets/ annif:/Annif-tutorial`
+
+In the container shell, check with `ls` that the directory is now there. In the following excercises, when editing a file is needed, it should be done within the container using `nano` editor; e.g. open `projects.cfg` using
+    
+    `nano projects.cfg`.
 
 ### 1.2. VirtualBox based install
 
