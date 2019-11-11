@@ -30,18 +30,18 @@ Start the bash shell in a Docker container:
 
 _Linux/Mac_:
 
-    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u $(id -u):$(id -g) annif-tutorial
+    docker run -v ~/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u $(id -u):$(id -g) annif-tutorial
 
 _Windows_ (replace `your_user_name` appropriately):
 
-    docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root annif-tutorial
+    docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
 
 In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available. Check this with `ls`, and if you see the same contents, you are ready with the install!
 
 #### Alternative approach using [named volume](https://docs.docker.com/storage/volumes/)
 In case the directory is empty or other problems occur, try
 
-    docker run -v Annif-tutorial-volume:/Annif-tutorial -p 5000:5000 --name annif -it --rm annif-tutorial
+    docker run -v Annif-tutorial-volume:/Annif-tutorial --network host --name annif -it --rm annif-tutorial
     
 Then, in another shell window on the host system, go to the `Annif-tutorial` directory, and copy the `data-sets` directory to the container's volume with
 
