@@ -99,6 +99,9 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-maui-en data-sets/stw-zbw/docs/test/
 
+Evaluation should take around 10 minutes for `yso-nlf` and around 5 minutes
+for `stw-zbw`.
+
 Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from TFIDF and Maui projects. Which one works best?
 
