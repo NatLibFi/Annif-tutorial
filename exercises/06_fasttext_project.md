@@ -4,7 +4,7 @@ In this lesson, we will set up a fastText project.
 [fastText](https://fasttext.cc/) is a machine learning model for text
 classification developed by Facebook Research. It has some advanced
 features, such as being able to use word and character level n-grams (i.e.
-words that appear together and subwords) and to creeate word embeddings. On
+words that appear together and subwords) and to create word embeddings. On
 the downside, it has lots of tunable parameters and finding a combination
 that works well on a given data set can be a challenge.
 
@@ -24,12 +24,11 @@ If you use the `yso-nlf` data set, use the following snippet:
     backend=fasttext
     vocab=yso-en
     analyzer=snowball(english)
-    dim=300
-    epoch=100
-    lr=0.75
-    minCount=1
-    minn=5
-    maxn=6
+    dim=230
+    lr=0.4
+    minCount=2
+    epoch=55
+    wordNgrams=2
 
 If you use the `stw-zbw` data set, use the following snippet:
 
@@ -39,7 +38,17 @@ If you use the `stw-zbw` data set, use the following snippet:
     backend=fasttext
     vocab=stw-en
     analyzer=snowball(english)
-    # ... TODO hyperparameters for STW
+    dim=230
+    lr=0.45
+    minCount=4
+    epoch=50
+    wordNgrams=2
+
+The fastText hyperparameters (dim, lr, minCount, epoch and wordNgrams) have
+been selected to provide a good compromise between training time, memory
+usage and quality of results. Better results could be attained using
+different sets of hyperparameters, but the model would be larger and take
+much longer to train.
 
 ## 2. Train the project using sample data
 
@@ -77,6 +86,8 @@ If you use the `yso-nlf` data set, run this command:
 If you use the `stw-zbw` data set, run this command:
 
     annif train stw-fasttext-en data-sets/stw-zbw/stw-econbiz.tsv.gz
+
+Full training should take at most around 20 minutes.
 
 ## 5. Evaluate the fastText project on a collection of documents
 
