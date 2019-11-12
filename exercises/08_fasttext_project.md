@@ -1,4 +1,4 @@
-# Exercise 6: Set up and train a fastText project
+# Exercise 8: Set up and train a fastText project
 
 In this lesson, we will set up a fastText project.
 [fastText](https://fasttext.cc/) is a machine learning model for text
@@ -105,5 +105,5 @@ for `stw-zbw`.
 Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from TFIDF and Maui projects. Which one works best?
 
-Congratulations, you've completed Exercise 6! You have a working fastText
+Congratulations, you've completed Exercise 8! You have a working fastText
 project and you know how well it works compared to TFIDF and Maui.

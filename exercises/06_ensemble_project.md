@@ -1,4 +1,4 @@
-# Exercise 7: Set up and train a simple ensemble
+# Exercise 6: Set up and train a simple ensemble
 
 In this lesson, we will set up a simple ensemble which combines results from
 the projects set up in previous exercises.
@@ -60,5 +60,5 @@ for `stw-zbw`.
 Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from TFIDF, Maui and fastText projects. Which one works best?
 
-Congratulations, you've completed Exercise 7! You have a working ensemble
+Congratulations, you've completed Exercise 6! You have a working ensemble
 project and you know how well it works compared to the projects it is based on.
