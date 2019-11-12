@@ -13,3 +13,6 @@ Jyväskylä](https://www.jyu.fi/en).
 
 2. [stw-zbw](stw-zbw) contains the [STW thesaurus for economics](http://zbw.eu/stw/version/latest/about),
 metadata used in the [ZBW](https://zbw.eu) retrieval system [EconBiz](https://www.econbiz.de) and full texts of working papers in economics uploaded to [EconStor](https://www.econstor.eu).
+
+In addition, [hogwarts](hogwarts) is a toy data set from the world of Harry
+Potter. It is used in an optional tutorial exercise.
