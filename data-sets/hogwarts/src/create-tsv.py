@@ -3,7 +3,7 @@
 import sys
 import random
 
-VOCABFILE = 'hogwarts-houses-vocab.tsv'
+VOCABFILE = '../hogwarts-vocab.tsv'
 
 houses = {}
 with open(VOCABFILE) as vf:
