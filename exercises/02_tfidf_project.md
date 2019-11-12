@@ -105,7 +105,7 @@ You can of course try any sentence or even just a single word.
 ## 6. Train the project using the full training data
 
 Now that the basic model works, you can retrain it using the complete
-training data sets. This should take around 10 minutes.
+training data sets. 
 
 If you use the `yso-nlf` data set, run this command:
 
@@ -114,6 +114,9 @@ If you use the `yso-nlf` data set, run this command:
 If you use the `stw-zbw` data set, run this command:
 
     annif train stw-tfidf-en data-sets/stw-zbw/stw-econbiz.tsv.gz
+
+This should take around 5 minutes for the `stw-zbw` data
+set and around 10-15 minutes for the `yso-nlf` data set.
 
 After retraining, you can try the `suggest` command again.
 
