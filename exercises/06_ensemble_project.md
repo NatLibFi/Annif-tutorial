@@ -15,7 +15,7 @@ If you use the `yso-nlf` data set, use the following snippet:
     language=en
     backend=ensemble
     vocab=yso-en
-    sources=yso-tfidf-en,yso-maui-en,yso-fasttext-en
+    sources=yso-tfidf-en,yso-maui-en
 
 If you use the `stw-zbw` data set, use the following snippet:
 
@@ -24,10 +24,11 @@ If you use the `stw-zbw` data set, use the following snippet:
     language=en
     backend=ensemble
     vocab=stw-en
-    sources=stw-tfidf-en,stw-maui-en,stw-fasttext-en
+    sources=stw-tfidf-en,stw-maui-en
 
 The `sources` setting lists the projects which will be included in the
-ensemble.
+ensemble. If you have created a fastText project, you can include it as a
+source as well.
 
 ## 2. Test the project
 
