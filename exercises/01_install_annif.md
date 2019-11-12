@@ -45,11 +45,11 @@ In case the directory is empty or other problems occur, try
     
 Then, in another shell window on the host system, go to the `Annif-tutorial` directory, and copy the `data-sets` directory to the container's volume with
 
-    `docker cp data-sets/ annif:/Annif-tutorial`
+    docker cp data-sets/ annif:/Annif-tutorial
 
 In the container shell, check with `ls` that the directory is now there. In the following excercises, when editing a file is needed, it should be done within the container using `nano` editor; e.g. open `projects.cfg` using
     
-    `nano projects.cfg`.
+    nano projects.cfg
 
 ### 1.2. VirtualBox based install
 
