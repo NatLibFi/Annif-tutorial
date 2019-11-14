@@ -1,14 +1,13 @@
 # Exercise 10: Set up and train a neural network ensemble
 
-In this lesson, we will set up an nn_ensemble which combines results from
-the projects set up in previous exercises.
+In this lesson, we will set up a trainable dynamic neural network ensemble model that intelligently combines results from the projects set up in previous exercises. Initially (with no training), the backend behaves exactly like a basic ensemble, but in this case the training data is used to fine-tune the output to better match the given manually assigned subjects in the training documents.
 
 ## 1. Define the project in the `projects.cfg` file
 
 If you use the `yso-nlf` data set, use the following snippet:
 
     [yso-nn-ensemble-en]
-    name=YSO ensemble project
+    name=YSO neural ensemble project
     language=en
     backend=nn_ensemble
     vocab=yso-en
@@ -22,7 +21,7 @@ If you use the `yso-nlf` data set, use the following snippet:
 If you use the `stw-zbw` data set, use the following snippet:
 
     [stw-nn-ensemble-en]
-    name=STW ensemble project
+    name=STW neural ensemble project
     language=en
     backend=ensemble
     vocab=stw-en
