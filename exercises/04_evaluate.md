@@ -1,4 +1,4 @@
-# Exercise 5: Evaluating quality on document corpora
+# Exercise 4: Evaluating quality on document corpora
 
 Testing on short text snippes only gives a first impression of the quality
 of automated subject indexing. To gain a better understanding of how well
@@ -11,8 +11,8 @@ and recall](https://en.wikipedia.org/wiki/Precision_and_recall), [F1
 score](https://en.wikipedia.org/wiki/F1_score) and
 [NDCG](https://en.wikipedia.org/wiki/Discounted_cumulative_gain).
 
-We will use full text documents to evaluate the TFIDF and Maui projects that
-were created in the previous exercises. For the
+We will use full text documents to evaluate the TFIDF project that
+was created in the previous exercises. For the
 `yso-nlf` data set, we will use 300 Master's and doctoral
 theses in the
 [`yso-nlf/docs/test/`](../data-sets/yso-nlf/docs/test)
@@ -31,19 +31,7 @@ If you use the `stw-zbw` data set, run this command:
     annif eval stw-tfidf-en data-sets/stw-zbw/docs/test/
 
 This will take a while but in the end you will receive a report of the
-evaluation results. Take note of the values, especially `F1@5` and `NDCG`.
+evaluation results. Write down the values, especially `F1@5` and `NDCG`.
 
-## 1. Evaluate Maui project on a collection of documents
-
-If you use the `yso-nlf` data set, run this command:
-
-    annif eval yso-maui-en data-sets/yso-nlf/docs/test/
-
-If you use the `stw-zbw` data set, run this command:
-
-    annif eval stw-maui-en data-sets/stw-zbw/docs/test/
-
-Compare the F1@5 and NDCG scores with what the TFIDF project got.
-
-Congratulations, you've completed Exercise 5 and you know how well your
-projects are doing in terms of quality!
+Congratulations, you've completed Exercise 4 and you know how well your
+TFIDF project is doing in terms of quality!

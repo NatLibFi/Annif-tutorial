@@ -1,18 +1,20 @@
-# Exercise 4: Set up and train a Maui project
+# Exercise 5: Set up and train a Maui project
 
 In this lesson, we will set up a Maui project. Maui is a great tool for
 lexical automated subject indexing, i.e. matching terms in document text to
 terms in a controlled vocabulary.
 
 Maui can be used with Annif through Maui Server, which is a REST API wrapper
-around the Maui codebase. Thus you need to install Maui Server first. There
-are two ways of doing this:
+around the Maui codebase. Thus you need to install Maui Server first (unless
+you use the VirtualBox image, where this has already been taken care of).
+There are two ways of doing this:
 
 1. Use the Docker image of Maui Server. This is the easiest option if you
 have Docker on your system.
 2. Set up the Tomcat application server, download the Maui Server WAR file
 which contains a pre-packaged webapp, and place the WAR under the `webapps`
-directory of Tomcat.
+directory of Tomcat. See the [Annif
+wiki](https://github.com/NatLibFi/Annif/wiki/Backend%3A-Maui) for details.
 
 ## 1. Make sure Maui Server is up and running
 
@@ -96,4 +98,18 @@ If you use the `stw-zbw` data set, run this command:
 
 You can also try the Web UI with this Maui based project.
 
-Congratulations, you've completed Exercise 4 and you have a working Maui project!
+## 5. Evaluate the project on a collection of documents
+
+If you use the `yso-nlf` data set, run this command:
+
+    annif eval yso-maui-en data-sets/yso-nlf/docs/test/
+
+If you use the `stw-zbw` data set, run this command:
+
+    annif eval stw-maui-en data-sets/stw-zbw/docs/test/
+
+Write down the F1@5 and NDCG scores and compare them with the scores that
+the TFIDF project got.
+
+Congratulations, you've completed Exercise 5, you have a working Maui project
+and you know how well it performs compared to the TFIDF project!
