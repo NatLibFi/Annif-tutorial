@@ -64,8 +64,8 @@ If you use the `stw-zbw` data set, run this command:
 
     annif loadvoc stw-tfidf-en data-sets/stw-zbw/stw-skos.ttl
 
-This should take a minute or two. No output means the operation was
-succesful.
+This should take less than 2 minutes for YSO and less than a minute for
+STW. No output means the operation was succesful.
 
 You only have to do this once for a particular vocabulary. You can now reuse
 the same vocabulary (by using the same `vocab=` value) in other projects.
