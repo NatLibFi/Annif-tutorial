@@ -44,7 +44,7 @@ If you use the `stw-zbw` data set, run this command:
 
 You can also try the Web UI with this ensemble project.
 
-## 5. Evaluate the ensemble project on a collection of documents
+## 3. Evaluate the ensemble project on a collection of documents
 
 If you use the `yso-nlf` data set, run this command:
 
