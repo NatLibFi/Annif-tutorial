@@ -41,7 +41,7 @@ In the shell you now have the Annif installation ready, and the `Annif-tutorial`
 #### Alternative approach using [named volume](https://docs.docker.com/storage/volumes/)
 In case the directory is empty or other problems occur, try
 
-    docker run -v Annif-tutorial-volume:/Annif-tutorial --network host --name annif -it --rm annif-tutorial
+    docker run -v Annif-tutorial-volume:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
     
 Then, in another shell window on the host system, go to the `Annif-tutorial` directory, and copy the `data-sets` directory to the container's volume with
 
