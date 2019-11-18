@@ -28,7 +28,7 @@ _Linux/Mac_:
 
 _Windows_:
 
-    docker run -v Maui-data-volume:/mauidata --network host --name mauiserver --rm -e "MAUI_SERVER_DATA_DIR=/mauidata" -e "MY_UID=0" -e "MY_GID=0" mauiserver
+    docker run -v Maui-data-volume:/mauidata -p 8080:8080 --name mauiserver --rm -e "MAUI_SERVER_DATA_DIR=/mauidata" -e "MY_UID=0" -e "MY_GID=0" mauiserver
 
 Try to access the URL [http://localhost:8080/mauiserver/](http://localhost:8080/mauiserver/) using
 a web browser or a tool such as `curl`. If you get a JSON response that
