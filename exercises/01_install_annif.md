@@ -36,7 +36,7 @@ _Windows_ (replace `your_user_name` appropriately):
 
     docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
 
-In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available. Check this with `ls`, and if you see the same contents, you are ready with the install!
+In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available. Check this with `ls`, and if you see the same contents, you are ready with the install! When you have finished the excercices, you can get out of the container shell with `exit` command.
 
 #### Alternative approach using [named volume](https://docs.docker.com/storage/volumes/)
 In case the directory is empty or other problems occur, try
