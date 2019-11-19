@@ -30,8 +30,8 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-tfidf-en data-sets/stw-zbw/docs/test/
 
-This will take a while but in the end you will receive a report of the
-evaluation results. Write down the values, especially `F1@5` and `NDCG`.
+This will take around 5 minutes but in the end you will receive a report of
+the evaluation results. Write down the values, especially `F1@5` and `NDCG`.
 
 Congratulations, you've completed Exercise 4 and you know how well your
 TFIDF project is doing in terms of quality!
