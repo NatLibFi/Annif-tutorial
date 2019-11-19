@@ -18,7 +18,7 @@ Copy the `Annif-tutorial` directory from the USB stick to your home directory.
 
 Using a terminal of your system (i.e. PowerShell in _Windows_), go to `Annif-tutorial` directory and load the Annif and Maui Server images to Docker:
 
-    docker load -i annif-tutorial.tar
+    docker load -i annif-0.44-tutorial.tar
 
 and 
 
