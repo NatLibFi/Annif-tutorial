@@ -115,7 +115,7 @@ If you use the `stw-zbw` data set, run this command:
 
     annif train stw-tfidf-en data-sets/stw-zbw/stw-econbiz.tsv.gz
 
-This should take around 5 minutes for the `stw-zbw` data
+This should take around 5-10 minutes for the `stw-zbw` data
 set and around 10-15 minutes for the `yso-nlf` data set.
 
 After retraining, you can try the `suggest` command again.
