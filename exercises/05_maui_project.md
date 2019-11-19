@@ -108,8 +108,8 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-maui-en data-sets/stw-zbw/docs/test/
 
-Write down the F1@5 and NDCG scores and compare them with the scores that
-the TFIDF project got.
+Evaluation should take 1-2 minutes. Write down the F1@5 and NDCG scores and
+compare them with the scores that the TFIDF project got.
 
 Congratulations, you've completed Exercise 5, you have a working Maui project
 and you know how well it performs compared to the TFIDF project!
