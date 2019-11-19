@@ -14,7 +14,7 @@ getting Annif up and running with all the extra features enabled.
 
 ### 1.1. Docker based install
 
-Copy the `Annif-tutorial` directory from the USB stick to your home directory.
+First, copy the `Annif-tutorial` directory from the USB stick to your home directory.
 
 Using a terminal of your system (i.e. PowerShell in _Windows_), go to `Annif-tutorial` directory and load the Annif and Maui Server images to Docker:
 
@@ -36,7 +36,7 @@ _Windows_ (replace `your_user_name` appropriately):
 
     docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
 
-In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available. Check this with `ls`, and if you see the same contents, you are ready with the install! When you have finished the excercices, you can get out of the container shell with `exit` command.
+In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available (don't care about the part `I have no name!` in the prompt). Check this with `ls`, and if you see the same contents, you are ready with the install! When you have finished the excercices, you can get out of the container shell with `exit` command.
 
 #### Alternative approach using [named volume](https://docs.docker.com/storage/volumes/)
 In case the directory is empty or other problems occur, try
