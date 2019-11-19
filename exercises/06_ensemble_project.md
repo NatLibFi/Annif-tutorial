@@ -58,11 +58,9 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-ensemble-en data-sets/stw-zbw/docs/test/
 
-Evaluation should take around X minutes for `yso-nlf` and around X minutes
-for `stw-zbw`.
-
-Take note of the F1@5 and NDCG measures you got and compare them with the
-previous figures from TFIDF, Maui and fastText projects. Which one works best?
+Evaluation should take around 5-10 minutes. Take note of the F1@5 and NDCG
+measures you got and compare them with the previous figures from TFIDF, Maui
+and fastText projects. Which one works best?
 
 Congratulations, you've completed Exercise 6! You have a working ensemble
 project and you know how well it works compared to the projects it is based on.
