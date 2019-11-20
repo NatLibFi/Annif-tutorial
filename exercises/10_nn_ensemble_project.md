@@ -16,7 +16,7 @@ If you use the `yso-nlf` data set, use the following snippet:
     language=en
     backend=nn_ensemble
     vocab=yso-en
-    sources=yso-tfidf-en,yso-maui-en
+    sources=yso-tfidf-en,yso-maui-en:2
     nodes=100
     dropout_rate=0.2
     epochs=10
@@ -26,9 +26,9 @@ If you use the `stw-zbw` data set, use the following snippet:
     [stw-nn-ensemble-en]
     name=STW neural ensemble project
     language=en
-    backend=ensemble
+    backend=nn_ensemble
     vocab=stw-en
-    sources=stw-tfidf-en,stw-maui-en
+    sources=stw-tfidf-en,stw-maui-en:2
     nodes=100
     dropout_rate=0.2
     epochs=10 
@@ -58,7 +58,10 @@ If you use the `stw-zbw` data set, run this command:
 
     annif train stw-nn-ensemble-en data-sets/stw-zbw/docs/train/
 
-Training should take around a minute.
+Training takes a long time - around 2 hours for `yso-nlf` and 1 hour for
+`stw-zbw`. Most of the time is spent on processing the training documents
+with the source projects/backends; the neural network is only trained at
+the very end and takes only a few minutes.
 
 ## 3. Test the ensemble
 
@@ -84,11 +87,11 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-nn-ensemble-en data-sets/stw-zbw/docs/test/
 
-Evaluation should take around X minutes for `yso-nlf` and around X minutes
-for `stw-zbw`.
+Evaluation should take around 15-20 minutes.
 
 Take note of the F1@5 and NDCG measures you got and compare them with the
-previous figures from other kinds of projects. Which one works best?
+previous figures from other kinds of projects. Is the NN ensemble better
+than a plain ensemble?
 
 Congratulations, you've completed Exercise 10! You have a working neural ensemble
 project and you know how well it works compared to the projects it is based on.
