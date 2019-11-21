@@ -5,12 +5,9 @@
 To be able to complete the exercises you need to install Annif on your own
 computer. There are three options to choose from:
 
-1. Docker based install
-2. VirtualBox virtual machine image with preinstalled Annif
+1. VirtualBox virtual machine image with preinstalled Annif
+2. Docker based install
 3. Local install using pip (Linux only)
-
-We recommend the Docker install because it is the most convenient way of
-getting Annif up and running with all the extra features enabled.
 
 ### 1.1. Docker based install
 
