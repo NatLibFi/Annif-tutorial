@@ -16,6 +16,8 @@ getting Annif up and running with all the extra features enabled.
 
 First, copy the `Annif-tutorial` directory from the USB stick to your home directory.
 
+_Windows_ and _MacOS_ users should make sure the available memory for Docker is at least 8 GB (under settings -> advanced).
+
 Using a terminal of your system (i.e. PowerShell in _Windows_), go to `Annif-tutorial` directory and load the Annif and Maui Server images to Docker:
 
     docker load -i annif-0.44-tutorial.tar
