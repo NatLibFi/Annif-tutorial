@@ -34,9 +34,13 @@ _Linux_:
 
     docker run -v ~/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u $(id -u):$(id -g) annif-tutorial
 
-_Windows_ (replace `your_user_name` appropriately):
+_Windows_:
 
-    docker run -v /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
+    docker run -v ~/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
+
+In case of troubles, try the following. Replace `your_user_name` appropriately:
+      
+      docker run -v  /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
 
 _MacOS_:
 
