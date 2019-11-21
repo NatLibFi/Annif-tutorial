@@ -59,7 +59,7 @@ In the container shell, check with `ls` that the directory is now there. In the 
 
 
 #### A brief nano guide
-You can copy paste text to the window and then exit nano (by ´ctrl+o´ or ´ctrl+´ followed by ´Enter´).
+You can copy paste text to the window and then exit nano (by  `ctrl+o` or  followed by `Enter`).
 Find out more the [site](https://linux.die.net/man/1/nano)
 
 ### 1.2. VirtualBox based install
