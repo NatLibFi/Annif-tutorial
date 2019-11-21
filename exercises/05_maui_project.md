@@ -22,9 +22,9 @@ If you have Maui Server running under Tomcat, no further setup is needed.
 
 If you are running Annif with Docker, start up Maui Server with:
 
-_Linux/Mac_:
+_Linux/MacOS_:
 
-    docker run -v Maui-data-volume:/mauidata --network host --name mauiserver --rm -e MAUI_SERVER_DATA_DIR=/mauidata -e MY_UID=$(id -u) -e MY_GID=$(id -g) quay.io/natlibfi/mauiserver
+    docker run -v Maui-data-volume:/mauidata -p 8080:8080 --name mauiserver --rm -e MAUI_SERVER_DATA_DIR=/mauidata -e MY_UID=$(id -u) -e MY_GID=$(id -g) quay.io/natlibfi/mauiserver
 
 _Windows_:
 
@@ -58,6 +58,8 @@ If you use the `stw-zbw` data set, use the following snippet:
     vocab=stw-en
     endpoint=http://localhost:8080/mauiserver/
     tagger=stw-maui-en
+
+**Note**: In case you are using Docker on _Windows_ or _MacOS_, use `host.docker.internal` inplace of `localhost` in the above endpoint entries.
 
 ## 3. Train the project
 
