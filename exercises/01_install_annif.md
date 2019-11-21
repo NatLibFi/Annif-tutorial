@@ -35,7 +35,7 @@ _Windows_:
 
     docker run -v ~/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
 
-In case of troubles, try the following. Replace `your_user_name` appropriately:
+In case of troubles, try the following, replacing `your_user_name` appropriately:
       
       docker run -v  /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
 
@@ -46,11 +46,11 @@ _MacOS_:
 In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available (don't care about the part `I have no name!` in the prompt). Check this with `ls`, and if you see the same contents, you are ready with the install! When you have finished the excercices, you can get out of the container shell with `exit` command.
 
 #### Alternative approach using [named volume](https://docs.docker.com/storage/volumes/)
-In case the directory is empty or other problems occur, try
+In case of problems related to sharing a drive for Docker, you can first check that [the sharing is enabled from the Docker settings](https://docs.docker.com/docker-for-windows/#shared-drives). If sharing is not possible, the `Annif-tutorial` directory is empty, or other problems occur, exit the container, and start it again with
 
     docker run -v Annif-tutorial-volume:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
     
-Then, in another shell window on the host system, go to the `Annif-tutorial` directory, and copy the `data-sets` directory to the container's volume with
+Then, open a new terminal window on the host system, go again to the `Annif-tutorial` directory, and copy the `data-sets` directory to the container's volume with
 
     docker cp data-sets/ annif:/Annif-tutorial
 
