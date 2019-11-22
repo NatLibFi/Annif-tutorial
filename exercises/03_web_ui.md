@@ -31,5 +31,15 @@ Press the Analyze button.
 
 You should see a list of results on the bottom right.
 
+## 4. Test on an example document
+
+Open up the example document (PDF or txt) that you used for testing the
+TFIDF project in the previous exercise. Copy all the text of the document
+and paste it into the text field of the web UI. Then press the Analyze
+button. Did you get similar results as when using the command line?
+
+Try also using copying just the title of the document, or both the title and
+abstract.
+
 Congratulations! You've completed Exercise 3 and you can now easily test your
 project with different input texts using the web UI. 
