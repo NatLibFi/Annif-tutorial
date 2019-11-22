@@ -44,7 +44,7 @@ and
 
     docker load -i mauiserver.tar
 
-You can check with `docker images` that the images `annif-tutorial` and `mauiserver` are now available.
+You can check with `docker images` that the images `annif-tutorial` and `quay.io/natlibfi/mauiserver` are now available.
 
 Start the bash shell in a Docker container:
 
