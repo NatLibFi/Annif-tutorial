@@ -132,8 +132,8 @@ corresponding `.tsv` file, which contains the subjects that have been
 manually assigned to that document. Direct links for the first documents in
 each set:
 
-* yso-nlf: 2017-D-52518 "New Insights on the Role of Ecology and Life-history in Social  Evolution" (doctoral dissertation of Piret Avila) [PDF](https://jyx2.jyu.fi/dspace/bitstream/handle/123456789/52518/978-951-39-6906-6_vaitos_20170113.pdf), [subjects](https://github.com/NatLibFi/Annif-tutorial/blob/master/data-sets/yso-nlf/docs/test/2017-D-52518.tsv)
-* stw-zbw: 10008797547 "Entrepreneurship is not a Binding Constraint on Growth and Develop-ment in the Poorest Countries" (article by Wim Naudé) [PDF](https://www.econstor.eu/bitstream/10419/45166/1/616078927.pdf), [subjects](https://github.com/NatLibFi/Annif-tutorial/blob/master/data-sets/stw-zbw/docs/test/10008797547.tsv)
+* yso-nlf: 2017-D-52518 "New Insights on the Role of Ecology and Life-history in Social Evolution" (doctoral dissertation of Piret Avila) [PDF](https://jyx2.jyu.fi/dspace/bitstream/handle/123456789/52518/978-951-39-6906-6_vaitos_20170113.pdf), [subjects](https://github.com/NatLibFi/Annif-tutorial/blob/master/data-sets/yso-nlf/docs/test/2017-D-52518.tsv)
+* stw-zbw: 10008797547 "Entrepreneurship is not a Binding Constraint on Growth and Development in the Poorest Countries" (article by Wim Naudé) [PDF](https://www.econstor.eu/bitstream/10419/45166/1/616078927.pdf), [subjects](https://github.com/NatLibFi/Annif-tutorial/blob/master/data-sets/stw-zbw/docs/test/10008797547.tsv)
 
 Now ask Annif for subject suggestions to the same document.
 
