@@ -60,7 +60,7 @@ If you use the `stw-zbw` data set, run this command:
 
     annif train stw-fasttext-en data-sets/stw-zbw/stw-econbiz-small.tsv.gz
 
-## 3. Test the project
+## 3. Test the project on sample text
 
 Once training is completed, we can try the model on some example sentence.
 
@@ -71,8 +71,6 @@ If you use the `yso-nlf` data set, run this command:
 If you use the `stw-zbw` data set, run this command:
 
     echo "library for efficient learning of word representations and sentence classification" | annif suggest stw-fasttext-en
-
-You can also try the Web UI with this fastText based project.
 
 ## 4. Train the project using the full training data
 
@@ -89,7 +87,22 @@ If you use the `stw-zbw` data set, run this command:
 
 Full training should take at most around 20 minutes.
 
-## 5. Evaluate the fastText project on a collection of documents
+## 5. Test the project on an example document
+
+Try asking for subject suggestions from the fastText project to the same
+document that you used in Exercise 2 (TFIDF project).
+
+If you use the `yso-nlf` data set, run this command:
+
+    annif suggest yso-fasttext-en <data-sets/yso-nlf/docs/test/2017-D-52518.txt
+
+If you use the `stw-zbw` data set, run this command:
+
+    annif suggest stw-fasttext-en <data-sets/stw-zbw/docs/test/10008797547.txt
+
+You can also try the Web UI with this fastText based project.
+
+## 6. Evaluate the fastText project on a collection of documents
 
 If you use the `yso-nlf` data set, run this command:
 

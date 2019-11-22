@@ -63,7 +63,7 @@ Training takes a long time - around 2 hours for `yso-nlf` and 1 hour for
 with the source projects/backends; the neural network is only trained at
 the very end and takes only a few minutes.
 
-## 3. Test the ensemble
+## 3. Test the ensemble on sample text
 
 We can test the ensemble on some example sentence.
 
@@ -75,9 +75,22 @@ If you use the `stw-zbw` data set, run this command:
 
     echo "ensemble methods use multiple learning algorithms to obtain better predictive performance" | annif suggest stw-nn-ensemble-en
 
-You can also try the Web UI with this ensemble project.
+## 4. Test the project on an example document
 
-## 4. Evaluate the NN ensemble project on a collection of documents
+Try asking for subject suggestions from the NN ensemble project to the same
+document that you used in Exercise 2 (TFIDF project).
+
+If you use the `yso-nlf` data set, run this command:
+
+    annif suggest yso-nn-ensemble-en <data-sets/yso-nlf/docs/test/2017-D-52518.txt
+
+If you use the `stw-zbw` data set, run this command:
+
+    annif suggest stw-nn-ensemble-en <data-sets/stw-zbw/docs/test/10008797547.txt
+
+You can also try the Web UI with this NN ensemble project.
+
+## 5. Evaluate the NN ensemble project on a collection of documents
 
 If you use the `yso-nlf` data set, run this command:
 
