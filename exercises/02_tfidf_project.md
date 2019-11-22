@@ -120,4 +120,33 @@ set and around 10-15 minutes for the `yso-nlf` data set.
 
 After retraining, you can try the `suggest` command again.
 
-Congratulations, you've completed Exercise 2 and you have a working project!
+## 7. Test on an example document
+
+Pick any document from the `docs/test/` folder of your chosen data set. In
+this example we will use the lowest-numbered documents, i.e. `2017-D-52518`
+for `yso-nlf` and `10008797547` for `stw-zbw`. Open the `.txt` file of your
+chosen document in a text editor, or alternately, look at the URL stored in
+the corresponding `.url` file and open that URL in a web browser, which
+should give you the original PDF version of that document. Then open the
+corresponding `.tsv` file, which contains the subjects that have been
+manually assigned to that document. Direct links for the first documents in
+each set:
+
+* yso-nlf: 2017-D-52518 "New Insights on the Role of Ecology and Life-history in Social  Evolution" (doctoral dissertation of Piret Avila) [original PDF](https://jyx2.jyu.fi/dspace/bitstream/handle/123456789/52518/978-951-39-6906-6_vaitos_20170113.pdf) [subjects](https://github.com/NatLibFi/Annif-tutorial/blob/master/data-sets/yso-nlf/docs/test/2017-D-52518.tsv)
+* stw-zbw: 10008797547 "Entrepreneurship is not a Binding Constraint on Growth and Develop-ment in the Poorest Countries" (article by Wim Naudé) [original PDF](https://www.econstor.eu/bitstream/10419/45166/1/616078927.pdf) [subjects](https://github.com/NatLibFi/Annif-tutorial/blob/master/data-sets/stw-zbw/docs/test/10008797547.tsv)
+
+Now ask Annif for subject suggestions to the same document.
+
+If you use the `yso-nlf` data set, run this command:
+
+    annif suggest yso-tfidf-en <data-sets/yso-nlf/docs/test/2017-D-52518.txt
+
+If you use the `stw-zbw` data set, run this command:
+
+    annif suggest stw-tfidf-en <data-sets/stw-zbw/docs/test/10008797547.txt
+
+Compare the output you got from Annif with the original, manually assigned
+subjects. Was it close? Did Annif come with reasonable suggestions or not?
+
+Congratulations, you've completed Exercise 2, you have a working project and
+you know how to use it to suggest subjects for documents!
