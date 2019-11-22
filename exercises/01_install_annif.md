@@ -9,7 +9,28 @@ computer. There are three options to choose from:
 2. Docker based install
 3. Local install using pip (Linux only)
 
-### 1.1. Docker based install
+### 1.1. VirtualBox based install
+
+First make sure that you have the [VirtualBox](https://www.virtualbox.org/)
+host software for your operating system installed. You only need the basic
+install; the Extension Pack or SDK modules are not necessary.
+
+You will be given a USB stick with a `VirtualBox VMs` folder. Inside this
+folder is another folder called `annif-tutorial`. You need to copy this
+folder into the `VirtualBox VMs` folder below your home directory. If it
+doesn't exist yet, you can create it yourself.
+
+Start up the VirtualBox software.  From the menu bar of the main window,
+select Machine -> Add... and navigate to the `annif-tutorial` folder on your
+hard drive (not the USB stick) and open the `annif-tutorial.vbox` file. The
+`annif-tutorial` machine should now appear at the list of VMs on the left
+side. Select it and press Start. A new window should appear and after a
+while, you should see a Linux (Xubuntu) desktop. Open a terminal window (by
+double-clicking on the Terminal desktop icon). You can also change the
+keyboard layout now from the upper right corner (click the US flag).
+
+
+### 1.2. Docker based install
 
 First, copy the `Annif-tutorial` directory from the USB stick to your home directory.
 
@@ -63,25 +84,6 @@ In the container shell, check with `ls` that the directory is now there. In the 
 You can paste text to the window e.g. by right-clicking on the terminal. Move around using arrow buttons. Save the text by `ctrl+O` (hit `Enter` to confirm file name). Exit nano by `ctrl+X`.
 (Find out more from the [quide](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/).)
 
-### 1.2. VirtualBox based install
-
-First make sure that you have the [VirtualBox](https://www.virtualbox.org/)
-host software for your operating system installed. You only need the basic
-install; the Extension Pack or SDK modules are not necessary.
-
-You will be given a USB stick with a `VirtualBox VMs` folder. Inside this
-folder is another folder called `annif-tutorial`. You need to copy this
-folder into the `VirtualBox VMs` folder below your home directory. If it
-doesn't exist yet, you can create it yourself.
-
-Start up the VirtualBox software.  From the menu bar of the main window,
-select Machine -> Add... and navigate to the `annif-tutorial` folder on your
-hard drive (not the USB stick) and open the `annif-tutorial.vbox` file. The
-`annif-tutorial` machine should now appear at the list of VMs on the left
-side. Select it and press Start. A new window should appear and after a
-while, you should see a Linux (Xubuntu) desktop. Open a terminal window (by
-double-clicking on the Terminal desktop icon). You can also change the
-keyboard layout now from the upper right corner (click the US flag).
 
 ### 1.3. Local install
 
