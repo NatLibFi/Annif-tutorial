@@ -14,5 +14,5 @@ able to install Annif and complete the [exercises](exercises).
 
 Note also that it might be convenient to have either Docker or VirtualBox
 installed beforehand.  Note that when using Docker desktop (Windows), you
-might want to increase the aviable memory for it to 8 GB under Settings ->
+might want to increase the aviable memory for it to 8GB under Settings ->
 Advanced.
