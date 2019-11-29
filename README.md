@@ -26,3 +26,16 @@ The tutorial material was created by:
 * Juho Inkinen, National Library of Finland
 * Anna Kasprzik, ZBW - Leibniz Information Centre for Economics
 * Moritz Fürneisen, ZBW - Leibniz Information Centre for Economics
+
+## License
+
+The materials created for this tutorial (presentations and exercises) are
+licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+The data sets were collected from other sources and have their own
+licensing; see each individual data set for details.
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
