@@ -8,6 +8,9 @@ words that appear together and subwords) and to create word embeddings. On
 the downside, it has lots of tunable parameters and finding a combination
 that works well on a given data set can be a challenge.
 
+Note that if you have a local installation of Annif, you will first need to install the 
+[optional fastText dependencies](https://github.com/NatLibFi/Annif/wiki/Optional-features-and-dependencies#fasttext-backend).
+
 We will create a project and train it with the same document titles and
 subjects that we used for the TFIDF project.
 
