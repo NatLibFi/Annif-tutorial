@@ -5,7 +5,11 @@ doctoral theses published in the years 2010 to 2017, collected from the
 [University of Jyväskylä digital repository JYX](https://jyx2.jyu.fi).
 
 Only the URLs and subject metadata are stored in this Git repository. Actual
-PDF documents must be downloaded separately.
+PDF documents must be downloaded separately, as they are copyrighted by the
+original authors. They may be downloaded from JYX under the following
+condition that applies to each document:
+
+> This publication is copyrighted. You may download, display and print it for Your own personal use. Commercial use is prohibited.
 
 ## Retrieving the PDFs
 

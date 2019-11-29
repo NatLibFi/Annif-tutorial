@@ -19,3 +19,14 @@ directories:
   University of Jyväskylä (JYX repository)
   * See [docs](docs) subdirectory for details
 
+## Licensing
+
+The General Finnish Ontology YSO is copyrighted by National Library of
+Finland, Semantic Computing Research Group (SeCo) and The Finnish
+Terminology Centre TSK. It is republished here according to the CC By 4.0
+license.
+
+The Finna training data set licensed under the CC0 1.0 Universal Public
+Domain Dedication. The data sets reproduced here are based on information
+from the [Finna
+API](https://www.kiwi.fi/pages/viewpage.action?pageId=53839221).
