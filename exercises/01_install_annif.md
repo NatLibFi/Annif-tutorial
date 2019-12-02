@@ -54,11 +54,11 @@ _Linux_:
 
 _Windows_:
 
-    docker run -v ~/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
+    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root annif-tutorial
 
 In case of troubles, try the following, replacing `your_user_name` appropriately:
       
-      docker run -v  /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
+      docker run -v  /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root annif-tutorial
 
 _MacOS_:
 
