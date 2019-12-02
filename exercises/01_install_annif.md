@@ -15,14 +15,25 @@ First make sure that you have the [VirtualBox](https://www.virtualbox.org/)
 host software for your operating system installed. You only need the basic
 install; the Extension Pack or SDK modules are not necessary.
 
-You will be given a USB stick with a `VirtualBox VMs` folder. Inside this
-folder is another folder called `annif-tutorial`. You need to copy this
-folder into the `VirtualBox VMs` folder below your home directory. If it
-doesn't exist yet, you can create it yourself.
+The VirtualBox image is a preconfigured virtual machine containing a minimal
+installation of Xubuntu, Annif and the files needed for this tutorial.  It
+is a 32 bit machine, which has some limitations: you will not be able to
+complete the last two exercises (neural network ensemble and incremental
+learning), because TensorFlow is only available for 64 bit platforms. 
+
+Download the [VirtualBox
+image](http://annif.org/download/annif-tutorial-vbox.zip).  This is a ~2GB
+zip archive so it can take a while to download.  Find the `VirtualBox VMs`
+folder below your home folder; if it doesn't exist yet (i.e. you've just
+installed VirtualBox and haven't created any VMs yet), you can create it
+yourself. Extrace the `annif-tutorial` folder from the zip archive into the
+`VirtualBox VMs` directory; it will initially take around 5GB disk space
+when uncompressed and grow in size (up to 20GB) as you add more data and
+train models.
 
 Start up the VirtualBox software.  From the menu bar of the main window,
 select Machine -> Add... and navigate to the `annif-tutorial` folder on your
-hard drive (not the USB stick) and open the `annif-tutorial.vbox` file. The
+hard drive (under `VirtualBox VMs`) and open the `annif-tutorial.vbox` file. The
 `annif-tutorial` machine should now appear at the list of VMs on the left
 side. Select it and press Start. A new window should appear and after a
 while, you should see a Linux (Xubuntu) desktop. Open a terminal window (by
@@ -93,10 +104,11 @@ if you are used to work with Python packages.
 
 See the [Annif top level README file](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
-The basic install from PyPI only supports core features. You need to
-install some optional extra features separately - see [Optional features and
+The basic install from PyPI only supports core features. You also need to
+install the fastText feature separately to complete the fastText based
+exercises - see [Optional features and
 dependencies]([https://github.com/NatLibFi/Annif/wiki/Optional-features-and-dependencies)
-in the Annif wiki.
+in the Annif wiki for details.
 
 ## 2. Verify that you can run Annif
 
