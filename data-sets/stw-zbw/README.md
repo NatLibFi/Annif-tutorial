@@ -17,3 +17,10 @@ directories:
 * Example documents: Working papers in economics
   * See [docs](docs) subdirectory for details
 
+## Licensing
+
+The STW thesaurus for economics is developed by ZBW - Leibniz Information Centre for Economics.
+It is licensed under the Open Database License (ODbL) v1.0.
+
+The ZBW training data set is licensed under the CC0 1.0 Universal Public Domain Dedication.
+The data sets reproduced here are based on information from an advanced internal version of the [EconBiz API](https://api.econbiz.de/).
