@@ -17,6 +17,19 @@ installed beforehand.  Note that when using Docker desktop (Windows), you
 might want to increase the available memory for it to 8GB under Settings ->
 Advanced.
 
+## Getting the tutorial materials
+
+To complete this tutorial, you will need a local copy of the materials,
+especially the data sets (unless you use the pre-built VirtualBox VM, which
+includes them).  The easiest way to get them is to either clone this
+repository or download it as a zip archive from GitHub (click the green "Clone
+or download" button).
+
+When you have the files locally, you also need to download the example
+full text documents for either or both data sets. The downloads are automated using
+`make` - see the README files for both data sets
+([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
+
 ## Authors
 
 The tutorial material was created by:
