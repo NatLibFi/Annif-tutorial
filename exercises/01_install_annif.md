@@ -32,44 +32,36 @@ keyboard layout now from the upper right corner (click the US flag).
 
 ### 1.2. Docker based install
 
-First, copy the `Annif-tutorial` directory from the USB stick to your home directory.
+First, copy the `Annif-tutorial` directory from
 
 _Windows_ and _MacOS_ users should make sure [the available memory](https://docs.docker.com/docker-for-windows/#advanced) for Docker is at least 8 GB (click the whale icon in the notification area, and select Settings -> Advanced).
 
-Using a terminal of your system (PowerShell in _Windows_), navigate to the `Annif-tutorial` directory using the `cd` command and load the Annif and Maui Server images to Docker:
 
-    docker load -i annif-0.44-tutorial.tar
-
-and 
-
-    docker load -i mauiserver.tar
-
-You can check with `docker images` that the images `annif-tutorial` and `quay.io/natlibfi/mauiserver` are now available.
 
 Start the bash shell in a Docker container:
 
 _Linux_:
 
-    docker run -v ~/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u $(id -u):$(id -g) annif-tutorial
+    docker run -v ~/Annif-tutorial:/Annif-tutorial --network host --name annif -it --rm -u $(id -u):$(id -g) quay.io/natlibfi/annif:0.44-tutorial
 
 _Windows_:
 
-    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root annif-tutorial
+    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root quay.io/natlibfi/annif:0.44-tutorial
 
 In case of troubles, try the following, replacing `your_user_name` appropriately:
       
-      docker run -v  /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root annif-tutorial
+      docker run -v  /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root quay.io/natlibfi/annif:0.44-tutorial
 
 _MacOS_:
 
-    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u $(id -u):$(id -g) annif-tutorial
+    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u $(id -u):$(id -g) quay.io/natlibfi/annif:0.44-tutorial
 
 In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available (don't care about the part `I have no name!` in the prompt). Check this with `ls`, and if you see the same contents, you are ready with the install! When you have finished the excercices, you can get out of the container shell with `exit` command.
 
 #### Alternative approach using [named volume](https://docs.docker.com/storage/volumes/)
 In case of problems related to sharing a drive for Docker, you can first check that [the sharing is enabled from the Docker settings](https://docs.docker.com/docker-for-windows/#shared-drives). If sharing is not possible, the `Annif-tutorial` directory is empty, or other problems occur, exit the container, and start it again with
 
-    docker run -v Annif-tutorial-volume:/Annif-tutorial --network host --name annif -it --rm -u root annif-tutorial
+    docker run -v Annif-tutorial-volume:/Annif-tutorial --network host --name annif -it --rm -u root quay.io/natlibfi/annif:0.44-tutorial
     
 Then, open a new terminal window on the host system, go again to the `Annif-tutorial` directory, and copy the `data-sets` directory to the container's volume with
 
