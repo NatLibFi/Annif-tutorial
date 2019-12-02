@@ -122,6 +122,27 @@ After retraining, you can try the `suggest` command again.
 
 ## 7. Test on an example document
 
+For this step, you will need the full text documents of your data set.  If
+you have not already done so, you need to download the PDFs and convert them
+to text files.
+
+If you use the `yso-nlf` data set, run these commands:
+
+    cd data-sets/yso-nlf/docs/
+    make -j4 -k
+    cd -
+
+If you use the `stw-zbw` data set, run these commands:
+
+    cd data-sets/stw-zbw/docs/
+    make -j4 -k
+    cd -
+
+The downloading and conversion can take an hour or more, depending on your
+Internet connection and CPU performance. The `-j4` option specifies the number of
+downloads and conversions to perform in parallel.  The final `cd -` command
+should take you back to the `Annif-tutorial` directory.
+
 Pick any document from the `docs/test/` folder of your chosen data set. In
 this example we will use the lowest-numbered documents, i.e. `2017-D-52518`
 for `yso-nlf` and `10008797547` for `stw-zbw`. Open the `.txt` file of your
