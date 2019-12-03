@@ -32,13 +32,11 @@ keyboard layout now from the upper right corner (click the US flag).
 
 ### 1.2. Docker based install
 
-First, copy the `Annif-tutorial` directory from
+First, to get the data sets for the exercises (if you do not have them already), either download this GitHub repository as [a zip archive ](https://github.com/NatLibFi/Annif-tutorial/archive/master.zip) or git clone it. Place the `Annif-tutorial` directory in your home directory (in _Windows_ to `C:\Users\your_username`), or to a location of your choice, but in that case change the mount location in below commands appropriately.
 
 _Windows_ and _MacOS_ users should make sure [the available memory](https://docs.docker.com/docker-for-windows/#advanced) for Docker is at least 8 GB (click the whale icon in the notification area, and select Settings -> Advanced).
 
-
-
-Start the bash shell in a Docker container:
+Start the bash shell in a Docker container with Annif using the following command (this will also download the `annif:0.44-tutorial` Docker image from quay.io/natlibfi):
 
 _Linux_:
 
@@ -48,22 +46,16 @@ _Windows_:
 
     docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root quay.io/natlibfi/annif:0.44-tutorial
 
-In case of troubles, try the following, replacing `your_user_name` appropriately:
-      
-      docker run -v  /c/Users/your_user_name/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root quay.io/natlibfi/annif:0.44-tutorial
-
 _MacOS_:
 
     docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u $(id -u):$(id -g) quay.io/natlibfi/annif:0.44-tutorial
 
-In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available (don't care about the part `I have no name!` in the prompt). Check this with `ls`, and if you see the same contents, you are ready with the install! When you have finished the excercices, you can get out of the container shell with `exit` command.
+In the shell you now have the Annif installation ready, and the `Annif-tutorial` directory and its contents (the same as in the host system) should be available (don't care about the part `I have no name!` in the prompt). Check this with `ls`, and if you see the same contents, you are ready with the install! When you have finished the excercices, you can get out of the container with `exit` command.
 
 #### Alternative approach using [named volume](https://docs.docker.com/storage/volumes/)
-In case of problems related to sharing a drive for Docker, you can first check that [the sharing is enabled from the Docker settings](https://docs.docker.com/docker-for-windows/#shared-drives). If sharing is not possible, the `Annif-tutorial` directory is empty, or other problems occur, exit the container, and start it again with
-
-    docker run -v Annif-tutorial-volume:/Annif-tutorial --network host --name annif -it --rm -u root quay.io/natlibfi/annif:0.44-tutorial
+In case of problems related to sharing a drive for Docker, you can first check that [the sharing is enabled from the Docker settings](https://docs.docker.com/docker-for-windows/#shared-drives). If sharing is not possible, the `Annif-tutorial` directory is empty, or other problems occur, exit the container, and start it again with a modified command, where the `-v ~/Annif-tutorial:/Annif-tutorial` option is replaced with `-v Annif-tutorial-volume:/Annif-tutorial` (note the `~/` is dropped from the beginning).
     
-Then, open a new terminal window on the host system, go again to the `Annif-tutorial` directory, and copy the `data-sets` directory to the container's volume with
+Then, open a new terminal window on the host system, `cd` to the `Annif-tutorial` directory, and copy the `data-sets` directory to the container's volume with
 
     docker cp data-sets/ annif:/Annif-tutorial
 
@@ -74,7 +66,7 @@ In the container shell, check with `ls` that the directory is now there. In the 
 
 #### A brief nano guide
 You can paste text to the window e.g. by right-clicking on the terminal. Move around using arrow buttons. Save the text by `ctrl+O` (hit `Enter` to confirm file name). Exit nano by `ctrl+X`.
-(Find out more from the [quide](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/).)
+(Find out more from the [guide](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/).)
 
 
 ### 1.3. Local install
