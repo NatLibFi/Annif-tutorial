@@ -20,7 +20,7 @@ wiki](https://github.com/NatLibFi/Annif/wiki/Backend%3A-Maui) for details.
 
 If you have Maui Server running under Tomcat, no further setup is needed.
 
-If you are running Annif with Docker (on any platform, _Linux/MacOS/Windows_), open a new terminal window and start up Maui Server with:
+If you are running Annif with Docker (on any platform, _Linux/MacOS/Windows_), open a new terminal window and start up Maui Server with (this will first download the Docker image if it does not yet exist locally):
 
     docker run -v Maui-data-volume:/mauidata -p 8080:8080 --name mauiserver --rm -e MAUI_SERVER_DATA_DIR=/mauidata quay.io/natlibfi/mauiserver
 
