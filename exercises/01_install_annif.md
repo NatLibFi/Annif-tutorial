@@ -68,6 +68,9 @@ In the container shell, check with `ls` that the directory is now there. In the 
 You can paste text to the window e.g. by right-clicking on the terminal. Move around using arrow buttons. Save the text by `ctrl+O` (hit `Enter` to confirm file name). Exit nano by `ctrl+X`.
 (Find out more from the [guide](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/).)
 
+#### Removing a container 
+
+The `--rm` option in the run commands should ensure that the container is removed when it is exited (but the data in the `Annif-tutorial` directory is retained as it is mounted from the host or from the named volume). However, in _Windows_ the container removing sometimes does not work, and restarting the container fails (`The container name XXX is already in use by...`). In this case, use command `docker rm -f XXX` to manually remove it.
 
 ### 1.3. Local install
 
