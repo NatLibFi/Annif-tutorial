@@ -92,7 +92,7 @@ if you are used to work with Python packages.
 See the [Annif top level README file](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
 The basic install from PyPI only supports core features. You also need to
-install the fastText feature separately to complete the fastText based
+install the Omikuji feature separately to complete the Omikuji based
 exercises - see [Optional features and
 dependencies]([https://github.com/NatLibFi/Annif/wiki/Optional-features-and-dependencies)
 in the Annif wiki for details.
