@@ -5,6 +5,16 @@ Hat](https://harrypotter.fandom.com/wiki/Sorting_Hat), which can determine
 which House (Slytherin, Ravenclaw, Hufflepuff or Gryffindor) a first-year
 student at the Hogwarts school should join.
 
+[fastText](https://fasttext.cc/) is a machine learning model for text
+classification developed by Facebook Research. It has some advanced
+features, such as being able to use word and character level n-grams (i.e.
+words that appear together and subwords) and to create word embeddings. On
+the downside, it has lots of tunable parameters and finding a combination
+that works well on a given data set can be a challenge.
+
+Note that if you have a local installation of Annif, you will first need to install the 
+[optional fastText dependencies](https://github.com/NatLibFi/Annif/wiki/Optional-features-and-dependencies#fasttext-backend).
+
 The original Sorting Hat reads the thoughts of the student, but Annif
 generally does not have access to that kind of information, so we will
 simply use the name of the student as input. We will train a fastText model
