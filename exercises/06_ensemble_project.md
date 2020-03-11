@@ -31,7 +31,7 @@ ensemble. The sources may be given weights: in the above examples, the Maui
 project has been given twice the normal weight, because it generally gives
 better results than TFIDF and is therefore more important.
 
-If you have created a fastText project (see Exercise 8), you can include it
+If you have created an Omikuji project (see Exercise 8), you can include it
 as a source as well.
 
 ## 2. Test the project on sample text
