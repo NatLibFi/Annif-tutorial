@@ -17,4 +17,4 @@ digraph "Annif-tutorial exercises" {
 
 }
 # Generate png with:
-# dot -Tpng overview.dot -o out.png
+# dot -Tpng overview.dot -o overview.png
