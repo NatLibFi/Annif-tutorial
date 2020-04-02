@@ -3,8 +3,9 @@ digraph "Annif-tutorial exercises" {
   ranksep=0.3;
   install -> TFIDF -> "Web UI" -> evaluate -> Maui -> ensemble [style=bold];
   ensemble -> "NN ensemble";
+  Maui -> "Hogwarts/fastText";
   "Web UI" -> "REST API";
-  evaluate -> fastText -> "Hogwarts";
+  evaluate -> Omikuji;
   "NN ensemble" -> "incremental learning";
 
   install [style=filled,fillcolor=lightblue,penwidth=2];
@@ -15,3 +16,5 @@ digraph "Annif-tutorial exercises" {
   ensemble [style=filled,fillcolor=lightblue,penwidth=2];
 
 }
+# Generate png with:
+# dot -Tpng overview.dot -o overview.png

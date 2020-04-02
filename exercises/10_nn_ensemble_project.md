@@ -34,7 +34,7 @@ If you use the `stw-zbw` data set, use the following snippet:
     epochs=10 
     
 The `sources` setting lists the projects which will be included in the
-ensemble. If you have created a fastText project, you can include it as a
+ensemble. If you have created an Omikuji project, you can include it as a
 source as well.
 
 ## 2. Train the project
