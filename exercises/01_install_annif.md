@@ -94,7 +94,7 @@ See the [Annif top level README file](https://github.com/NatLibFi/Annif/blob/mas
 The basic install from PyPI only supports core features. You also need to
 install the Omikuji feature separately to complete the Omikuji based
 exercises - see [Optional features and
-dependencies]([https://github.com/NatLibFi/Annif/wiki/Optional-features-and-dependencies)
+dependencies](https://github.com/NatLibFi/Annif/wiki/Optional-features-and-dependencies)
 in the Annif wiki for details.
 
 ## 2. Verify that you can run Annif
