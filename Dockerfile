@@ -1,7 +1,7 @@
-FROM quay.io/natlibfi/annif:0.46
+FROM quay.io/natlibfi/annif:0.48
 # Docker image to use in Annif tutorial, https://github.com/NatLibFi/Annif-tutorial.
 # Build with:
-#     docker build -t quay.io/natlibfi/annif:0.46-tutorial .
+#     docker build -t quay.io/natlibfi/annif:0.48-tutorial .
 #
 
 USER root
