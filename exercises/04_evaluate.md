@@ -35,3 +35,10 @@ the evaluation results. Write down the values, especially `F1@5` and `NDCG`.
 
 Congratulations, you've completed Exercise 4 and you know how well your
 TFIDF project is doing in terms of quality!
+
+---
+
+<p align="center">
+<a href="/exercises/03_web_ui.md">« Previous</a> |
+<a href="/exercises/05_maui_project.md">Next »</a> 
+</p>
