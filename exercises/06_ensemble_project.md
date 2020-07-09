@@ -77,3 +77,10 @@ projects. Which one works best?
 
 Congratulations, you've completed Exercise 6! You have a working ensemble
 project and you know how well it works compared to the projects it is based on.
+
+---
+
+<p align="center">
+<a href="/exercises/05_maui_project.md">« Previous</a> |
+<a href="/exercises/07_rest_api.md">Next »</a>
+</p>

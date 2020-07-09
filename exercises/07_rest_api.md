@@ -57,3 +57,10 @@ the same JSON response body.
 Congratulations, you've completed Exercise 7!  You now know what kind of
 methods and services the Annif REST API provides and how to access them from
 a web browser and the `curl` command line tool.
+
+---
+
+<p align="center">
+<a href="/exercises/06_ensemble_project.md">« Previous</a> |
+<a href="/exercises/08_omikuji_project.md">Next »</a>
+</p>

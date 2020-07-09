@@ -125,3 +125,10 @@ compare them with the scores that the TFIDF project got.
 
 Congratulations, you've completed Exercise 5, you have a working Maui project
 and you know how well it performs compared to the TFIDF project!
+
+---
+
+<p align="center">
+<a href="/exercises/04_evaluate.md">« Previous</a> |
+<a href="/exercises/06_ensemble_project.md">Next »</a>
+</p>

@@ -105,3 +105,10 @@ window, check that Annif runs using the command:
     annif
 
 If you get a usage message, congratulations - you're up and running!
+
+---
+
+<p align="center">
+|
+<a href="/exercises/02_tfidf_project.md">Next »</a>
+</p>

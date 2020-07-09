@@ -47,3 +47,10 @@ when given additional training documents?
 
 Congratulations, you've completed Exercise 11! You know how to perform
 incremental learning.
+
+
+---
+
+<p align="center">
+<a href="/exercises/10_nn_ensemble.md">« Previous</a> |
+</p>

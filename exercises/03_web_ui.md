@@ -43,3 +43,10 @@ abstract.
 
 Congratulations! You've completed Exercise 3 and you can now easily test your
 project with different input texts using the web UI. 
+
+---
+
+<p align="center">
+<a href="/exercises/02_tfidf_project.md">« Previous</a> |
+<a href="/exercises/04_evaluate.md">Next »</a>
+</p>

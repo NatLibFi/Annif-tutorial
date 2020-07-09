@@ -40,5 +40,5 @@ TFIDF project is doing in terms of quality!
 
 <p align="center">
 <a href="/exercises/03_web_ui.md">« Previous</a> |
-<a href="/exercises/05_maui_project.md">Next »</a> 
+<a href="/exercises/05_maui_project.md">Next »</a>
 </p>
