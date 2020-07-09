@@ -107,3 +107,11 @@ previous figures from TFIDF and Maui projects. Which one works best?
 
 Congratulations, you've completed Exercise 8! You have a working Omikuji
 project and you know how well it works compared to TFIDF and Maui.
+
+
+---
+
+<p align="center">
+<a href="/exercises/07_rest_api.md">« Previous</a> |
+<a href="/exercises/09_hogwarts.md">Next »</a>
+</p>

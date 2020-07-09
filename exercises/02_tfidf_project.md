@@ -171,3 +171,10 @@ subjects. Was it close? Did Annif come with reasonable suggestions or not?
 
 Congratulations, you've completed Exercise 2, you have a working project and
 you know how to use it to suggest subjects for documents!
+
+---
+
+<p align="center">
+<a href="/exercises/01_install_annif.md">« Previous</a> |
+<a href="/exercises/03_web_ui.md">Next »</a>
+</p>

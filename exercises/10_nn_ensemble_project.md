@@ -108,3 +108,11 @@ than a plain ensemble?
 
 Congratulations, you've completed Exercise 10! You have a working neural ensemble
 project and you know how well it works compared to the projects it is based on.
+
+
+---
+
+<p align="center">
+<a href="/exercises/09_hogwarts.md">« Previous</a> |
+<a href="/exercises/11_incremental_learning.md">Next »</a>
+</p>
