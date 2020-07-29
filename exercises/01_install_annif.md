@@ -16,18 +16,15 @@ host software for your operating system installed. You only need the basic
 install; the Extension Pack or SDK modules are not necessary.
 
 The VirtualBox image is a preconfigured virtual machine containing a minimal
-installation of Xubuntu, Annif and the files needed for this tutorial.  It
-is a 32 bit machine, which has some limitations: you will not be able to
-complete the last two exercises (neural network ensemble and incremental
-learning), because TensorFlow is only available for 64 bit platforms. 
+installation of Xubuntu, Annif, Maui, and the files needed for this tutorial.
 
 Download the [VirtualBox
-image](http://annif.org/download/annif-tutorial-vbox.zip).  This is a ~2GB
+image](http://annif.org/download/annif-tutorial-vbox-2020.zip).  This is a ~2GB
 zip archive so it can take a while to download.  Find the `VirtualBox VMs`
 folder below your home folder; if it doesn't exist yet (i.e. you've just
 installed VirtualBox and haven't created any VMs yet), you can create it
 yourself. Extrace the `annif-tutorial` folder from the zip archive into the
-`VirtualBox VMs` directory; it will initially take around 5GB disk space
+`VirtualBox VMs` directory; it will initially take around 6GB disk space
 when uncompressed and grow in size (up to 20GB) as you add more data and
 train models.
 
@@ -38,8 +35,9 @@ hard drive (under `VirtualBox VMs`) and open the `annif-tutorial.vbox` file. The
 side. Select it and press Start. A new window should appear and after a
 while, you should see a Linux (Xubuntu) desktop. Open a terminal window (by
 double-clicking on the Terminal desktop icon). You can also change the
-keyboard layout now from the upper right corner (click the US flag).
-
+keyboard layout now from the upper right corner (click the US flag). Other 
+keyboard layouts can be installed from the top left corner menu 
+(Settings -> Keyboard -> Layout tab, where you can add and remove layouts).
 
 ### 1.2. Docker based install
 
