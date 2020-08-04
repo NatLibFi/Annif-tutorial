@@ -22,6 +22,8 @@ in the corresponding
 
 ## 1. Evaluate TFIDF project on a collection of documents
 
+Note that you need to have fetched the full-text documents as done in the end of [Excercise 2](02_tfidf_project.md#7-test-on-an-example-document).
+
 If you use the `yso-nlf` data set, run this command:
 
     annif eval yso-tfidf-en data-sets/yso-nlf/docs/test/
