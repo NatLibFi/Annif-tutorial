@@ -74,7 +74,7 @@ the same vocabulary (by using the same `vocab=` value) in other projects.
 
 Now we can train the project. We will use training files that contain titles
 and subjects extracted from metadata records (around 2 million for
-`yso-nlf` and 1 million for `stw-zbw). However, we will first try
+`yso-nlf` and 1 million for `stw-zbw`). However, we will first try
 with just a small training file based on 100,000 records to test the
 process.
 
