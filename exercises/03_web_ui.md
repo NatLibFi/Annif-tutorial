@@ -13,12 +13,12 @@ Annif will start up and keep running until you stop it (by pressing Ctrl-C).
 
 ## 2. Open the UI in the browser
 
-Use your browser to access the URL
-[http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+Use your browser to access the URL 
+[localhost:5000/](http://localhost:5000/) or [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 
 You should see a simple user interface with a big empty text field.
 
-In case of connection problems and you are using Docker, try using [http://192.168.99.100:5000/](http://192.168.99.100:5000/) instead of `localhost`. 
+In case of connection problems and you are using Docker, try using [http://192.168.99.100:5000/](http://192.168.99.100:5000/).
 
 ## 3. Test your project using the UI
 
@@ -27,7 +27,7 @@ previous lesson.
 
 Type or paste some text into the big text field.
 
-Press the Analyze button.
+Press the "Get suggestions" button.
 
 You should see a list of results on the bottom right.
 
@@ -35,7 +35,7 @@ You should see a list of results on the bottom right.
 
 Open up the example document (PDF or txt) that you used for testing the
 TFIDF project in the previous exercise. Copy all the text of the document
-and paste it into the text field of the web UI. Then press the Analyze
+and paste it into the text field of the web UI. Then press the "Get suggestions"
 button. Did you get similar results as when using the command line?
 
 Try also using copying just the title of the document, or both the title and
