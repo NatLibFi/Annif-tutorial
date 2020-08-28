@@ -1,7 +1,7 @@
 # Annif tutorial outline
 ## 1. Introduction and overview
 
-[![Watch the video](https://img.youtube.com/vi/ZKN22mXKMm8/mqdefault.jpg)](https://youtu.be/ZKN22mXKMm8)
+[![Watch the video](img/ZKN22mXKMm8.jpg)](https://youtu.be/ZKN22mXKMm8)
 
 - [slides]()
 - [transcript of video]()
