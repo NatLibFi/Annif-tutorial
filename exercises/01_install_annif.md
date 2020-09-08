@@ -65,7 +65,7 @@ _Linux_:
 
 _Windows_:
 
-    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root quay.io/natlibfi/annif:0.tutorial
+    docker run -v ~/Annif-tutorial:/Annif-tutorial -p 5000:5000 --name annif -it --rm -u root quay.io/natlibfi/annif:tutorial
 
 _MacOS_:
 
