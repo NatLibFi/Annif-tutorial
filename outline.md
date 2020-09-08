@@ -88,6 +88,6 @@ Select your installation type. If you don’t know what to choose, we suggest us
 Here are exercises you can also work on.
 - [REST API](/exercises/07_rest_api.md)
 - [Omikuji project](/exercises/08_omikuji_project.md)
-- [Hogwars Sorting Hat using fastText](/exercises/09_hogwarts.md)
+- [Hogwarts Sorting Hat using fastText](/exercises/09_hogwarts.md)
 - [Neural network ensemble project](/exercises/10_nn_ensemble_project.md)
 - [Incremental learning](/exercises/11_incremental_learning.md)
