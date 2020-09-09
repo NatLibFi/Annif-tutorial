@@ -1,4 +1,5 @@
 # Annif tutorial outline
+
 ## 1. Introduction and overview
 
 [![Watch the video](img/ZKN22mXKMm8.jpg)](https://youtu.be/ZKN22mXKMm8)
@@ -27,29 +28,34 @@ Select your installation type. If you don’t know what to choose, we suggest us
 - [transcript of video]()
 - [Annif README file with installation instructions](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
-## 3. Data-sets
+## 3. Data sets
+This tutorial provides two data sets; one of them should be chosen to be used in the exercises.
 
 - [slides]()
 - [transcript of video]()
 
 ## 4. TFIDF project
+The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
 - [slides]()
 - [transcript of video]()
 - [exercise](/exercises/02_tfidf_project.md)
 
 ## 5. Algorithms
+The principles of the algorithm types used by Annif models are presented.
 
 - [slides]()
 - [transcript of video]()
 
 ## 6. Web UI
+The web user interface of Annif allows quick testing of projects.
 
 - [slides]()
 - [transcript of video]()
 - [exercise](/exercises/03_web_ui.md)
 
 ## 7. Metrics & evaluation
+More quantitative testing and comparison of projects can be done based on metrics given by Annif's evaluation command.
 
 - [slides]()
 - [transcript of video]()
@@ -67,12 +73,14 @@ Select your installation type. If you don’t know what to choose, we suggest us
 - [transcript of video]()
 
 ## 9. Maui project
+Maui is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
 
 - [slides]()
 - [transcript of video]()
 - [exercise](/exercises/05_maui_project.md)
 
 ## 10. Ensemble project
+An ensemble project combines results from the projects set up in previous exercises.
 
 - [slides]()
 - [transcript of video]()
@@ -84,7 +92,6 @@ Select your installation type. If you don’t know what to choose, we suggest us
 - [transcript of video]()
 
 ## Optional exercises
-
 Here are exercises you can also work on.
 - [REST API](/exercises/07_rest_api.md)
 - [Omikuji project](/exercises/08_omikuji_project.md)
