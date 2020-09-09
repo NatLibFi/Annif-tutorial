@@ -12,7 +12,7 @@ tell it otherwise using either the `-p` command line option or the
 will be using a working directory.
 
 In this lesson, we will set up the simplest kind of Annif project, which
-uses a TFIDF model, which needs to be trained on example documents and/or
+uses a TFIDF model that needs to be trained on example documents and/or
 metadata records before it can be used. 
 
 You need to choose which data set you want to use: either the
