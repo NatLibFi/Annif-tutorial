@@ -54,12 +54,23 @@ The web user interface of Annif allows quick testing of projects.
 - [transcript of video]()
 - [exercise](/exercises/03_web_ui.md)
 
+**[Optional] REST API**
+
+In the background the web UI uses the API of Annif, which can be accessed also directly.
+- [exercise](/exercises/07_rest_api.md)
+
+
 ## 7. Metrics & evaluation
 More quantitative testing and comparison of projects can be done based on metrics given by Annif's evaluation command.
 
 - [slides]()
 - [transcript of video]()
 - [exercise](/exercises/04_evaluate.md)
+
+**[Optional] Omikuji project**
+
+The evaluation results of the TFIDF project can be compared for example to an Omikuji based project.
+- [exercise](/exercises/08_omikuji_project.md)
 
 ## 8. Installing Maui Server
 ### 8.1. Docker
@@ -79,6 +90,11 @@ Maui is a lexical algorithm for matching terms in document text to terms in a co
 - [transcript of video]()
 - [exercise](/exercises/05_maui_project.md)
 
+**[Optional] Hogwarts Sorting Hat using fastText**
+
+Yet another algorithm you can try is fastText, which can dig into the character level of a text.
+- [exercise](/exercises/09_hogwarts.md)
+
 ## 10. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
 
@@ -86,15 +102,14 @@ An ensemble project combines results from the projects set up in previous exerci
 - [transcript of video]()
 - [exercise](/exercises/06_ensemble_project.md)
 
+**[Optional] Neural network ensemble project and incremental learning**
+
+Neural network ensemble can be trained to intelligently combine the results from the base projects. NN ensemble is also capable to online incremental learning, i.e. the training can be continued while the model is in use.
+
+- [exercise](/exercises/10_nn_ensemble_project.md)
+- [exercise](/exercises/11_incremental_learning.md)
+
 ## 11. Closing
 
 - [slides]()
 - [transcript of video]()
-
-## Optional exercises
-Here are exercises you can also work on.
-- [REST API](/exercises/07_rest_api.md)
-- [Omikuji project](/exercises/08_omikuji_project.md)
-- [Hogwarts Sorting Hat using fastText](/exercises/09_hogwarts.md)
-- [Neural network ensemble project](/exercises/10_nn_ensemble_project.md)
-- [Incremental learning](/exercises/11_incremental_learning.md)
