@@ -81,7 +81,7 @@ The evaluation results of the TFIDF project can be compared for example to an Om
 - [slides]()
 - [transcript of video]()
 
-### 10.2.Linux local install
+### 10.2. Linux local install
 
 - [slides]()
 - [transcript of video]()
@@ -104,13 +104,17 @@ An ensemble project combines results from the projects set up in previous exerci
 - [transcript of video]()
 - [exercise](/exercises/06_ensemble_project.md)
 
-## 14. [Optional] Neural network ensemble project and incremental learning
-Neural network ensemble can be trained to intelligently combine the results from the base projects. NN ensemble is also capable to online incremental learning, i.e. the training can be continued while the model is in use.
+## 14. [Optional] Neural network ensemble project
+Neural network ensemble can be trained to intelligently combine the results from the base projects. 
 
 - [exercise](/exercises/10_nn_ensemble_project.md)
+
+## 15. [Optional] Incremental learning
+Neural network ensemble is also capable to online incremental learning, i.e. the training can be continued while the model is in use.
+
 - [exercise](/exercises/11_incremental_learning.md)
 
-## 15. Closing
+## 16. Closing
 
 - [slides]()
 - [transcript of video]()
