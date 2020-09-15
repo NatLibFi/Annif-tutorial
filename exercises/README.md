@@ -4,8 +4,8 @@
 
 [![Watch the video](/img/ZKN22mXKMm8.jpg)](https://youtu.be/ZKN22mXKMm8)
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/intro-slides.pdf)
+- [transcript of video](/scripts/intro.txt)
 
 The exercises drawn with thick borders and a blue background are **core**, the
 others are optional extras.
@@ -18,45 +18,45 @@ Select your installation type. If you don’t know what to choose, we suggest us
 
 ### 2.1. VirtualBox install
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/annif-install-virtualbox-slides.pdf)
+- [transcript of video](/scripts/annif-install-virtualbox.txt)
 - [VirtualBox image download (~2GB)](https://annif.org/download/)
 
 ### 2.2. Docker install
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/annif-install-docker-slides.pdf) **LINK TO BE ADDED**
+- [transcript of video](/scripts/annif-install-docker.txt) **LINK TO BE ADDED**
 
 ### 2.3. Linux native install
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/annif-install-linux-slides.pdf)
+- [transcript of video](/scripts/annif-install-linux.txt)
 - [Annif README file with installation instructions](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
 ## 3. Data sets
 This tutorial provides two data sets; one of them should be chosen to be used in the exercises.
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/data-sets-slides.pdf)
+- [transcript of video](/scripts/data-sets.txt)
 
 ## 4. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/tfidf-project-slides.pdf)
+- [transcript of video](/scripts/tfidf-project.txt)
 - [exercise](/exercises/02_tfidf_project.md)
 
 ## 5. Algorithms
 The principles of the algorithm types used by Annif models are presented.
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/algorithms-slides.pdf)
+- [transcript of video](/scripts/algorithms.txt)
 
 ## 6. Web UI
 The web user interface of Annif allows quick testing of projects.
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/web-ui-slides.pdf)
+- [transcript of video](/scripts/web-ui.txt)
 - [exercise](/exercises/03_web_ui.md)
 
 ## 7. [Optional] REST API
@@ -67,8 +67,8 @@ In the background the web UI uses the API of Annif, which can be accessed also d
 ## 8. Metrics & evaluation
 More quantitative testing and comparison of projects can be done based on metrics given by Annif's evaluation command.
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/metrics-and-evaluation-slides.pdf)
+- [transcript of video](/scripts/metrics-and-evaluation.txt)
 - [exercise](/exercises/04_evaluate.md)
 
 ## 9. [Optional] Omikuji project
@@ -78,19 +78,19 @@ The evaluation results of the TFIDF project can be compared for example to an Om
 ## 10. Installing Maui Server
 ### 10.1. Docker
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/mauiserver-install-docker-slides.pdf)
+- [transcript of video](/scripts/mauiserver-install-docker.txt)
 
 ### 10.2. Linux local install
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/mauiserver-install-linux-slides.pdf)
+- [transcript of video](/scripts/mauiserver-install-linux.txt)
 
 ## 11. Maui project
 Maui is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/maui-project-slides.pdf)
+- [transcript of video](/scripts/maui-project.txt)
 - [exercise](/exercises/05_maui_project.md)
 
 ## 12. [Optional] Hogwarts Sorting Hat using fastText
@@ -100,8 +100,8 @@ Yet another algorithm you can try is fastText, which can dig into the character 
 ## 13. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
 
-- [slides]()
-- [transcript of video]()
+- [slides](/presentations/ensemble-project-slides.pdf)
+- [transcript of video](/scripts/ensemble-project.txt)
 - [exercise](/exercises/06_ensemble_project.md)
 
 ## 14. [Optional] Neural network ensemble project
@@ -116,6 +116,6 @@ Neural network ensemble is also capable to online incremental learning, i.e. the
 
 ## 16. Closing
 
-- [slides]()
-- [transcript of video]()
-- [feedback]()
+- [slides](/presentations/closing-slides.pdf)
+- [transcript of video](/scripts/closing.txt)
+- [feedback]() **LINK TO BE ADDED**
