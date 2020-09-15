@@ -8,6 +8,8 @@ The interesting part here is that the ensembles in general perform at least as w
 
 You should now have completed the hands-on part of the tutorial. If you got stuck on an exercise, want to ask questions or just to discuss the topics of this tutorial, you can consider joining an online interactive session that we arrange from time to time. Please see the Annif-tutorial GitHub repository for details on the schedule and registration.
 
+We have prepared a feedback survey for you to fill in, so that we get to know how to improve the tutorial in the future. Please take a few minutes to fill in the feedback form. The link to the survey is in the Annif-tutorial GitHub repository.
+
 Finally, you should also consider joining the annif-users group. It is a web forum and mailing list hosted on Google Groups where you can ask questions, share your experiences and get to know other people who use Annif. If you do something interesting with Annif, please write a message there to let others know about it! The user group is also used for announcements about new Annif releases and other news relevant to the Annif community.
 
-This was the final video in this hands-on tutorial. Thank you for watching and for completing the tutorial. We hope to hear back from you!
+This was the final video in this hands-on tutorial. Thank you for watching and for completing the tutorial. We hope to hear back from you.
