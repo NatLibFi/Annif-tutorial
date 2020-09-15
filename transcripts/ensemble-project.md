@@ -24,7 +24,7 @@ Finally there is the neural network ensemble. It starts like the simple averagin
 
 Let’s have a look on how we can configure a simple ensemble project.
 Open you project configuration file:
-> nano projects.cfg
+nano projects.cfg
 This file has a tfidf project and a maui one.
 Let’s add the ensemble
 [stw-ensemble-en]
@@ -47,7 +47,7 @@ Exit and save the document
 
 Now we will see what an ensemble can do for us.
 Start by typing
-> echo “History of Salt Prices in Germany”
+echo “History of Salt Prices in Germany”
 This is a made up title for this example.
 We pipe (|) this to
 annif suggest stw-tfidif-en
