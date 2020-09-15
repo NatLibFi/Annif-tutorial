@@ -8,16 +8,14 @@ Projects are defined in a file usually called projects.cfg and located in the cu
 In the projects.cfg file a project is identified by a project id, which is typically a short string such as yso-tfidf-en. 
 Annif has a list-projects command to show the projects that have been configured.
 
----
 In this exercise, we will create a TFIDF project, which is the simplest type of project in Annif. It’s like the “Hello, World” of automated subject indexing algorithms: it’s quick to set up, train and test. You get to see results quickly, but it’s not the final say when it comes to quality.
 
----
 Now lets see how to define a TFIDF project in the projects.cfg file. On the left there is a configuration suitable for the dataset of the National Library of Finland, and on the right for the dataset of ZBW.
 
 On both configurations the project identifier is at the first line in square brackets. In the following lines are the name and language of the project. The backend entry defines the algorithm to use, and vocab is an identifier for the vocabulary. These settings are mandatory for all Annif backends.
 
 The TFIDF algorithm, like most backends, also needs the analyzer setting. The analyzer takes care of the preprocessing, tokenization, and normalization of the input text. We will use the Snowball analyzer for English here, as it helps to normalize unimportant distinctions such as singular vs. plural forms.
----
+
 Here are the steps for setting up a new TFIDF project.
 
 The first step is to add the project configuration to the projects.cfg file.
@@ -31,7 +29,7 @@ After training the project is ready to be used. First, we can use just a short s
 For testing with a longer text it is better to have the text in a file, whose contents can then be fed to the suggest command with this kind of command. 
 
 Let’s see these steps in practice.
----
+
 I’m using Annif within VirtualBox, but the steps are the same in every type of installation. I will first open a web browser, go the exercises of the tutorial, and the TFIDF exercise page. I copy the project configuration either for the NLF or ZBW dataset to clipboard. Here I choose the ZBW dataset. Then I open the text editor, paste the configuration, and save the file to the Annif tutorial directory with the name projects.cfg. 
 
 Next, I open a terminal window. I make sure with that the projects.cfg file is here in the Annif tutorial directory using the command ls
