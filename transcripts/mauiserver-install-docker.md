@@ -6,32 +6,39 @@ Docker allows running pre configured applications in an environment that is isol
 This enables us to run Maui Server with only little configuration.
 
 The demonstration of the installation process will use Xubuntu.
-However, It should be the same for other Linux Distributions as long as you have Docker installed. You can find instructions for doing so on docker.com or by entering docker installation into a search engine.
+However, it should be the same for other Linux Distributions as long as you have Docker installed. You can find instructions for doing so on docker.com or by entering docker installation into a search engine.
 
 Start  by pulling the docker image for maui server
-> docker pull quay.io/natlibfi/mauiserver
+
+docker pull quay.io/natlibfi/mauiserver
 
 Now we can start the docker container:
 
-> docker run 
- Set environment variables that are present inside the docker container
+docker run 
+
+Set environment variables that are present inside the docker container
 first the user id
->continued> -e MY_UID=$(id -u)
+
+continued> -e MY_UID=$(id -u)
 
 And also the group id
->continued> -e MY_GID=$(id -g)
+
+continued> -e MY_GID=$(id -g)
 
 Then we need to make sure that the container can store the data in a place that is accessible to other instances of the image
->continued> -v maui-data-volume:/mauidata
+
+continued> -v maui-data-volume:/mauidata
 
 To allow processes on  the host system, like Annif, access to the MauiServer instance running inside the container the port needs to be exposed.
->continued> -p 127.0.0.1:8080:8080
+
+continued> -p 127.0.0.1:8080:8080
 
 We need to make sure that the container is deleted after its exits, otherwise it will fill up space.
->continued>--rm
+
+continued>--rm
 
 Finally we need to give the name of the image the container should be created from.
->continued>quay.io/natlibfi/mauiserver
+continued>quay.io/natlibfi/mauiserver
 
 
 
@@ -53,12 +60,15 @@ Switching the terminal we use the up arrow to retrieve the command for starting 
 Then navigate the cursor in front of the image name by pressing the left arrow.
 We add -d to indicate that the container will run as a background process.
 Furthermore we give the container a name to easily reference it later on.
+
 >continues> --name tutorial-mauiserver
+
 By pressing the up arrow we will again retrieve the curl command.
 This time it returns with a success response.
 We can stop the container by running
-Docker kill tutorial-mauiserver
+
+docker kill tutorial-mauiserver
 
 
 
-Now we are finished installing and running Maui Server using Docker.. Thank you for watching!
+Now we are finished installing and running Maui Server using Docker. Thank you for watching!
