@@ -76,6 +76,8 @@ The evaluation results of the TFIDF project can be compared for example to an Om
 - [exercise](/exercises/08_omikuji_project.md)
 
 ## 10. Installing Maui Server
+The usage of Maui projects is a bit different to other project types, because the Maui tool is run as a separate standalone service, Maui Server. If you using the VirtualBox image, Maui Server is already installed and running, and you can straight away continue to the Maui project lesson. If you have installed Annif using Docker or as a Linux local installation, the Maui Server needs to be installed and started.
+
 ### 10.1. Docker
 
 - [slides](/presentations/mauiserver-install-docker-slides.pdf)
