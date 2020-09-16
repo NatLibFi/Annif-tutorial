@@ -2,7 +2,7 @@
 
 ## 1. Introduction and overview
 
-[![Watch the video](/img/ZKN22mXKMm8.jpg)](https://youtu.be/ZKN22mXKMm8)
+[![Video to be added]()]()
 
 - [slides](/presentations/intro-slides.pdf)
 - [transcript of video](/transcripts/intro.md)
