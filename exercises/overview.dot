@@ -17,4 +17,4 @@ digraph "Annif-tutorial exercises" {
 
 }
 # Generate png with:
-# dot -Tpng overview.dot -o overview.png
+# dot -Tpng overview.dot -Gsize=3.76,4.69\! -Gdpi=100 -o overview.png;
