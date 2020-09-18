@@ -29,8 +29,8 @@ Select your installation type. If you don’t know what to choose, we suggest us
 
 [![Video](/img/j_VeC_NeVcw.jpg)](https://www.youtube.com/watch?v=j_VeC_NeVcw&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=3)
 
-- [slides](/presentations/annif-install-docker-slides.pdf) **LINK TO BE ADDED**
-- [transcript of video](/transcripts/annif-install-docker.md) **LINK TO BE ADDED**
+- [slides](/presentations/annif-install-docker-slides.pdf)
+- [transcript of video](/transcripts/annif-install-docker.md)
 
 ### 2.3. Linux native install
 
