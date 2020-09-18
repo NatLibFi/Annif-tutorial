@@ -12,12 +12,11 @@ but the materials are freely available for self-study.
 
 ## Prerequisites
 
-You will need a computer with sufficient resources (at least 8GB RAM) to be
-able to install Annif and complete the [exercises](exercises). 
-Installation of Annif is one topic of the exercises.
+You will need a computer with sufficient resources (at least 8GB RAM and 20GB free disk space) to be
+able to install Annif and complete the [exercises](exercises). Installation of Annif is one topic of the exercises.
 
 Note also that it might be convenient to have either Docker or VirtualBox
-installed beforehand.  Note that when using Docker desktop (Windows), you
+installed beforehand.  When using Docker desktop (Windows), you
 might want to increase the available memory for it to 8GB under Settings ->
 Advanced.
 
