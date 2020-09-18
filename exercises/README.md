@@ -41,7 +41,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 - [Annif README file with installation instructions](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
 ## 3. Data sets
-This tutorial provides two data sets; one of them should be chosen to be used in the exercises.
+This tutorial provides two example data sets; one of them should be chosen to be used in the exercises.
 
 [![Video](/img/S4E3d3o5HWg.jpg)](https://www.youtube.com/watch?v=S4E3d3o5HWg&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=5)
 
@@ -75,12 +75,12 @@ The web user interface of Annif allows quick testing of projects.
 - [exercise](/exercises/03_web_ui.md)
 
 ## 7. [Optional] REST API
-In the background the web UI uses the API of Annif, which can be accessed also directly.
+The REST API of Annif can be used for integrating Annif with other systems.
 - [exercise](/exercises/07_rest_api.md)
 
 
 ## 8. Metrics & evaluation
-More quantitative testing and comparison of projects can be done based on metrics given by Annif's evaluation command.
+Quantitative testing and comparison of projects against standard metrics can be done using the `eval` command.
 
 [![Video](/img/OhiAZ64dCUQ.jpg)](https://www.youtube.com/watch?v=OhiAZ64dCUQ&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=9)
 
@@ -89,11 +89,11 @@ More quantitative testing and comparison of projects can be done based on metric
 - [exercise](/exercises/04_evaluate.md)
 
 ## 9. [Optional] Omikuji project
-The evaluation results of the TFIDF project can be compared for example to an Omikuji based project.
+Omikuji is a tree-based associative machine learning model that often produces very good results, but requires more resources than the TFIDF model.
 - [exercise](/exercises/08_omikuji_project.md)
 
 ## 10. Installing Maui Server
-The usage of Maui projects is a bit different to other project types, because the Maui tool is run as a separate standalone service, Maui Server. If you using the VirtualBox image, Maui Server is already installed and running, and you can straight away continue to the Maui project lesson. If you have installed Annif using Docker or as a Linux local installation, the Maui Server needs to be installed and started.
+The usage of Maui projects is a bit different to other project types, because it relies on a separate service, Maui Server. If you using the VirtualBox image, Maui Server is already installed and running, and you can continue straight away to the Maui project exercise. If you have installed Annif using Docker or as a Linux local installation, Maui Server needs to be installed separately.
 
 ### 10.1. Docker
 
@@ -119,7 +119,7 @@ Maui is a lexical algorithm for matching terms in document text to terms in a co
 - [exercise](/exercises/05_maui_project.md)
 
 ## 12. [Optional] Hogwarts Sorting Hat using fastText
-Yet another algorithm you can try is fastText, which can dig into the character level of a text.
+Yet another algorithm you can try is fastText, which can also work on the level of individual characters.
 - [exercise](/exercises/09_hogwarts.md)
 
 ## 13. Ensemble project
@@ -132,19 +132,19 @@ An ensemble project combines results from the projects set up in previous exerci
 - [exercise](/exercises/06_ensemble_project.md)
 
 ## 14. [Optional] Neural network ensemble project
-Neural network ensemble can be trained to intelligently combine the results from the base projects.
+A neural network ensemble can be trained to intelligently combine the results from the base projects.
 
 - [exercise](/exercises/10_nn_ensemble_project.md)
 
 ## 15. [Optional] Incremental learning
-Neural network ensemble is also capable to online incremental learning, i.e. the training can be continued while the model is in use.
+The neural network ensemble is also capable to online incremental learning, i.e. the training can be continued while the model is in use.
 
 - [exercise](/exercises/11_incremental_learning.md)
 
 ## 16. Closing
-
+Summary of the material in the tutorial and some pointers to further information.
 [![Video](/img/gIZLWqVaXAA.jpg)](https://www.youtube.com/watch?v=gIZLWqVaXAA&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=14)
 
 - [slides](/presentations/closing-slides.pdf)
 - [transcript of video](/transcripts/closing.md)
-- [feedback]() **LINK TO BE ADDED**
+- [feedback form]() **LINK TO BE ADDED**
