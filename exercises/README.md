@@ -147,4 +147,4 @@ Summary of the material in the tutorial and some pointers to further information
 
 - [slides](/presentations/closing-slides.pdf)
 - [transcript of video](/transcripts/closing.md)
-- [feedback form]() **LINK TO BE ADDED**
+- [feedback](https://forms.gle/hrY4oxfg9MB6YiEc7)
