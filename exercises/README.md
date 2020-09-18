@@ -93,7 +93,7 @@ Omikuji is a tree-based associative machine learning model that often produces v
 - [exercise](/exercises/08_omikuji_project.md)
 
 ## 10. Installing Maui Server
-The usage of Maui projects is a bit different to other project types, because it relies on a separate service, Maui Server. If you using the VirtualBox image, Maui Server is already installed and running, and you can continue straight away to the Maui project exercise. If you have installed Annif using Docker or as a Linux local installation, Maui Server needs to be installed separately.
+The usage of Maui projects is a bit different to other project types, because it relies on a separate service, Maui Server. If you are using the VirtualBox image, Maui Server is already installed and running, and you can continue straight away to the Maui project exercise. If you have installed Annif using Docker or as a Linux local installation, Maui Server needs to be installed separately.
 
 ### 10.1. Docker
 
@@ -143,6 +143,7 @@ The neural network ensemble is also capable to online incremental learning, i.e.
 
 ## 16. Closing
 Summary of the material in the tutorial and some pointers to further information.
+
 [![Video](/img/closing-slides-1.png)](https://www.youtube.com/watch?v=gIZLWqVaXAA&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=14)
 
 - [slides](/presentations/closing-slides.pdf)
