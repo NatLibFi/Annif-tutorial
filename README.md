@@ -1,16 +1,20 @@
 # Annif tutorial
 
-[Presentations](presentations), [exercises](exercises) and example [data
-sets](data-sets) for Annif hands-on tutorial.
+The tutorial includes short video presentatios and hands-on exercises, which 
+can be explored via [the outline page](exercises/README.md). 
+Two example [data sets](data-sets) are provided to be used in the exercises.
 
 The tutorial was initially organized at
-[SWIB19](http://swib.org/swib19/programme.html) but the materials are also
-made more widely available for self-study.
+[SWIB19](http://swib.org/swib19/programme.html) 
+and later updated for 
+[DCMI Virtual 2020](http://dublincore.org/conferences/2020/),
+but the materials are freely available for self-study.
 
 ## Prerequisites
 
 You will need a computer with sufficient resources (at least 8GB RAM) to be
-able to install Annif and complete the [exercises](exercises).
+able to install Annif and complete the [exercises](exercises). 
+Installation of Annif is one topic of the exercises.
 
 Note also that it might be convenient to have either Docker or VirtualBox
 installed beforehand.  Note that when using Docker desktop (Windows), you
@@ -19,7 +23,7 @@ Advanced.
 
 ## Getting the tutorial materials
 
-To complete this tutorial, you will need a local copy of the materials,
+To complete the exercises of this tutorial, you will need a local copy of the materials,
 especially the data sets (unless you use the pre-built VirtualBox VM, which
 includes them).  The easiest way to get them is to either clone this
 repository or download it as a zip archive from GitHub (click the green "Clone
