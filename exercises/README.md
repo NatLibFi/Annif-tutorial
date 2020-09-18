@@ -27,7 +27,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 
 ### 2.2. Docker install
 
-[![Video](/img/j_VeC_NeVcw.jpg)]https://www.youtube.com/watch?v=j_VeC_NeVcw&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=3)
+[![Video](/img/j_VeC_NeVcw.jpg)](https://www.youtube.com/watch?v=j_VeC_NeVcw&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=3)
 
 - [slides](/presentations/annif-install-docker-slides.pdf) **LINK TO BE ADDED**
 - [transcript of video](/transcripts/annif-install-docker.md) **LINK TO BE ADDED**
@@ -60,7 +60,7 @@ The basic functionality of Annif is introduced by setting up and training a proj
 ## 5. Algorithms
 The principles of the algorithm types used by Annif models are presented.
 
-[![Video](/img/xyobh-T6lNQ&.jpg)](https://www.youtube.com/watch?v=xyobh-T6lNQ&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=7)
+[![Video](/img/xyobh-T6lNQ.jpg)](https://www.youtube.com/watch?v=xyobh-T6lNQ&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=7)
 
 - [slides](/presentations/algorithms-slides.pdf)
 - [transcript of video](/transcripts/algorithms.md)
@@ -97,7 +97,7 @@ The usage of Maui projects is a bit different to other project types, because th
 
 ### 10.1. Docker
 
-[![Video](/img/.jpg)](https://www.youtube.com/watch?v=F4ALM6m5_t0&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=10)
+[![Video](/img/F4ALM6m5_t0.jpg)](https://www.youtube.com/watch?v=F4ALM6m5_t0&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=10)
 
 - [slides](/presentations/mauiserver-install-docker-slides.pdf)
 - [transcript of video](/transcripts/mauiserver-install-docker.md)
