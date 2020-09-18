@@ -1,6 +1,6 @@
 # Annif tutorial
 
-The tutorial includes *short video presentatios* and *hands-on exercises*, which 
+The tutorial includes short **video presentatios** and **hands-on exercises**, which 
 can be explored via [the outline page](exercises/README.md). 
 Two example [data sets](data-sets) are provided to be used in the exercises.
 
