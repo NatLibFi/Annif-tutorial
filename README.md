@@ -1,6 +1,6 @@
 # Annif tutorial
 
-The tutorial includes short video presentatios and hands-on exercises, which 
+The tutorial includes *short video presentatios* and *hands-on exercises*, which 
 can be explored via [the outline page](exercises/README.md). 
 Two example [data sets](data-sets) are provided to be used in the exercises.
 
@@ -33,6 +33,16 @@ When you have the files locally, you also need to download the example
 full text documents for either or both data sets. The downloads are automated using
 `make` - see the README files for both data sets
 ([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
+
+## Online help sessions
+
+From time to time, we organize online help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Current schedule:
+
+* [DCMI Virtual post-conference tutorial](https://www.dublincore.org/news/2020/09-11-tutorial-on-automated-subject-indexing-with-annif/)
+  * Friday October 9 2020, 07:00-08:30 UTC (registration opens on Friday 25 September)
+  * Wednesday October 21 2020, 15:00-16:30 UTC (registration opens on Wednesday 7 September)
+
+The sessions are held remotely using Zoom. In the registration form, you are asked which topics you need help with or want to discuss. The number of participants is capped for practical reasons.
 
 ## Authors
 
