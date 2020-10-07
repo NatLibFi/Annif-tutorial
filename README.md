@@ -39,7 +39,7 @@ From time to time, we organize online help sessions for people working on the tu
 
 * [DCMI Virtual post-conference tutorial](https://www.dublincore.org/news/2020/09-11-tutorial-on-automated-subject-indexing-with-annif/)
   * Friday October 9 2020, 07:00-08:30 UTC (registration open: Please fill out [this form](https://forms.gle/tw7bdNwJAVQ4ciKM7))
-  * Wednesday October 21 2020, 15:00-16:30 UTC (registration opens on Wednesday 7 September)
+  * Wednesday October 21 2020, 15:00-16:30 UTC (Registration open: Please fill out [this form](https://forms.gle/RmX4YyUzF5vRLWb98))
 
 The sessions are held remotely using Zoom. In the registration form, you are asked which topics you need help with or want to discuss. The number of participants is capped for practical reasons.
 
