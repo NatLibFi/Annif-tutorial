@@ -40,8 +40,10 @@ From time to time, we organize online help sessions for people working on the tu
 * [DCMI Virtual post-conference tutorial](https://www.dublincore.org/news/2020/09-11-tutorial-on-automated-subject-indexing-with-annif/)
   * Friday October 9 2020 
   * Wednesday October 21 2020
+* [SWIB20 conference workshop/tutorial](https://swib.org/swib20/programme.html#abs05)
+  * Tuesday November 24 2020
 
-The sessions are held remotely using Zoom. In the registration form, you are asked which topics you need help with or want to discuss. The number of participants is capped for practical reasons.
+The sessions are held remotely. The number of participants is capped for practical reasons.
 
 ## Authors
 
