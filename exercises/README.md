@@ -65,6 +65,13 @@ The principles of the algorithm types used by Annif models are presented.
 - [slides](/presentations/algorithms-slides.pdf)
 - [transcript of video](/transcripts/algorithms.md)
 
+#### [Optional]
+Slides on associative algorithms for XMTC (by CSC's [@jmakoske](https://github.com/jmakoske) & [@mvsjober](https://github.com/mvsjober)):
+- [Extreme multi-label text classification (XMTC)](https://a3s.fi/hpd/1.pdf)
+- [Tree-based methods for XMTC](https://a3s.fi/hpd/2.pdf)
+- [Neural networks for XMTC](https://a3s.fi/hpd/3.pdf)
+
+
 ## 6. Web UI
 The web user interface of Annif allows quick testing of projects.
 
