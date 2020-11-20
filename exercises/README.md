@@ -67,9 +67,9 @@ The principles of the algorithm types used by Annif models are presented.
 
 #### [Optional]
 Slides on associative algorithms for XMTC (by CSC's [@jmakoske](https://github.com/jmakoske) & [@mvsjober](https://github.com/mvsjober)):
-- [Extreme multi-label text classification (XMTC)](https://a3s.fi/hpd/1.pdf)
-- [Tree-based methods for XMTC](https://a3s.fi/hpd/2.pdf)
-- [Neural networks for XMTC](https://a3s.fi/hpd/3.pdf)
+- [Extreme multi-label text classification (XMTC)](/exercises/HPD-XMTC-2020-11-13.pdf)
+- [Tree-based methods for XMTC](/exercises/HPD-TBM-2020-11-13.pdf)
+- [Neural networks for XMTC](/exercises/HPD-NN-2020-11-13.pdf)
 
 
 ## 6. Web UI
