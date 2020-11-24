@@ -58,6 +58,13 @@ Congratulations, you've completed Exercise 7!  You now know what kind of
 methods and services the Annif REST API provides and how to access them from
 a web browser and the `curl` command line tool.
 
+## Annif-client 
+[Annif-client](https://github.com/NatLibFi/Annif-client) is a minimal Python 3.x 
+client library for accessing the Annif REST API. 
+[This Jupyter notebook](https://colab.research.google.com/drive/1S0JX_befWeECKCJEZYSvcGzCnJfDePF0?usp=sharing) 
+includes some examples of the use of Annif-client; getting suggestions for news texts 
+fetched via news agency APIs and for texts OCRed from a photo by a webcam.
+
 ---
 
 <p align="center">
