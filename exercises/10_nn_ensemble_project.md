@@ -16,7 +16,7 @@ If you use the `yso-nlf` data set, use the following snippet:
     language=en
     backend=nn_ensemble
     vocab=yso-en
-    sources=yso-tfidf-en,yso-maui-en:2
+    sources=yso-tfidf-en,yso-mllm-en:2
     nodes=100
     dropout_rate=0.2
     epochs=10
@@ -28,7 +28,7 @@ If you use the `stw-zbw` data set, use the following snippet:
     language=en
     backend=nn_ensemble
     vocab=stw-en
-    sources=stw-tfidf-en,stw-maui-en:2
+    sources=stw-tfidf-en,stw-mllm-en:2
     nodes=100
     dropout_rate=0.2
     epochs=10 
