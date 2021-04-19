@@ -15,7 +15,7 @@ If you use the `yso-nlf` data set, use the following snippet:
     language=en
     backend=ensemble
     vocab=yso-en
-    sources=yso-tfidf-en,yso-maui-en:2
+    sources=yso-tfidf-en,yso-mllm-en:2
 
 If you use the `stw-zbw` data set, use the following snippet:
 
@@ -24,10 +24,10 @@ If you use the `stw-zbw` data set, use the following snippet:
     language=en
     backend=ensemble
     vocab=stw-en
-    sources=stw-tfidf-en,stw-maui-en:2
+    sources=stw-tfidf-en,stw-mllm-en:2
 
 The `sources` setting lists the projects which will be included in the
-ensemble. The sources may be given weights: in the above examples, the Maui
+ensemble. The sources may be given weights: in the above examples, the MLLM
 project has been given twice the normal weight, because it generally gives
 better results than TFIDF and is therefore more important.
 
@@ -72,8 +72,8 @@ If you use the `stw-zbw` data set, run this command:
     annif eval stw-ensemble-en data-sets/stw-zbw/docs/test/
 
 Evaluation should take around 5-10 minutes. Take note of the F1@5 and NDCG
-measures you got and compare them with the previous figures from TFIDF and Maui
-projects. Which one works best?
+measures you got and compare them with the previous figures from TFIDF and
+MLLM projects. Which one works best?
 
 Congratulations, you've completed Exercise 6! You have a working ensemble
 project and you know how well it works compared to the projects it is based on.
