@@ -17,6 +17,7 @@ If you use the `yso-nlf` data set, use the following snippet:
     language=en
     backend=mllm
     vocab=yso-en
+    analyzer=snowball(english)
 
 If you use the `stw-zbw` data set, use the following snippet:
 
@@ -25,6 +26,7 @@ If you use the `stw-zbw` data set, use the following snippet:
     language=en
     backend=mllm
     vocab=stw-en
+    analyzer=snowball(english)
 
 ## 2. Train the project
 
