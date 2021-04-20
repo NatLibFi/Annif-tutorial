@@ -1,6 +1,6 @@
-# yso-finna-theses data set for Annif tutorial
+# yso-nlf data set for Annif tutorial
 
-This directory contains the yso-finna-theses example data set that can be
+This directory contains the yso-nlf example data set that can be
 used to complete the Annif tutorial. It consists of the following files and
 directories:
 
