@@ -25,8 +25,7 @@ Advanced.
 To complete the exercises of this tutorial, you will need a local copy of the materials,
 especially the data sets (unless you use the pre-built VirtualBox VM, which
 includes them).  The easiest way to get them is to either clone this
-repository or download it as a zip archive from GitHub (click the green "Clone
-or download" button).
+repository or download it as a zip archive from GitHub (click the green "Code" button near the top for clone and download options).
 
 When you have the files locally, you also need to download the example
 full text documents for either or both data sets. The downloads are automated using
