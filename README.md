@@ -25,17 +25,23 @@ Advanced.
 To complete the exercises of this tutorial, you will need a local copy of the materials,
 especially the data sets (unless you use the pre-built VirtualBox VM, which
 includes them).  The easiest way to get them is to either clone this
-repository or download it as a zip archive from GitHub (click the green "Clone
-or download" button).
+repository or download it as a zip archive from GitHub (click the green "Code" button near the top for clone and download options).
 
 When you have the files locally, you also need to download the example
 full text documents for either or both data sets. The downloads are automated using
 `make` - see the README files for both data sets
 ([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
 
-## Online help sessions
+## Online help sessions 2021
 
 From time to time, we organize online help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Current schedule:
+
+* [Annif tutorial / workshop (NB! Event in Finnish)](https://www.kiwi.fi/x/FwW5D)
+  * May 19 2021 
+
+The sessions are held remotely. More information about upcoming events to be announced soon.
+
+## Past online help sessions
 
 * [DCMI Virtual post-conference tutorial](https://www.dublincore.org/news/2020/09-11-tutorial-on-automated-subject-indexing-with-annif/)
   * Friday October 9 2020 
@@ -43,7 +49,7 @@ From time to time, we organize online help sessions for people working on the tu
 * [SWIB20 conference workshop/tutorial](https://swib.org/swib20/programme.html#abs05)
   * Tuesday November 24 2020
 
-The sessions are held remotely. The number of participants is capped for practical reasons.
+The sessions were held remotely. The number of participants was capped for practical reasons.
 
 ## Authors
 
