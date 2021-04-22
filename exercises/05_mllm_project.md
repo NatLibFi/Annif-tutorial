@@ -36,19 +36,19 @@ as similar as possible in structure to the documents it will later be
 applied on.
 
 We will therefore use full text documents from the train subset to train
-MLLM. We will limit the number of training documents to 500 using the
+MLLM. We will limit the number of training documents to 400 using the
 `--docs-limit` parameter, because training with more documents would just
 take longer without improving the results very much.
 
 If you use the `yso-nlf` data set, run this command:
 
-    annif train yso-mllm-en --docs-limit 500 data-sets/yso-nlf/docs/train/
+    annif train yso-mllm-en --docs-limit 400 data-sets/yso-nlf/docs/train/
 
 If you use the `stw-zbw` data set, run this command:
 
-    annif train stw-mllm-en --docs-limit 500 data-sets/stw-zbw/docs/train/
+    annif train stw-mllm-en --docs-limit 400 data-sets/stw-zbw/docs/train/
 
-Training should take around 5-10 minutes.
+Training should take around 5-15 minutes.
 
 ## 3. Test the project on sample text
 
