@@ -35,23 +35,20 @@ Now we can train the project. MLLM requires a relatively small number
 as similar as possible in structure to the documents it will later be
 applied on.
 
-We will therefore use full text documents to train MLLM. For the
-`yso-nlf` data set, we will use around 350 Master's and doctoral
-theses in the
-[`yso-nlf/docs/validate/`](../data-sets/yso-nlf/docs/validate)
-directory. For the `stw-zbw` data set, we will use around 600 articles
-in the corresponding
-[`stw-zbw/docs/validate/`](../data-sets/stw-zbw/docs/validate)directory.
+We will therefore use full text documents from the train subset to train
+MLLM. We will limit the number of training documents to 500 using the
+`--docs-limit` parameter, because training with more documents would just
+take longer without improving the results very much.
 
 If you use the `yso-nlf` data set, run this command:
 
-    annif train yso-mllm-en data-sets/yso-nlf/docs/validate/
+    annif train yso-mllm-en --docs-limit 500 data-sets/yso-nlf/docs/train/
 
 If you use the `stw-zbw` data set, run this command:
 
-    annif train stw-mllm-en data-sets/stw-zbw/docs/validate/
+    annif train stw-mllm-en --docs-limit 500 data-sets/stw-zbw/docs/train/
 
-Training should take around a minute.
+Training should take around 5-10 minutes.
 
 ## 3. Test the project on sample text
 
@@ -90,8 +87,8 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-mllm-en data-sets/stw-zbw/docs/test/
 
-Evaluation should take 1-2 minutes. Write down the F1@5 and NDCG scores and
-compare them with the scores that the TFIDF project got.
+Evaluation should take around 5-10 minutes. Write down the F1@5 and NDCG
+scores and compare them with the scores that the TFIDF project got.
 
 Congratulations, you've completed Exercise 5, you have a working MLLM project
 and you know how well it performs compared to the TFIDF project!
