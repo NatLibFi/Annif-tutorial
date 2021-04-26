@@ -3,7 +3,8 @@ digraph "Annif-tutorial exercises" {
   ranksep=0.3;
   install -> TFIDF -> "Web UI" -> evaluate -> MLLM -> ensemble [style=bold];
   ensemble -> "NN ensemble";
-  Maui -> "Hogwarts/fastText";
+  ensemble -> "Custom corpus";
+  MLLM -> "Hogwarts/fastText";
   "Web UI" -> "REST API";
   evaluate -> Omikuji;
   "NN ensemble" -> "incremental learning";
