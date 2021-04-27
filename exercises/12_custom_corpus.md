@@ -1,4 +1,4 @@
-# Exercise 10 b: Create a custom corpus for Annif (DRAFT)
+# Exercise 12: Create a custom corpus for Annif (DRAFT)
 
 In this lesson we will look at how to make a corpus for use with Annif.
 
