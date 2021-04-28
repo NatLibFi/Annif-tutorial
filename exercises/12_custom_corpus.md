@@ -1,6 +1,6 @@
 # Exercise 12: Create a custom corpus for Annif (DRAFT)
 
-In this lesson we will look at how to make a corpus for use with Annif.
+In this lesson we will look at how to make a corpus to use with Annif.
 
 ## 0. Introduction to Annif Corpora and corpora formats (in here or as slides)
 The Merriam-Webster Dictionary defines a corpus as "all the writings or works of a particular kind or on a particular subject" or a "collection or body of knowledge or evidence".
@@ -47,9 +47,12 @@ Go To Statement Considered Harmful	<http://example.org/thesaurus/subj2>
 
 Note that it is also possible to separate the subjects with tabs, thus creating a variable number of columns.
 
-The TSV file may be compressed using gzip compression. The compressed file must have the extension `.gz`.
-
+The TSV file may be compressed using gzip compression. The compressed file must have the extension `.gz`. Annif corpora are usually divided into three sets, train, validate and test. The training and testing corpora are used as they are named - the validation set can be used for fine-tuning models.
 
 ## 1. Obtain data
-## 2. Make data usable for Annif
-## 3. Check
+In this exercise we will use a corpus of scientific articles retrieved from ArXiv for demonstration purposes. You can use the [Jupyter Notebook](https://github.com/NatLibFi/Annif-tutorial/blob/update-spring-2021/data-sets/arxiv/create-arxiv-corpus.ipynb) to construct the subject vocabulary and the corpus. 
+Once you have installed Jupyter (we provide / include it), type `jupyter notebook` on the command line and navigate to the notebook in the browser window that opens. Run the notebook step-by-step by pressing `ctrl+enter` in every interactive block. Read also the notebook comments.
+
+## 2. Use the corpus with Annif
+Try training Annif with the ArXiv corpora and evaluate the result.
+
