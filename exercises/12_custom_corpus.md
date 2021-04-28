@@ -51,7 +51,7 @@ The TSV file may be compressed using gzip compression. The compressed file must 
 
 ## 1. Obtain data
 In this exercise we will use a corpus of scientific articles retrieved from ArXiv for demonstration purposes. You can use the [Jupyter Notebook](https://github.com/NatLibFi/Annif-tutorial/blob/update-spring-2021/data-sets/arxiv/create-arxiv-corpus.ipynb) to construct the subject vocabulary and the corpus. 
-Once you have installed Jupyter (we provide / include it), type `jupyter notebook` on the command line and navigate to the notebook in the browser window that opens. Run the notebook step-by-step by pressing `ctrl+enter` in every interactive block. Read also the notebook comments.
+Once you have installed Jupyter (we provide / include it), type `jupyter notebook` on the command line and navigate to the notebook in the browser window that opens. Run the notebook step-by-step by e.g. pressing `shift+enter` in every interactive block. Read also the notebook comments.
 
 ## 2. Use the corpus with Annif
 Try training Annif with the ArXiv corpora and evaluate the result.
