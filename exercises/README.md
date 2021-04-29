@@ -133,7 +133,13 @@ The neural network ensemble is also capable to online incremental learning, i.e.
 
 - [exercise](/exercises/11_incremental_learning.md)
 
-## 15. Closing
+## 15. [Optional] Custom corpus
+A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
+
+- [exercise](/exercises/12_custom_corpus.md)
+- [Jupyter Notebook](/data-sets/arxiv/create-arxiv-corpus.ipynb)
+
+## 16. Closing
 Summary of the material in the tutorial and some pointers to further information.
 
 [![Video](/img/closing-slides-1.png)](https://www.youtube.com/watch?v=gIZLWqVaXAA&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=14)
