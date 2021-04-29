@@ -8,8 +8,8 @@ Various corpora are widely used in language and literature research. In this cas
 Annif supports two document corpus formats: one for full-text or longer documents and another for metadata or very short texts.
 
 ### Full-text corpora
-All of the documents should be in `.txt`-format. The assigned subjects for each document can be included in a separate file. The subject file has the same file name as the document, but with the
-extension `.tsv` or `.key`.  The main distinction between the two is whether or not subject URIs are included. 
+A full-text corpus is a directory containing document and subject files. The document files should have `.txt` extension, and 
+for each document file there should be a subject file with the same (base) name, but with the extension `.tsv` or `.key`. The main distinction between the two is whether or not subject URIs are included. 
 
 A  `.key`-file simply lists subject labels, UTF-8 encoded, one per line. For example:
 
@@ -22,7 +22,7 @@ Internet Protocol
 Note that the labels must exactly match the preferred labels of concepts in the subject vocabulary.
 
 
-A  `.tsv`-file is otherwise similar, but the subject file is now a UTF-8 encoded tab separated file, where the first column contains a subject URI within angle brackets `<>` and the second column its label. For example:
+A `.tsv` file is otherwise similar, but the subject file is now a UTF-8 encoded tab separated file, where the first column contains a subject URI within angle brackets `<>` and the second column its label. For example:
 
 ```
 <http://example.org/thesaurus/subj1>	networking
@@ -47,14 +47,17 @@ Go To Statement Considered Harmful	<http://example.org/thesaurus/subj2>
 
 Note that it is also possible to separate the subjects with tabs, thus creating a variable number of columns.
 
-The TSV file may be compressed using gzip compression. The compressed file must have the extension `.gz`. Annif corpora are usually divided into three sets, train, validate and test. The training and testing corpora are used as they are named - the validation set can be used for fine-tuning models.
+The TSV file may be compressed using gzip compression. The compressed file must have the extension `.gz`. Annif corpora are usually divided into three sets, train, validate and test. The training and testing corpora are used as they are named - the validation set can be used for fine-tuning model hyperparameters.
 
 ## 1. Obtain data
-In this exercise we will use a corpus of scientific articles retrieved from ArXiv for demonstration purposes. You can use the [Jupyter Notebook](https://github.com/NatLibFi/Annif-tutorial/blob/update-spring-2021/data-sets/arxiv/create-arxiv-corpus.ipynb) to construct the subject vocabulary and the corpus. 
-Once you have installed Jupyter (we provide / include it), type `jupyter notebook` on the command line and navigate to the notebook in the browser window that opens. Run the notebook step-by-step by e.g. pressing `shift+enter` in every interactive block. Read also the notebook comments.
+In this exercise we will use a corpus of scientific articles retrieved from arXiv for demonstration purposes. You can use the [Jupyter Notebook](https://github.com/NatLibFi/Annif-tutorial/blob/update-spring-2021/data-sets/arxiv/create-arxiv-corpus.ipynb) to construct a subject vocabulary and short-text document corpus.
+
+The Jupyter Notebook software is included in the VirtualBox and Docker images for this tutorial, and you can start Jupyter Server by typing `jupyter notebook` on the command line. You may need to click the URL provided by the Server to open the Jupyter navigator view in your internet browser (if you go straight to the address http://localhost:8888 you need to give the token displayed in the terminal). From the main view you can navigate to the notebook `data-sets/arxiv/create-arxiv-corpus.ipynb`.
+
+Run the notebook cell-by-cell by e.g. pressing `shift+enter` in every interactive block. The notebook comments explain the steps.
 
 ## 2. Use the corpus with Annif
-Try training Annif with the ArXiv corpora and evaluate the result.
+Try training Annif with the arXiv corpora and evaluate the result. When training you will get many warnings about unknown URIs, because many documents in the training set have been assigned to categories that are now deprecated and thus are not in the subject vocabulary.
 
 ---
 
