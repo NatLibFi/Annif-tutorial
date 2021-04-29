@@ -15,6 +15,7 @@ RUN mkdir -p /Annif-tutorial /home/annif_user \
 RUN pip install jupyter --no-cache-dir
 
 USER annif_user
+ENV JUPYTER_DATA_DIR=/tmp
 
 WORKDIR /Annif-tutorial
 
