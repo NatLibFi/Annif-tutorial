@@ -56,3 +56,8 @@ Once you have installed Jupyter (we provide / include it), type `jupyter noteboo
 ## 2. Use the corpus with Annif
 Try training Annif with the ArXiv corpora and evaluate the result.
 
+---
+
+<p align="center">
+<a href="/exercises/11_incremental_learning.md">« Previous</a> |
+</p>
