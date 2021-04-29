@@ -9,8 +9,10 @@ USER root
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends curl nano wget make poppler-utils
 
-RUN mkdir -p /Annif-tutorial /home/annif_user/.local/share/nano/ \
-	&& chown -R annif_user:annif_user /Annif-tutorial /home/annif_user/.local/share/nano/
+RUN mkdir -p /Annif-tutorial /home/annif_user \
+	&& chown -R annif_user:annif_user /Annif-tutorial /home/annif_user
+
+RUN pip install jupyter --no-cache-dir
 
 USER annif_user
 
