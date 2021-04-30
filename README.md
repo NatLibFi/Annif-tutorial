@@ -38,7 +38,8 @@ From time to time, we organize online help sessions for people working on the tu
 
 * [Annif tutorial / workshop (NB! Event in Finnish)](https://www.kiwi.fi/x/FwW5D)
   * May 19 2021 
-
+* [Metadata workshop by Humlab (Umeå University)](https://www.umu.se/en/events/metadata-workshop_10407034/)
+  * June 9 2021 
 The sessions are held remotely. More information about upcoming events to be announced soon.
 
 ## Past online help sessions
