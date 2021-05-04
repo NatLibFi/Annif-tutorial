@@ -2,7 +2,7 @@
 
 ## 1. Introduction and overview
 
-[![Video](/img/intro-slides-1.png)](https://www.youtube.com/watch?v=C4t1tnWslWA&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=1)
+[![Video](/img/intro-slides-1.png)](https://www.youtube.com/watch?v=h8s3dDYYNP4&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=1)
 
 - [slides](/presentations/intro-slides.pdf)
 - [transcript of video](/transcripts/intro.md)
@@ -19,7 +19,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 
 ### 2.1. VirtualBox install
 
-[![Video](/img/annif-install-virtualbox-slides-1.png)](https://www.youtube.com/watch?v=l1rtJ6AO0P0&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=2)
+[![Video](/img/annif-install-virtualbox-slides-1.png)](https://www.youtube.com/watch?v=z_Fq-87QbyQ&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=2)
 
 - [slides](/presentations/annif-install-virtualbox-slides.pdf)
 - [transcript of video](/transcripts/annif-install-virtualbox.md)
@@ -60,7 +60,7 @@ The basic functionality of Annif is introduced by setting up and training a proj
 ## 5. Algorithms
 The principles of the algorithm types used by Annif models are presented.
 
-[![Video](/img/algorithms-slides-1.png)](https://www.youtube.com/watch?v=xyobh-T6lNQ&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=7)
+[![Video](/img/algorithms-slides-1.png)](https://www.youtube.com/watch?v=OvPx8Ipe3BU&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=7)
 
 - [slides](/presentations/algorithms-slides.pdf)
 - [transcript of video](/transcripts/algorithms.md)
@@ -75,7 +75,7 @@ Slides on associative algorithms for XMTC (by CSC's [@jmakoske](https://github.c
 ## 6. Web UI
 The web user interface of Annif allows quick testing of projects.
 
-[![Video](/img/web-ui-slides-1.png)](https://www.youtube.com/watch?v=unid4yNtMR0&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=8)
+[![Video](/img/web-ui-slides-1.png)](https://www.youtube.com/watch?v=wkDbVnkuV6E&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=8)
 
 - [slides](/presentations/web-ui-slides.pdf)
 - [transcript of video](/transcripts/web-ui.md)
@@ -89,7 +89,7 @@ The REST API of Annif can be used for integrating Annif with other systems.
 ## 8. Metrics & evaluation
 Quantitative testing and comparison of projects against standard metrics can be done using the `eval` command.
 
-[![Video](/img/metrics-and-evaluation-slides-1.png)](https://www.youtube.com/watch?v=OhiAZ64dCUQ&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=9)
+[![Video](/img/metrics-and-evaluation-slides-1.png)](https://www.youtube.com/watch?v=zWMXUfLJtn0&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=9)
 
 - [slides](/presentations/metrics-and-evaluation-slides.pdf)
 - [transcript of video](/transcripts/metrics-and-evaluation.md)
@@ -103,7 +103,7 @@ Omikuji is a tree-based associative machine learning model that often produces v
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
  
 
-[![Video](/img/maui-project-slides-1.png)](https://www.youtube.com/watch?v=kNCW2XF7_ek&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=10)
+[![Video](/img/mllm-slides-1.png)](https://www.youtube.com/watch?v=kNCW2XF7_ek&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=10)
 
 - [slides](/presentations/mllm-slides.pdf)
 - [transcript of video](/transcripts/mllm.md)
@@ -116,7 +116,7 @@ Yet another algorithm you can try is fastText, which can also work on the level 
 ## 12. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
 
-[![Video](/img/ensemble-project-slides-1.png)](https://www.youtube.com/watch?v=v7vyU0jjOyg&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=13)
+[![Video](/img/ensemble-project-slides-1.png)](https://www.youtube.com/watch?v=B-YYJqHiJ3k&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=11)
 
 - [slides](/presentations/ensemble-project-slides.pdf)
 - [transcript of video](/transcripts/ensemble-project.md)
@@ -141,7 +141,7 @@ A big challenge in applying Annif to own data is gathering documents and convert
 ## 16. Closing
 Summary of the material in the tutorial and some pointers to further information.
 
-[![Video](/img/closing-slides-1.png)](https://www.youtube.com/watch?v=gIZLWqVaXAA&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=14)
+[![Video](/img/closing-slides-1.png)](https://www.youtube.com/watch?v=OrScuYCyHGs&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=12)
 
 - [slides](/presentations/closing-slides.pdf)
 - [transcript of video](/transcripts/closing.md)
