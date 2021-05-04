@@ -78,7 +78,7 @@ The Jupyter Notebook software is included in the VirtualBox and Docker images fo
 
 Run the notebook cell-by-cell by e.g. pressing `shift+enter` in every interactive block. The notebook comments explain the steps.
 
-## 2. Use the corpus with Annif
+## 3. Use the corpus with Annif
 Try setting up a project for the arXiv corpus and training and evaluating it. 
 
 When training you will get many warnings about unknown URIs, because many documents in the training set have been assigned to categories that are now deprecated and thus are not in the subject vocabulary. Some of the deprecation cases could possibly be handled by utilizing the [information of the subsumed archives](https://github.com/arXiv/arxiv-base/blob/dc7e537a290751af95a5ffe87fb9074a932cacf5/arxiv/taxonomy/definitions.py#L272-L291) etc. details of the taxonoy, but that is beyond the scope of this exercise.
