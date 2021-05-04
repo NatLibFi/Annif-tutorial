@@ -1,8 +1,5 @@
 #!/bin/bash
 
-base_url='https://img.youtube.com/vi/'
-url_postfix='/mqdefault.jpg'
-# For YouTube Image Thumbnail URLs see http://promincproductions.com/blog/youtube-image-thumbnail-urls/
 
  # Fetch the thumbnails
 for pdffile in ../presentations/*.pdf
