@@ -101,13 +101,12 @@ Omikuji is a tree-based associative machine learning model that often produces v
 
 ## 10. MLLM project
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
+ 
 
-**TODO** needs new video, slides and transcript
+[![Video](/img/maui-project-slides-1.png)](https://www.youtube.com/watch?v=kNCW2XF7_ek&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=10)
 
-[![Video](/img/maui-project-slides-1.png)](https://www.youtube.com/watch?v=YHZ9vIAN5uQ&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=12)
-
-- [slides](/presentations/maui-project-slides.pdf)
-- [transcript of video](/transcripts/maui-project.md)
+- [slides](/presentations/mllm-slides.pdf)
+- [transcript of video](/transcripts/mllm.md)
 - [exercise](/exercises/05_mllm_project.md)
 
 ## 11. [Optional] Hogwarts Sorting Hat using fastText
