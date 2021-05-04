@@ -53,4 +53,5 @@ incremental learning.
 
 <p align="center">
 <a href="/exercises/10_nn_ensemble_project.md">« Previous</a> |
+<a href="/exercises/12_custom_corpus.md">Next »</a>
 </p>

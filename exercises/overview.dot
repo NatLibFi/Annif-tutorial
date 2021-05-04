@@ -1,9 +1,10 @@
 digraph "Annif-tutorial exercises" {
   dpi=100;
   ranksep=0.3;
-  install -> TFIDF -> "Web UI" -> evaluate -> Maui -> ensemble [style=bold];
+  install -> TFIDF -> "Web UI" -> evaluate -> MLLM -> ensemble [style=bold];
   ensemble -> "NN ensemble";
-  Maui -> "Hogwarts/fastText";
+  ensemble -> "Custom corpus";
+  MLLM -> "Hogwarts/fastText";
   "Web UI" -> "REST API";
   evaluate -> Omikuji;
   "NN ensemble" -> "incremental learning";
@@ -12,7 +13,7 @@ digraph "Annif-tutorial exercises" {
   TFIDF [style=filled,fillcolor=lightblue,penwidth=2];
   "Web UI" [style=filled,fillcolor=lightblue,penwidth=2];
   evaluate [style=filled,fillcolor=lightblue,penwidth=2];
-  Maui [style=filled,fillcolor=lightblue,penwidth=2];
+  MLLM [style=filled,fillcolor=lightblue,penwidth=2];
   ensemble [style=filled,fillcolor=lightblue,penwidth=2];
 
 }

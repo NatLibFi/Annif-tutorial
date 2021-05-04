@@ -16,10 +16,10 @@ host software for your operating system installed. You only need the basic
 install; the Extension Pack or SDK modules are not necessary.
 
 The VirtualBox image is a preconfigured virtual machine containing a minimal
-installation of Xubuntu, Annif, Maui, and the files needed for this tutorial.
+installation of Xubuntu, Annif, and the files needed for this tutorial.
 
 Download the [VirtualBox
-image](http://annif.org/download/annif-tutorial-vbox-2020.zip).  This is a ~2GB
+image](http://annif.org/download/annif-tutorial-vbox-2021.zip).  This is a ~2GB
 zip archive so it can take a while to download.  Find the `VirtualBox VMs`
 folder below your home folder; if it doesn't exist yet (i.e. you've just
 installed VirtualBox and haven't created any VMs yet), you can create it

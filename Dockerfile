@@ -1,7 +1,7 @@
-FROM quay.io/natlibfi/annif:0.49
+FROM quay.io/natlibfi/annif:0.52
 # Docker image to use in Annif tutorial, https://github.com/NatLibFi/Annif-tutorial.
 # Build with:
-#     docker build -t quay.io/natlibfi/annif:0.49-tutorial -t quay.io/natlibfi/annif:tutorial .
+#     docker build -t quay.io/natlibfi/annif:0.52-tutorial -t quay.io/natlibfi/annif:tutorial .
 #
 
 USER root
@@ -9,10 +9,13 @@ USER root
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends curl nano wget make poppler-utils
 
-RUN mkdir -p /Annif-tutorial /home/annif_user/.local/share/nano/ \
-	&& chown -R annif_user:annif_user /Annif-tutorial /home/annif_user/.local/share/nano/
+RUN mkdir -p /Annif-tutorial /home/annif_user \
+	&& chown -R annif_user:annif_user /Annif-tutorial /home/annif_user
+
+RUN pip install jupyter --no-cache-dir
 
 USER annif_user
+ENV JUPYTER_DATA_DIR=/tmp
 
 WORKDIR /Annif-tutorial
 

@@ -106,7 +106,7 @@ Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from TFIDF and Maui projects. Which one works best?
 
 Congratulations, you've completed Exercise 8! You have a working Omikuji
-project and you know how well it works compared to TFIDF and Maui.
+project and you know how well it works compared to TFIDF and MLLM.
 
 
 ---

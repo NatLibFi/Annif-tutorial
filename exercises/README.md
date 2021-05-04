@@ -99,37 +99,22 @@ Quantitative testing and comparison of projects against standard metrics can be 
 Omikuji is a tree-based associative machine learning model that often produces very good results, but requires more resources than the TFIDF model.
 - [exercise](/exercises/08_omikuji_project.md)
 
-## 10. Installing Maui Server
-The usage of Maui projects is a bit different to other project types, because it relies on a separate service, Maui Server. If you are using the VirtualBox image, Maui Server is already installed and running, and you can continue straight away to the Maui project exercise. If you have installed Annif using Docker or as a Linux local installation, Maui Server needs to be installed separately.
+## 10. MLLM project
+MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
 
-### 10.1. Docker
-
-[![Video](/img/mauiserver-install-docker-slides-1.png)](https://www.youtube.com/watch?v=F4ALM6m5_t0&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=10)
-
-- [slides](/presentations/mauiserver-install-docker-slides.pdf)
-- [transcript of video](/transcripts/mauiserver-install-docker.md)
-
-### 10.2. Linux local install
-
-[![Video](/img/mauiserver-install-linux-slides-1.png)](https://www.youtube.com/watch?v=cac2ULKALNA&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=11)
-
-- [slides](/presentations/mauiserver-install-linux-slides.pdf)
-- [transcript of video](/transcripts/mauiserver-install-linux.md)
-
-## 11. Maui project
-Maui is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
+**TODO** needs new video, slides and transcript
 
 [![Video](/img/maui-project-slides-1.png)](https://www.youtube.com/watch?v=YHZ9vIAN5uQ&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=12)
 
 - [slides](/presentations/maui-project-slides.pdf)
 - [transcript of video](/transcripts/maui-project.md)
-- [exercise](/exercises/05_maui_project.md)
+- [exercise](/exercises/05_mllm_project.md)
 
-## 12. [Optional] Hogwarts Sorting Hat using fastText
+## 11. [Optional] Hogwarts Sorting Hat using fastText
 Yet another algorithm you can try is fastText, which can also work on the level of individual characters.
 - [exercise](/exercises/09_hogwarts.md)
 
-## 13. Ensemble project
+## 12. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
 
 [![Video](/img/ensemble-project-slides-1.png)](https://www.youtube.com/watch?v=v7vyU0jjOyg&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=13)
@@ -138,15 +123,21 @@ An ensemble project combines results from the projects set up in previous exerci
 - [transcript of video](/transcripts/ensemble-project.md)
 - [exercise](/exercises/06_ensemble_project.md)
 
-## 14. [Optional] Neural network ensemble project
+## 13. [Optional] Neural network ensemble project
 A neural network ensemble can be trained to intelligently combine the results from the base projects.
 
 - [exercise](/exercises/10_nn_ensemble_project.md)
 
-## 15. [Optional] Incremental learning
+## 14. [Optional] Incremental learning
 The neural network ensemble is also capable to online incremental learning, i.e. the training can be continued while the model is in use.
 
 - [exercise](/exercises/11_incremental_learning.md)
+
+## 15. [Optional] Custom corpus
+A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
+
+- [exercise](/exercises/12_custom_corpus.md)
+- [Jupyter Notebook](/data-sets/arxiv/create-arxiv-corpus.ipynb)
 
 ## 16. Closing
 Summary of the material in the tutorial and some pointers to further information.
