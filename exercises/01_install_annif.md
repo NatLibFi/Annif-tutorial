@@ -98,14 +98,14 @@ The `--rm` option in the run commands should ensure that the container is remove
 ### 1.3. Local install
 
 For this to work, you will need a Linux operating system (preferably Ubuntu
-or Debian based) and Python 3.5, 3.6 or 3.7. This option is only recommended
+or Debian based) and Python 3.6, 3.7 or 3.8. This option is only recommended
 if you are used to work with Python packages.
 
 See the [Annif top level README file](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
 The basic install from PyPI only supports core features. You also need to
 install the Omikuji feature separately to complete the Omikuji based
-exercises - see [Optional features and
+exercises and the neural network (nn) feature for the NN ensemble exercises - see [Optional features and
 dependencies](https://github.com/NatLibFi/Annif/wiki/Optional-features-and-dependencies)
 in the Annif wiki for details.
 
