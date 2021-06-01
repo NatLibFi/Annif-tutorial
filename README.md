@@ -40,6 +40,8 @@ From time to time, we organize online help sessions for people working on the tu
   * May 19 2021 
 * [Metadata workshop by Humlab (Umeå University)](https://www.umu.se/en/events/metadata-workshop_10407034/)
   * June 9 2021 
+* [Baltic Summer School of Digital Humanities 2021: "Digital Methods in Humanities and Social Sciences"](https://www.nlib.ee/et/digital-humanities-tallinn-2021)
+  * Annif workshop August 25 2021    
 
 The sessions are held remotely. More information about upcoming events to be announced soon.
 
