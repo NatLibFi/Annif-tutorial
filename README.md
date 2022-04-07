@@ -32,18 +32,20 @@ full text documents for either or both data sets. The downloads are automated us
 `make` - see the README files for both data sets
 ([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
 
-## Online help sessions 2021
+## Help sessions in 2022
 
-From time to time, we organize online help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Current schedule:
-* [SWIB21 conference workshop/tutorial](https://swib.org/swib21/programme.html#abs104)
-  * November 30 2021 (NB! Fully booked) 
-* [Les Futurs Fantastiques conference workshop/tutorial](https://bnf-fr.zoom.us/meeting/register/tJ0vd-qsqTgvGdIOkl2aw4aJl3bOZ--x6zUm)
-  * December 7 2021
+From time to time, we organize (online) help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Current schedule:
+* [Annif bootcamp at ELAG](https://elag2022.lnb.lv/programme/bootcamps/#Osma_Suominen)
+  * ELAG (European Library Automation Group) Conference is in Riga, Latvia (June 8-10 2022). More info: [https://elag2022.lnb.lv/](https://elag2022.lnb.lv/)
 
-The sessions are held remotely. More information about upcoming events to be announced soon.
+ More information about upcoming events to be announced soon.
 
 ## Past online help sessions
 
+* [SWIB21 conference workshop/tutorial](https://swib.org/swib21/programme.html#abs104)
+  * November 30 2021 
+* [Les Futurs Fantastiques conference workshop/tutorial](https://bnf-fr.zoom.us/meeting/register/tJ0vd-qsqTgvGdIOkl2aw4aJl3bOZ--x6zUm)
+  * December 7 2021
 * [Annif tutorial / workshop (NB! Event in Finnish)](https://www.kiwi.fi/x/FwW5D)
   * May 19 2021 
 * [Metadata workshop by Humlab (Umeå University)](https://www.umu.se/en/events/metadata-workshop_10407034/)
