@@ -18,12 +18,12 @@ install; the Extension Pack or SDK modules are not necessary.
 The VirtualBox image is a preconfigured virtual machine containing a minimal
 installation of Xubuntu, Annif, and the files needed for this tutorial.
 
-Download the [VirtualBox
-image](http://annif.org/download/annif-tutorial-vbox-2021.zip).  This is a ~2GB
+Download the latest available VirtualBox image from the [annif.org/download
+folder](https://annif.org/download/).  This is a ~2GB
 zip archive so it can take a while to download.  Find the `VirtualBox VMs`
 folder below your home folder; if it doesn't exist yet (i.e. you've just
 installed VirtualBox and haven't created any VMs yet), you can create it
-yourself. Extrace the `annif-tutorial` folder from the zip archive into the
+yourself. Extract the `annif-tutorial` folder from the zip archive into the
 `VirtualBox VMs` directory; it will initially take around 6GB disk space
 when uncompressed and grow in size (up to 20GB) as you add more data and
 train models.
@@ -98,7 +98,7 @@ The `--rm` option in the run commands should ensure that the container is remove
 ### 1.3. Local install
 
 For this to work, you will need a Linux operating system (preferably Ubuntu
-or Debian based) and Python 3.6, 3.7 or 3.8. This option is only recommended
+or Debian based) and Python 3.7, 3.8 or 3.9. This option is only recommended
 if you are used to work with Python packages.
 
 See the [Annif top level README file](https://github.com/NatLibFi/Annif/blob/master/README.md)
