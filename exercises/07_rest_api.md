@@ -58,6 +58,11 @@ Congratulations, you've completed Exercise 7!  You now know what kind of
 methods and services the Annif REST API provides and how to access them from
 a web browser and the `curl` command line tool.
 
+## Sending text file
+The `curl` tool can also send the contents of a text file to Annif API for suggestions. 
+For this you need to replace the option `-d 'text=your_example_text&limit=10'` 
+with `--data-urlencode 'text@your_example_file.txt'`.
+
 ## Annif-client 
 [Annif-client](https://github.com/NatLibFi/Annif-client) is a minimal Python 3.x 
 client library for accessing the Annif REST API. 
