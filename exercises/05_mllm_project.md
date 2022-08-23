@@ -90,6 +90,25 @@ If you use the `stw-zbw` data set, run this command:
 Evaluation should take around 5-10 minutes. Write down the F1@5 and NDCG
 scores and compare them with the scores that the TFIDF project got.
 
+## EXTRA: Experiment with different amounts of training data
+
+In the training step above, we limited the number of documents to 400, but
+there are many more documents available in the corpus. Try retraining with a 
+different number of documents - smaller or larger - and see how it affects the 
+time required to train the model and the evaluation results.
+
+### Learning curves
+
+If you do this many times with different amounts of training 
+documents, you can plot the results into a diagram. This is called a 
+[learning curve](https://en.wikipedia.org/wiki/Learning_curve_(machine_learning)) 
+and it shows the relationship between the amount of training data and the evaluation
+score. Typically, the curve will eventually reach a plateau, at which point any
+additional training data will not substantially improve the results. This kind of
+analysis will help inform decisions about how much training data to collect and use.
+
+---
+
 Congratulations, you've completed Exercise 5, you have a working MLLM project
 and you know how well it performs compared to the TFIDF project!
 
