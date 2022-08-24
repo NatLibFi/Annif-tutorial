@@ -11,6 +11,15 @@ The exercises drawn with thick borders and a blue background are **core**, the
 others are optional extras.
 
 ```mermaid
+%%{
+    init: {
+       "flowchart": {
+           "nodeSpacing": 30,
+           "rankSpacing": 30,
+           "useMaxWidth": false
+        }
+    }
+}%%
 flowchart TD
     classDef core fill:#ADD8E6,stroke:#000000,stroke-width:2px;
     classDef optional fill:#ffffff,stroke:#000000,stroke-width:1px;
