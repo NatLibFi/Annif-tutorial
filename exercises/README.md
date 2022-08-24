@@ -16,7 +16,8 @@ others are optional extras.
        "flowchart": {
            "nodeSpacing": 30,
            "rankSpacing": 30,
-           "useMaxWidth": false
+           "useMaxWidth": false,
+           "curve": "linear"
         }
     }
 }%%
