@@ -10,7 +10,35 @@
 The exercises drawn with thick borders and a blue background are **core**, the
 others are optional extras.
 
-![overview](overview.png)
+```mermaid
+flowchart TD
+    classDef core fill:#ADD8E6,stroke:#000000,stroke-width:2px;
+    classDef optional fill:#ffffff,stroke:#000000,stroke-width:1px;
+
+    install([install]) --> tfidf([TFIDF])
+    tfidf --> webui([Web UI])
+    webui --> eval([evaluate])
+    eval --> mllm([MLLM])
+    mllm --> ensemble([ensemble])
+    ensemble --> nn_ensemble([NN ensemble])
+    ensemble --> custom([Custom corpus])
+    mllm --> ft([Hogwarts/fastText])
+    webui --> rest([REST API])
+    eval --> omikuji([Omikuji])
+    nn_ensemble --> incremental([incremental learning])
+    class install core
+    class tfidf core
+    class webui core
+    class eval core
+    class mllm core
+    class ensemble core
+    class rest optional
+    class omikuji optional
+    class ft optional
+    class custom optional
+    class nn_ensemble optional
+    class incremental optional
+```
 
 ## 2. Installation
 
