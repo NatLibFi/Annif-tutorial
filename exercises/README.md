@@ -135,6 +135,7 @@ Quantitative testing and comparison of projects against standard metrics can be 
 
 ## 9. [Optional] Omikuji project
 Omikuji is a tree-based associative machine learning model that often produces very good results, but requires more resources than the TFIDF model.
+This exercise is optional, because training an Omikuji model on the full datasets can take around 40 minutes.
 - [exercise](/exercises/08_omikuji_project.md)
 
 ## 10. MLLM project
