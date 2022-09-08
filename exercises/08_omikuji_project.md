@@ -23,7 +23,7 @@ If you use the `yso-nlf` data set, use the following snippet:
     language=en
     backend=omikuji
     analyzer=snowball(english)
-    vocab=yso-en
+    vocab=yso
 
 
 If you use the `stw-zbw` data set, use the following snippet:
@@ -33,7 +33,7 @@ If you use the `stw-zbw` data set, use the following snippet:
     language=en
     backend=omikuji
     analyzer=snowball(english)
-    vocab=stw-en
+    vocab=stw
 
 
 These are configurations that emulate the Parabel algorithm. All the hyperparameters are left at their default values.

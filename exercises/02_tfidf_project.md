@@ -31,7 +31,7 @@ If you use the `yso-nlf` data set, use the following contents:
     name=YSO TFIDF project
     language=en
     backend=tfidf
-    vocab=yso-en
+    vocab=yso
     analyzer=snowball(english)
 
 If you use the `stw-zbw` data set, use the following contents:
@@ -40,7 +40,7 @@ If you use the `stw-zbw` data set, use the following contents:
     name=STW TFIDF project
     language=en
     backend=tfidf
-    vocab=stw-en
+    vocab=stw
     analyzer=snowball(english)
 
 ## 2. Test that Annif can read the `projects.cfg` file
@@ -58,17 +58,19 @@ Annif needs to know the vocabulary to use. We will load it from a SKOS file.
 
 If you use the `yso-nlf` data set, run this command:
 
-    annif loadvoc yso-tfidf-en data-sets/yso-nlf/yso-skos.ttl
+    annif load-vocab yso data-sets/yso-nlf/yso-skos.ttl
 
 If you use the `stw-zbw` data set, run this command:
 
-    annif loadvoc stw-tfidf-en data-sets/stw-zbw/stw-skos.ttl
+    annif load-vocab stw data-sets/stw-zbw/stw-skos.ttl
 
 This should take less than 2 minutes for YSO and less than a minute for
 STW. No output means the operation was succesful.
 
 You only have to do this once for a particular vocabulary. You can now reuse
 the same vocabulary (by using the same `vocab=` value) in other projects.
+
+Note that in Annif versions older than 0.59 the command for loading a vocabulary was `loadvoc` and it expected a project id as an argument, not a vocabulary id.
 
 ## 4. Train the project using sample data
 
