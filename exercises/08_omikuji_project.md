@@ -105,6 +105,15 @@ Evaluation should take around 5 minutes.
 Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from TFIDF and Maui projects. Which one works best?
 
+## EXTRA: Experiment with different algorithms
+
+The project configurations above made Omikuji emulate the Parabel algorithm.
+In the [Annif wiki](https://github.com/NatLibFi/Annif/wiki/Backend%3A-Omikuji#example-configuration)
+there are example configurations with hyperparameters that make Omikuji emulate the Bonsai and AttentionXML algorithms.
+You can try those, and compare the evaluation results.
+
+---
+
 Congratulations, you've completed Exercise 8! You have a working Omikuji
 project and you know how well it works compared to TFIDF and MLLM.
 
