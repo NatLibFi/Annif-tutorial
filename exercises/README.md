@@ -35,6 +35,7 @@ flowchart TD
     mllm --> ft([Hogwarts/fastText])
     webui --> rest([REST API])
     eval --> omikuji([Omikuji])
+    omikuji --> classification([Classification])
     class install core
     class tfidf core
     class webui core
@@ -43,6 +44,7 @@ flowchart TD
     class ensemble core
     class rest optional
     class omikuji optional
+    class classification optional
     class ft optional
     class custom optional
     class nn_ensemble optional
