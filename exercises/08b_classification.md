@@ -67,14 +67,20 @@ Use a text editor to add new project definitions to the end of the
     cluster_k=100
     max_depth=3
 
+Check that the configuration is valid:
+
+    annif list-projects
+
 ## 2. Load the vocabulary of 20 Newsgroups
 
 Run this command:
 
     annif load-vocab --language en 20news data-sets/20news/20news-vocab.tsv
 
-The vocabulary file is small and simple, it just contains a line for
-each newsgroup containing the newsgroup URI and name.
+The vocabulary file is small and simple, it just contains a line for each
+newsgroup containing the newsgroup URI and name. Since this is a TSV file
+with no language information, we need to use the `--language` option to
+indicate that the subject labels (newsgroup names) are in English.
 
 ## 3. Train the SVC project
 
@@ -82,7 +88,7 @@ Run this command:
 
     annif train 20news-svc-en data-sets/20news/20news-train.tsv
 
-Model training should take around X minutes.
+Model training should take less than a minute.
 
 ## 4. Test the SVC project on an example document
 
@@ -99,29 +105,32 @@ It is a message that looks like this:
 > what the book value is for prefereably the 89 model. And how much less
 > than book value can you usually get them for. In other words how much are
 > they in demand this time of year. I have heard that the mid-spring early
-> summer is the best time to buy.	<news:rec.autos>
+> summer is the best time to buy.	\<news:rec.autos>
 
 The message is about cars and was posted to the `rec.autos` newsgroup, as
-can be seen from the tag at the end. But the topic may not be entirely
-obvious from the text as it doesn't directly mention cars. We can check what
-newsgroups the SVC algorithm suggests for this text. We can pipe the text
-through the `cut` command in order to strip away the tag at the end, leaving
-just the text, and pipe it directly to the `annif suggest` command:
+can be seen from the tag at the end. But this is a difficult document to
+classify: the topic may not be entirely obvious from the text as it doesn't
+directly mention cars. We can check what newsgroups the SVC algorithm
+suggests for this text. We can pipe the text through the `cut` command in
+order to strip away the tag at the end, leaving just the text, and pipe it
+directly to the `annif suggest` command:
 
     head -n 1 data-sets/20news/20news-test.tsv | cut -f 1 | annif suggest 20news-svc-en
 
-Is the first suggestion `rec.autos` or something else?
+Is the first suggestion `rec.autos` or something else? If `rec.autos` is
+not the top suggestion, how close is it to the top?
 
 ## 5. Evaluate the SVC project
 
 We can then evaluate the model on the whole test set. Run this command:
 
-    annif eval 20news-svc-en data-sets/hogwarts/20news-test.tsv
+    annif eval 20news-svc-en data-sets/20news/20news-test.tsv
 
-Evaluation should take around X minutes. Check the *Precision@1* score,
+Evaluation should take around a minute. Check the *Precision@1* score,
 which indicates the proportion of the first suggestions of the algoritm that
 are considered correct; in this kind of multiclass setting, this corresponds
-to the *accuracy* of the classifier.
+to the *accuracy* of the classifier. Write down this number so you can
+compare it with the results of further experiments.
 
 ## 6. Train the Omikuji Bonsai project
 
@@ -129,7 +138,7 @@ Run this command:
 
     annif train 20news-omikuji-bonsai-en data-sets/20news/20news-train.tsv
 
-Model training should take around X minutes.
+Model training should take around one minute.
 
 ## 7. Test the Omikuji Bonsai project on an example document
 
@@ -138,15 +147,18 @@ above:
 
     head -n 1 data-sets/20news/20news-test.tsv | cut -f 1 | annif suggest 20news-omikuji-bonsai-en
 
+Was the top suggestion correct this time? If not, how far from the top was
+the correct answer `rec.autos`?
+
 ## 8. Evaluate the Omikuji Bonsai project
 
 Run this command:
 
-    annif eval 20news-omikuji-bonsai-en data-sets/hogwarts/20news-test.tsv
+    annif eval 20news-omikuji-bonsai-en data-sets/20news/20news-test.tsv
 
 Evaluation should take around X minutes. Again, check the *Precision@1* score
 and compare it with the result you got from the SVC evaluation above. Which
-one worked better?
+algorithm worked better?
 
 ## EXTRA: Use bigrams for better accuracy
 
@@ -159,28 +171,36 @@ as well as unigrams (single words). This will extract the maximum amount of
 information from the relatively short texts available and thus hopefully
 improve classification accuracy, at the cost of a larger and heavier model.
 
-Since including bigrams can increase the size of the model quite
-drastically, we can also use the `min_df=2` setting will instruct the
-vectorizer to ignore tokens (bigrams or unigrams) that only appear in a
-single document of the training set, which will help to reduce the number of
-features and thus the size of the model.
-
-Add these settings to both the SVC and Omikuji projects you added above:
+Add this settings to both the SVC and Omikuji projects you added above:
 
     ngram=2
-    min_df=2
 
 Then retrain and evaluate both projects. Did you get a better result? Did it
 take longer and/or consume more resources?
 
+Including bigrams can increase the size of the model quite drastically,
+especially for larger vocabularies and training corpora. To keep resource
+usage in control, we can also use the `min_df` setting. This will instruct
+the vectorizer to ignore tokens (bigrams or unigrams) that only appear in a
+small number of documents of the training set. This will reduce the number
+of features and thus the size of the model and the resource consumption.
+
+Add this settings to both the SVC and Omikuji projects so that tokens
+(unigrams or bigrams) must appear in at least two documents to be
+considered:
+
+    min_df=2
+
+Then retrain and evaluate both projects. How did this affect the result?
+
 ---
 
-Congratulations, you've completed Exercise 5, you have a working MLLM project
-and you know how well it performs compared to the TFIDF project!
+Congratulations, you've completed Exercise X, you have performed
+classification using two different algorithms and compared their results!
 
 ---
 
 <p align="center">
-<a href="/exercises/04_evaluate.md">« Previous</a> |
+<a href="/exercises/08_omikuji_project.md">« Previous</a> |
 <a href="/exercises/06_ensemble_project.md">Next »</a>
 </p>
