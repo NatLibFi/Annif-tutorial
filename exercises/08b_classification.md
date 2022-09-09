@@ -66,8 +66,6 @@ Use a text editor to add new project definitions to the end of the
     cluster_balanced=False
     cluster_k=100
     max_depth=3
-    ngram=2
-    min_df=2
 
 ## 2. Load the vocabulary of 20 Newsgroups
 
