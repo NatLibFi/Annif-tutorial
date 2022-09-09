@@ -166,11 +166,6 @@ A neural network ensemble can be trained to intelligently combine the results fr
 
 - [exercise](/exercises/10_nn_ensemble_project.md)
 
-## 14. [Optional] Incremental learning
-The neural network ensemble is also capable to online incremental learning, i.e. the training can be continued while the model is in use.
-
-- [exercise](/exercises/11_incremental_learning.md)
-
 ## 15. [Optional] Custom corpus
 A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
 
