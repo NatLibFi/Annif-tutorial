@@ -35,7 +35,6 @@ flowchart TD
     mllm --> ft([Hogwarts/fastText])
     webui --> rest([REST API])
     eval --> omikuji([Omikuji])
-    nn_ensemble --> incremental([incremental learning])
     class install core
     class tfidf core
     class webui core
@@ -47,7 +46,6 @@ flowchart TD
     class ft optional
     class custom optional
     class nn_ensemble optional
-    class incremental optional
 ```
 
 ## 2. Installation
@@ -166,13 +164,13 @@ A neural network ensemble can be trained to intelligently combine the results fr
 
 - [exercise](/exercises/10_nn_ensemble_project.md)
 
-## 15. [Optional] Custom corpus
+## 14. [Optional] Custom corpus
 A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
 
 - [exercise](/exercises/12_custom_corpus.md)
 - [Jupyter Notebook](/data-sets/arxiv/create-arxiv-corpus.ipynb)
 
-## 16. Closing
+## 15. Closing
 Summary of the material in the tutorial and some pointers to further information.
 
 [![Video](/img/closing-slides-1.png)](https://www.youtube.com/watch?v=OrScuYCyHGs&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=12)
