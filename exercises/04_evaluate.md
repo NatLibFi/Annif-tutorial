@@ -35,7 +35,7 @@ If you use the `stw-zbw` data set, run this command:
 This will take around 5 minutes but in the end you will receive a report of
 the evaluation results. Write down the values, especially `F1@5` and `NDCG`.
 For more insights on the details on the different ways to compute the averaged metrics see for example [scikit-learn 
-documentation](https://scikit-learn.org/stable/modules/model_evaluation.html#average). You can log your results in a table (see [template](ResultTable.csv))
+documentation](https://scikit-learn.org/stable/modules/model_evaluation.html#average). You can log your results in a table (see [template](ResultsTable.csv)).
 
 Congratulations, you've completed Exercise 4 and you know how well your
 TFIDF project is doing in terms of quality!
