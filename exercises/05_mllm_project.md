@@ -133,8 +133,6 @@ step=$6
 
 for (( limit=$minlimit; limit<=$maxlimit; limit+=$step )); do
     echo "limit: $limit"
-    echo "trainset: $trainset"
-    echo "testset: $testset"
     time annif train $project --docs-limit $limit $trainset
     time annif eval $project $testset
     echo
