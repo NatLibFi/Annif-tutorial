@@ -61,8 +61,7 @@ virtual machine running inside will still be limited to two CPU cores unless you
 settings. To do this, first shut down the virtual machine. Then open the Settings view of
 the machine and increase the number of CPU cores under System -> Processor. Finally start
 the machine again and it should now have access to more cores. You can verify this using the
-guide linked above. Note that VirtualBox does not support more than one CPU thread per core
-so the number of threads will be the same as the number of cores.
+guide linked above.
 
 ### Running evaluation in parallel
 
