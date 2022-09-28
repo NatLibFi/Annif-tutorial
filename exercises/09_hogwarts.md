@@ -58,7 +58,7 @@ unseen names.
 
 Run this command:
 
-    annif loadvoc hogwarts data-sets/hogwarts/hogwarts-vocab.tsv
+    annif load-vocab hogwarts data-sets/hogwarts/hogwarts-vocab.tsv
 
 The vocabulary file is really small and simple, it just contains a line for
 each of the four Hogwarts houses along with their Wikidata URIs.
