@@ -157,8 +157,8 @@ limits, and the step size. With the above parameters, it will perform five train
 cycles with the `docs-limit` set to 200, 400, 600, 800 and 1000 respectively. The 
 output of the script, including the evaluation results, will be stored into the file
 `train-eval-limits.out` in addition to being printed on the console in real time.
-Running this script can take a long time, depending on the number of iterations, the
-limit values and the size of the test set.
+Running this script can take a long time (an hour or two), depending on the number
+of iterations, the limit values and the size of the test set.
 
 To analyze the results, you can use the `grep` command to extract just the numbers you
 need from the output file. To get the sequence of limit values, use a command like
@@ -171,8 +171,26 @@ like this:
 
     grep F1@5 train-eval-limits.out | cut -c32-
 
-Paste both columns side by side into a spreadsheet application and plot the numbers
-so that you have limit values on the X axis and corresponding F1@5 scores on the Y axis.
+Paste both columns side by side into a spreadsheet table, like this:
+
+| limit | F1@5                |
+| ----- | ------------------- |
+| 200   | 0.3170204745341874  |
+| 400   | 0.34323561922389234 |
+| 600   | 0.35361283894005663 |
+| 800   | 0.360568593082306   |
+| 1000  | 0.3660707186808946  |
+
+Then plot the numbers as a line graph so that you have limit values on the X axis
+and corresponding F1@5 scores on the Y axis, like this:
+
+![learning curve plot](/img/learning-curve.png)
+
+This plot shows that the F1@5 score achieved by the MLLM algorithm is increasing 
+all the way up to 1000 training documents, although the increase in scores is starting
+to peter out. For an optimal result, more than 1000 documents would be needed.
+
+The chart above was created using the XY (Scatter) chart type in LibreOffice Calc.
 
 ---
 
