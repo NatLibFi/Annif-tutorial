@@ -14,7 +14,7 @@ If you use the `yso-nlf` data set, use the following snippet:
     name=YSO ensemble project
     language=en
     backend=ensemble
-    vocab=yso-en
+    vocab=yso
     sources=yso-tfidf-en,yso-mllm-en:2
 
 If you use the `stw-zbw` data set, use the following snippet:
@@ -23,7 +23,7 @@ If you use the `stw-zbw` data set, use the following snippet:
     name=STW ensemble project
     language=en
     backend=ensemble
-    vocab=stw-en
+    vocab=stw
     sources=stw-tfidf-en,stw-mllm-en:2
 
 The `sources` setting lists the projects which will be included in the
