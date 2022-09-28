@@ -15,7 +15,7 @@ If you use the `yso-nlf` data set, use the following snippet:
     name=YSO neural ensemble project
     language=en
     backend=nn_ensemble
-    vocab=yso-en
+    vocab=yso
     sources=yso-tfidf-en,yso-mllm-en:2
     nodes=100
     dropout_rate=0.2
@@ -27,7 +27,7 @@ If you use the `stw-zbw` data set, use the following snippet:
     name=STW neural ensemble project
     language=en
     backend=nn_ensemble
-    vocab=stw-en
+    vocab=stw
     sources=stw-tfidf-en,stw-mllm-en:2
     nodes=100
     dropout_rate=0.2
