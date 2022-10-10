@@ -14,9 +14,9 @@ others are optional extras.
 %%{
     init: {
        "flowchart": {
-           "nodeSpacing": 30,
-           "rankSpacing": 30,
-           "useMaxWidth": false,
+           "nodeSpacing": 20,
+           "rankSpacing": 45,
+           "useMaxWidth": true,
            "curve": "linear"
         }
     }
@@ -32,8 +32,11 @@ flowchart TD
     mllm --> ensemble([ensemble])
     ensemble --> nn_ensemble([NN ensemble])
     ensemble --> custom([Custom corpus])
+    ensemble --> dvc([DVC])
     mllm --> ft([Hogwarts/fastText])
+    mllm --> lang_filter([Languages & filtering])
     webui --> rest([REST API])
+    rest --> production([Production use])
     eval --> omikuji([Omikuji])
     omikuji --> classification([Classification])
     class install core
@@ -41,8 +44,11 @@ flowchart TD
     class webui core
     class eval core
     class mllm core
+    class lang_filter optional
     class ensemble core
+    class dvc optional
     class rest optional
+    class production optional
     class omikuji optional
     class classification optional
     class ft optional
