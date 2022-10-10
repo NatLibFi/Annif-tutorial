@@ -1,4 +1,4 @@
-# Exercise 8: Running Annif for production use
+# Exercise 6: Running Annif for production use
 
 The intended way for using Annif in production is by making the REST API or Web
 UI available for end-users, either publicly to everyone on internet or in a
