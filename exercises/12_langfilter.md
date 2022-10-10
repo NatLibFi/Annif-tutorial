@@ -1,4 +1,4 @@
-# Exercise 6: Languages and filtering
+# Exercise 12: Languages and filtering
 Sometimes it is useful to further preprcess the text before passing it on to Annif. Sometimes the text might contain two or more languages, especially academic texts.
 In this case, it might be usseful to filter out anything but the main language of the document. 
 
