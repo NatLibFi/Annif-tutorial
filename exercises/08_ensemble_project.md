@@ -1,4 +1,4 @@
-# Exercise 6: Set up and train a simple ensemble
+# Exercise 8: Set up and train a simple ensemble
 
 In this lesson, we will set up a simple ensemble which combines results from
 the projects set up in previous exercises.
