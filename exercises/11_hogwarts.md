@@ -1,4 +1,4 @@
-# Exercise 9: Hogwarts Sorting Hat using fastText
+# Exercise 11: Hogwarts Sorting Hat using fastText
 
 In this lesson, we will use Annif and fastText to implement a [Sorting
 Hat](https://harrypotter.fandom.com/wiki/Sorting_Hat), which can determine
