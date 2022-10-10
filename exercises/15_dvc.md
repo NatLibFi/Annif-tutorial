@@ -97,9 +97,58 @@ configurations):
 
     cp ../Annif-tutorial/projects.cfg .
 
-Create `dvc.yaml` with these contents:
-
-    # TODO
+If you use the `stw-zbw` data set, create `dvc.yaml` with these contents:
+```yaml
+stages:
+  # Load vocabulary
+  load-vocab:
+    cmd: annif load-vocab stw corpora/skos.ttl --force
+    deps:
+    - corpora/skos.ttl
+    outs:
+    - data/vocabs/stw
+  # Train tfidf project
+  train-tfidf:
+    cmd: annif train stw-tfidf-en corpora/shorttext-docs.tsv.gz -d 10000
+    deps:
+    - corpora/shorttext-docs.tsv.gz
+    - data/vocabs/stw
+    outs:
+    - data/projects/stw-tfidf-en
+  # Train MLLM project
+  train-mllm:
+    cmd: annif train stw-mllm-en corpora/docs/train -d 100
+    deps:
+    - corpora/docs/train
+    - data/vocabs/stw
+    outs:
+    - data/projects/stw-mllm-en
+  # Train nn-ensemble project
+  train-nn-ensemble:
+    cmd: annif train stw-nn-ensemble-en corpora/docs/train -d 100
+    deps:
+    - corpora/docs/train
+    - data/vocabs/stw
+    - data/projects/stw-mllm-en
+    - data/projects/stw-tfidf-en
+    outs:
+    - data/projects/stw-nn-ensemble-en
+  # Evaluate projects in a loop
+  eval-en:
+    foreach:
+      - stw-mllm-en
+      - stw-tfidf-en
+      - stw-nn-ensemble-en
+    do:
+      cmd:
+      - annif eval ${item} -m F1@5 -m NDCG --metrics-file reports/${item}.json corpora/docs/test/ -d 100
+      deps:
+      - corpora/docs/test
+      - data/projects/${item}
+      metrics:
+      - reports/${item}.json:
+          cache: false
+```
 
 Now the pipeline is set up, and can be executed with one command:
 
