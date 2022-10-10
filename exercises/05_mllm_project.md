@@ -92,6 +92,9 @@ scores and compare them with the scores that the TFIDF project got.
 
 ## EXTRA: Experiment with different amounts of training data
 
+<details>
+<summary>See details of extra section</summary>
+
 In the training step above, we limited the number of documents to 400, but
 there are many more documents available in the corpus. Try retraining with a 
 different number of documents - smaller or larger - and see how it affects the 
@@ -190,6 +193,8 @@ to peter out. For an optimal result, more than 1000 documents would be needed.
 
 The chart above was created using the XY (Scatter) chart type in LibreOffice Calc.
 
+</details>                                         
+                                         
 ---
 
 Congratulations, you've completed Exercise 5, you have a working MLLM project
