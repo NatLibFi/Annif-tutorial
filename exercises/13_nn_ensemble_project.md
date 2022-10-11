@@ -107,6 +107,9 @@ previous figures from other kinds of projects. Is the NN ensemble better
 than a plain ensemble?
 
 ## EXTRA: Incremental learning
+<details><summary>
+See details of extra section
+</summary>
 
 The neural network ensemble has an additional feature missing from most
 other backends: it can continue learning from new documents after initial
@@ -155,6 +158,7 @@ Evaluation should take around 15-20 minutes.
 Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from the initial training and evaluation. Did the NN ensemble
 improve when given additional training documents?
+</details>
 
 ---
 
