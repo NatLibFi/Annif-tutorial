@@ -58,8 +58,7 @@ Enable DVC autostage, which avoids the need to run `git add` commands:
 Create directories for the metric reports and training data to be used in the
 pipeline:
 
-    mkdir reports
-    mkdir corpora
+    mkdir corpora reports
 
 Import the vocabulary, short-text and full-text documents.
 If you use the `yso-nlf` data set, run these commands:
@@ -92,56 +91,61 @@ Commit changes:
 
 A DVC pipeline is defined in an YAML file, by default of the name `dvc.yaml`.
 Copy the project configuration file containing the configurations made in
-previous exercises (the pipeline uses tfidf, MLLM, and NN ensemble
+previous exercises (or create a new `projects.cfg` with tfidf, MLLM, and NN ensemble
 configurations):
 
     cp ../Annif-tutorial/projects.cfg .
 
-If you use the `stw-zbw` data set, create `dvc.yaml` with these contents:
+Create `dvc.yaml` with the following contents, and **uncomment the line defining the vocab variable depending on the data-set you use**:
 ```yaml
+vars:
+  #- vocab: 'stw'  # Uncomment this if you are using the STW dataset
+  #- vocab: 'yso'  # Uncomment this if you are using the YSO dataset
+  - docs: 100      # How many documents to use in training stages
+
 stages:
   # Load vocabulary
   load-vocab:
-    cmd: annif load-vocab stw corpora/skos.ttl --force
+    cmd: annif load-vocab ${vocab} corpora/skos.ttl --force
     deps:
     - corpora/skos.ttl
     outs:
-    - data/vocabs/stw
+    - data/vocabs/${vocab}
   # Train tfidf project
   train-tfidf:
-    cmd: annif train stw-tfidf-en corpora/shorttext-docs.tsv.gz -d 10000
+    cmd: annif train ${vocab}-tfidf-en corpora/shorttext-docs.tsv.gz -d ${docs}
     deps:
     - corpora/shorttext-docs.tsv.gz
-    - data/vocabs/stw
+    - data/vocabs/${vocab}
     outs:
-    - data/projects/stw-tfidf-en
+    - data/projects/${vocab}-tfidf-en
   # Train MLLM project
   train-mllm:
-    cmd: annif train stw-mllm-en corpora/docs/train -d 100
+    cmd: annif train ${vocab}-mllm-en corpora/docs/train -d ${docs}
     deps:
     - corpora/docs/train
-    - data/vocabs/stw
+    - data/vocabs/${vocab}
     outs:
-    - data/projects/stw-mllm-en
+    - data/projects/${vocab}-mllm-en
   # Train nn-ensemble project
   train-nn-ensemble:
-    cmd: annif train stw-nn-ensemble-en corpora/docs/train -d 100
+    cmd: annif train ${vocab}-nn-ensemble-en corpora/docs/train -d ${docs}
     deps:
     - corpora/docs/train
-    - data/vocabs/stw
-    - data/projects/stw-mllm-en
-    - data/projects/stw-tfidf-en
+    - data/vocabs/${vocab}
+    - data/projects/${vocab}-mllm-en
+    - data/projects/${vocab}-tfidf-en
     outs:
-    - data/projects/stw-nn-ensemble-en
+    - data/projects/${vocab}-nn-ensemble-en
   # Evaluate projects in a loop
   eval-en:
     foreach:
-      - stw-mllm-en
-      - stw-tfidf-en
-      - stw-nn-ensemble-en
+      - ${vocab}-mllm-en
+      - ${vocab}-tfidf-en
+      - ${vocab}-nn-ensemble-en
     do:
       cmd:
-      - annif eval ${item} -m F1@5 -m NDCG --metrics-file reports/${item}.json corpora/docs/test/ -d 100
+      - annif eval ${item} -m F1@5 -m NDCG --metrics-file reports/${item}.json corpora/docs/test/ -d ${docs}
       deps:
       - corpora/docs/test
       - data/projects/${item}
@@ -154,10 +158,13 @@ Now the pipeline is set up, and can be executed with one command:
 
     dvc repro
 
-Running the pipeline takes XX min. When finished, the evalution reports can be
+Running the pipeline as such takes about 3 min, because the `docs` variable limits the number of documents used in training stages to 100.
+When the `docs` is increased e.g. to 10000000 to cover all available (short-text) documents, reproducing the pipeline takes about XX min.
+
+When finished, the evalution reports can be
 shown using DVC:
 
-	dvc metrics show
+    dvc metrics show
 
 Finally commit the changes with `git`:
 
