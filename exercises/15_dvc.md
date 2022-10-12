@@ -12,7 +12,7 @@ can be installed using `pip` or `pipx` from PyPI. See details on
 
 ## About DVC with Annif
 
-DVC offers many functionalities that ease working with machine-learning models.
+DVC offers many functionalities for working with machine-learning models.
 In case of Annif, maybe the most valuable feature is the possibility to build
 _data pipelines_, which consist of separate _stages_. The whole pipeline
 can be conviniently operated on with `dvc` commands.
@@ -38,9 +38,9 @@ management](https://dvc.org/doc/user-guide/experiment-management).
 In this exercise a DVC pipeline is set up for some of the projects seen in the
 previous exercises.
 
-It is best to create a new git repository for this:
+It is best to create a new git repository `Annif-tutorial-dvc` for this:
 
-    cd  # Change directory to home directory
+    cd ..  # To one level up from Annif-tutorial
     git init Annif-tutorial-dvc
     cd Annif-tutorial-dvc/
 
@@ -63,7 +63,10 @@ pipeline:
 Import the vocabulary, short-text and full-text documents.
 If you use the `yso-nlf` data set, run these commands:
 
-    # TODO
+    cd corpora
+    dvc import-url ../../Annif-tutorial/data-sets/yso-nlf/yso-skos.ttl skos.ttl
+    dvc import-url ../../Annif-tutorial/data-sets/yso-nlf/yso-finna.tsv.gz shorttext-docs.tsv.gz
+    dvc import-url ../../Annif-tutorial/data-sets/yso-nlf/docs/ docs
 
 If you use the `stw-zbw` data set, run these commands:
 
