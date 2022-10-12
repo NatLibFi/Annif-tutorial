@@ -20,7 +20,7 @@ Here are the steps for setting up a new TFIDF project.
 
 The first step is to add the project configuration to the projects.cfg file.
 
-The second step is to load the vocabulary, which is done using the annif loadvoc command. It takes the project ID as the first argument, and a path to the vocabulary as the second argument. The vocabulary can be in a TSV file, that is in a simple tab-separated-values format, or in a SKOS/RDF file. However, if the same vocabulary is used in multiple projects, it needs to be loaded only once, as the vocabulary is shared with all the projects that use the same vocabulary identifier.
+The second step is to load the vocabulary, which is done using the annif load-vocab command. It takes the vocabulary ID as the first argument, and a path to the vocabulary as the second argument. The vocabulary can be in a TSV file, that is in a simple tab-separated-values format, or in a SKOS/RDF file. However, if the same vocabulary is used in multiple projects, it needs to be loaded only once, as the vocabulary is shared with all the projects that use the same vocabulary identifier.
 
 The third step is training the project. The command is annif train, which takes the project ID as the first argument, and a path to the training data as the second argument. The training data or training documents can be collected to one TSV file, which can be compressed, or to a directory containing several documents. More information on the formats can be found from the Annif wiki pages. Note that the training step can take a long time, up to several hours in some cases.
 
