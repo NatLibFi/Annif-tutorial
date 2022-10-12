@@ -93,11 +93,75 @@ Commit changes:
 ## Pipeline for Annif projects
 
 A DVC pipeline is defined in an YAML file, by default of the name `dvc.yaml`.
-Copy the project configuration file containing the configurations made in
-previous exercises (or create a new `projects.cfg` with tfidf, MLLM, and NN ensemble
-configurations):
+DVC can intelligently track (hyper)parameter changes in a file, which in case of
+Annif is the projects configuration file. However, the INI/CFG format does not
+work in this, but the format has to be [TOML](https://en.wikipedia.org/wiki/TOML).
 
-    cp ../Annif-tutorial/projects.cfg .
+Create a projects configuration file `projects.toml` containing the configurations 
+for tfidf, MLLM, and NN ensemble projects.
+
+<details><summary>
+Show configurations to use with the <code>nlf-yso</code> data set
+</summary>
+
+```toml
+[yso-tfidf-en]
+name = "YSO TFIDF project"
+language = "en"
+backend = "tfidf"
+vocab = "yso"
+analyzer = "snowball(english)"
+
+[yso-mllm-en]
+name = "YSO MLLM project"
+language = "en"
+backend = "mllm"
+vocab = "yso"
+analyzer = "snowball(english)"
+
+[yso-nn-ensemble-en]
+name = "YSO neural ensemble project"
+language = "en"
+backend = "nn_ensemble"
+vocab = "yso"
+sources = "yso-tfidf-en,yso-mllm-en:2"
+nodes = "100"
+dropout_rate = "0.2"
+epochs = "4"
+```
+</details>
+
+<details><summary>
+Show configurations to use with the <code>stw-zbw</code> data set
+</summary>
+
+```toml
+[stw-tfidf-en]
+name = "STW TFIDF project"
+language = "en"
+backend = "tfidf"
+vocab = "stw"
+analyzer = "snowball(english)"
+
+[stw-mllm-en]
+name = "STW MLLM project"
+language = "en"
+backend = "mllm"
+vocab = "stw"
+analyzer = "snowball(english)"
+
+[stw-nn-ensemble-en]
+name = "STW neural ensemble project"
+language = "en"
+backend = "nn_ensemble"
+vocab = "stw"
+sources = "stw-tfidf-en,stw-mllm-en:2"
+nodes = "100"
+dropout_rate = "0.2"
+epochs = "4"
+```
+</details>
+
 
 Create `dvc.yaml` with the following contents, and **uncomment the line defining the vocab variable depending on the data-set you use**:
 ```yaml
@@ -120,6 +184,9 @@ stages:
     deps:
     - corpora/shorttext-docs.tsv.gz
     - data/vocabs/${vocab}
+    params:
+    - projects.toml:
+      - ${vocab}-tfidf-en
     outs:
     - data/projects/${vocab}-tfidf-en
   # Train MLLM project
@@ -128,6 +195,9 @@ stages:
     deps:
     - corpora/docs/train
     - data/vocabs/${vocab}
+    params:
+    - projects.toml:
+      - ${vocab}-mllm-en
     outs:
     - data/projects/${vocab}-mllm-en
   # Train nn-ensemble project
@@ -138,20 +208,26 @@ stages:
     - data/vocabs/${vocab}
     - data/projects/${vocab}-mllm-en
     - data/projects/${vocab}-tfidf-en
+    params:
+    - projects.toml:
+      - ${vocab}-nn-ensemble-en
     outs:
     - data/projects/${vocab}-nn-ensemble-en
   # Evaluate projects in a loop
   eval-en:
     foreach:
-      - ${vocab}-mllm-en
-      - ${vocab}-tfidf-en
-      - ${vocab}-nn-ensemble-en
+    - ${vocab}-mllm-en
+    - ${vocab}-tfidf-en
+    - ${vocab}-nn-ensemble-en
     do:
       cmd:
       - annif eval ${item} -m F1@5 -m NDCG --metrics-file reports/${item}.json corpora/docs/test/ -d ${docs}
       deps:
       - corpora/docs/test
       - data/projects/${item}
+      params:
+      - projects.toml:
+        - ${item}
       metrics:
       - reports/${item}.json:
           cache: false
