@@ -1,4 +1,4 @@
-# Exercise 7: Set up and train a MLLM project
+# Exercise 5: Set up and train a MLLM project
 
 In this lesson, we will set up a MLLM project. MLLM is an algorithm for
 lexical automated subject indexing, i.e. matching terms in document text to
