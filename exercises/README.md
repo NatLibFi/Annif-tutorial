@@ -186,6 +186,8 @@ A big challenge in applying Annif to own data is gathering documents and convert
 ## :computer: 6-3. [Optional] Data Version Control
 Data Version Control (DVC) eases maintaining machine learning projects. In this exercise a DVC pipeline is used to set up, train and evaluate Annif projects.
 
+- [exercise](/exercises/15_dvc.md.md)
+
 ## 🎞️ Closing
 Summary of the material in the tutorial and some pointers to further information.
 
