@@ -167,6 +167,9 @@ Yet another algorithm you can try is fastText, which can also work on the level 
 - [exercise](/exercises/09_hogwarts.md)
 
 ## :computer: 5-2. [Optional] Languages and filtering
+The ability of Annif to process text in a given language depends on the choice of the analyzer, which performs text preprocessing.
+Sometimes it might be useful to filter out parts of the document that are not in the main language of the document.
+- [exercise](/exercises/12_langfilter.md)
 
 ## :computer: 6. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
