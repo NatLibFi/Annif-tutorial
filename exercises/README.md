@@ -184,6 +184,7 @@ A big challenge in applying Annif to own data is gathering documents and convert
 - [Jupyter Notebook](/data-sets/arxiv/create-arxiv-corpus.ipynb)
 
 ## :computer: 6-3. [Optional] Data Version Control
+Data Version Control (DVC) eases maintaining machine learning projects. In this exercise a DVC pipeline is used to set up, train and evaluate Annif projects.
 
 ## 🎞️ Closing
 Summary of the material in the tutorial and some pointers to further information.
