@@ -130,6 +130,8 @@ The REST API of Annif can be used for integrating Annif with other systems.
 - [exercise](/exercises/07_rest_api.md)
 
 ## :computer: 3-2. [Optional] Production use
+How to put Annif into production use.
+- [exercise](/exercises/06_production_use.md)
 
 ## :computer: 4. Metrics & evaluation
 Quantitative testing and comparison of projects against standard metrics can be done using the `eval` command.
