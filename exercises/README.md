@@ -148,6 +148,9 @@ This exercise is optional, because training an Omikuji model on the full dataset
 - [exercise](/exercises/08_omikuji_project.md)
 
 ## :computer: 4-2. [Optional] Classification
+In classification the goal is to assign each document with only a single class or category. 
+Annif implements Support Vector Classification algorithm which is designed for this task.
+- [exercise](/exercises/09_classification.md)
 
 ## :computer: 5. MLLM project
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
