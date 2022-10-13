@@ -1,6 +1,6 @@
 # Annif tutorial outline
 
-## Introduction and overview
+## :film_strip: Introduction and overview
 
 [![Video](/img/intro-slides-1.png)](https://www.youtube.com/watch?v=h8s3dDYYNP4&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=1)
 
@@ -56,7 +56,7 @@ flowchart TD
     class nn_ensemble optional
 ```
 
-## 1. Installation
+## :computer: 1. Installation
 
 Select your installation type. If you don’t know what to choose, we suggest using VirtualBox.
 - [exercise](/exercises/01_install_annif.md)
@@ -84,7 +84,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 - [transcript of video](/transcripts/annif-install-linux.md)
 - [Annif README file with installation instructions](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
-## Data sets
+## 🎞️ Data sets
 This tutorial provides two example data sets; one of them should be chosen to be used in the exercises.
 
 [![Video](/img/data-sets-slides-1.png)](https://www.youtube.com/watch?v=S4E3d3o5HWg&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=5)
@@ -92,7 +92,7 @@ This tutorial provides two example data sets; one of them should be chosen to be
 - [slides](/presentations/data-sets-slides.pdf)
 - [transcript of video](/transcripts/data-sets.md)
 
-## 2. TFIDF project
+## :computer: 2. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
 [![Video](/img/tfidf-project-slides-1.png)](https://www.youtube.com/watch?v=FOdB3tJNSRM&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=6)
@@ -101,7 +101,7 @@ The basic functionality of Annif is introduced by setting up and training a proj
 - [transcript of video](/transcripts/tfidf-project.md)
 - [exercise](/exercises/02_tfidf_project.md)
 
-## Algorithms
+## 🎞️ Algorithms
 The principles of the algorithm types used by Annif models are presented.
 
 [![Video](/img/algorithms-slides-1.png)](https://www.youtube.com/watch?v=OvPx8Ipe3BU&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=7)
@@ -116,7 +116,7 @@ Slides on associative algorithms for XMTC (by CSC's [@jmakoske](https://github.c
 - [Neural networks for XMTC](/exercises/HPD-NN-2020-11-13.pdf)
 
 
-## 3. Web UI
+## :computer: 3. Web UI
 The web user interface of Annif allows quick testing of projects.
 
 [![Video](/img/web-ui-slides-1.png)](https://www.youtube.com/watch?v=wkDbVnkuV6E&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=8)
@@ -125,13 +125,13 @@ The web user interface of Annif allows quick testing of projects.
 - [transcript of video](/transcripts/web-ui.md)
 - [exercise](/exercises/03_web_ui.md)
 
-## 3-1. [Optional] REST API
+## :computer: 3-1. [Optional] REST API
 The REST API of Annif can be used for integrating Annif with other systems.
 - [exercise](/exercises/07_rest_api.md)
 
-## 3-2. [Optional] Production use
+## :computer: 3-2. [Optional] Production use
 
-## 4. Metrics & evaluation
+## :computer: 4. Metrics & evaluation
 Quantitative testing and comparison of projects against standard metrics can be done using the `eval` command.
 
 [![Video](/img/metrics-and-evaluation-slides-1.png)](https://www.youtube.com/watch?v=zWMXUfLJtn0&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=9)
@@ -140,14 +140,14 @@ Quantitative testing and comparison of projects against standard metrics can be 
 - [transcript of video](/transcripts/metrics-and-evaluation.md)
 - [exercise](/exercises/04_evaluate.md)
 
-## 4-1. [Optional] Omikuji project
+## :computer: 4-1. [Optional] Omikuji project
 Omikuji is a tree-based associative machine learning model that often produces very good results, but requires more resources than the TFIDF model.
 This exercise is optional, because training an Omikuji model on the full datasets can take around 40 minutes.
 - [exercise](/exercises/08_omikuji_project.md)
 
-## 4-2. [Optional] Classification
+## :computer: 4-2. [Optional] Classification
 
-## 5. MLLM project
+## :computer: 5. MLLM project
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
  
 
@@ -157,13 +157,13 @@ MLLM is a lexical algorithm for matching terms in document text to terms in a co
 - [transcript of video](/transcripts/mllm.md)
 - [exercise](/exercises/05_mllm_project.md)
 
-## 5-1. [Optional] Hogwarts Sorting Hat using fastText
+## :computer: 5-1. [Optional] Hogwarts Sorting Hat using fastText
 Yet another algorithm you can try is fastText, which can also work on the level of individual characters.
 - [exercise](/exercises/09_hogwarts.md)
 
-## 5-2. [Optional] Languages and filtering
+## :computer: 5-2. [Optional] Languages and filtering
 
-## 6. Ensemble project
+## :computer: 6. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
 
 [![Video](/img/ensemble-project-slides-1.png)](https://www.youtube.com/watch?v=B-YYJqHiJ3k&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=11)
@@ -172,20 +172,20 @@ An ensemble project combines results from the projects set up in previous exerci
 - [transcript of video](/transcripts/ensemble-project.md)
 - [exercise](/exercises/06_ensemble_project.md)
 
-## 6-1. [Optional] Neural network ensemble project
+## :computer: 6-1. [Optional] Neural network ensemble project
 A neural network ensemble can be trained to intelligently combine the results from the base projects.
 
 - [exercise](/exercises/10_nn_ensemble_project.md)
 
-## 6-2. [Optional] Custom corpus
+## :computer: 6-2. [Optional] Custom corpus
 A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
 
 - [exercise](/exercises/12_custom_corpus.md)
 - [Jupyter Notebook](/data-sets/arxiv/create-arxiv-corpus.ipynb)
 
-## 6-3. [Optional] Data Version Control
+## :computer: 6-3. [Optional] Data Version Control
 
-## Closing
+## 🎞️ Closing
 Summary of the material in the tutorial and some pointers to further information.
 
 [![Video](/img/closing-slides-1.png)](https://www.youtube.com/watch?v=OrScuYCyHGs&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=12)
