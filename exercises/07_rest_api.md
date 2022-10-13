@@ -1,4 +1,4 @@
-# Exercise 5: Annif REST API
+# Exercise 7: Annif REST API
 
 Annif provides a simple REST API which can be used to integrate other
 systems with Annif. The REST API provides automated subject indexing
