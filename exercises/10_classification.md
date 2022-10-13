@@ -1,4 +1,4 @@
-# Exercise 9: Automated classification
+# Exercise 10: Automated classification
 
 In this lesson, we will apply Annif on an automated classification task,
 where the goal is to classify each document into a single class or category
