@@ -7,14 +7,15 @@ version control of machine learning projects. It works on top of [git](https://g
 ## Installing DVC
 
 DVC is included in the Virtualbox image of this tutorial; to your computer it
-can be installed using `pip` or `pipx` from PyPI. See details on
-[dvc.org](https://dvc.org/doc/install). 
+can be installed using `pip` or `pipx` from [PyPI](https://pypi.org/project/dvc/).
+See details on [dvc.org](https://dvc.org/doc/install). 
 
 ## About DVC with Annif
 
 DVC offers many functionalities for working with machine-learning models.
 In case of Annif, maybe the most valuable feature is the possibility to build
-_data pipelines_, which consist of separate _stages_. The whole pipeline
+[_data pipelines_](https://dvc.org/doc/start/data-management/data-pipelines),
+which consist of separate _stages_. The whole pipeline
 can be conviniently operated on with `dvc` commands.
 
 For example, the stages of a pipeline can be
@@ -40,7 +41,8 @@ previous exercises.
 
 It is best to create a new git repository `Annif-tutorial-dvc` for this:
 
-    cd ..  # To one level up from Annif-tutorial
+    pwd    # Check that you start in the Annif-tutorial directory
+    cd ..  # And move one level up from there
     git init Annif-tutorial-dvc
     cd Annif-tutorial-dvc/
 
@@ -92,7 +94,7 @@ Commit changes:
 
 ## Pipeline for Annif projects
 
-A DVC pipeline is defined in an YAML file, by default of the name `dvc.yaml`.
+A DVC pipeline is defined in an YAML file, by default of the name [`dvc.yaml`](https://dvc.org/doc/user-guide/project-structure/dvcyaml-files).
 DVC can intelligently track (hyper)parameter changes in a file, which in case of
 Annif is the projects configuration file. However, the INI/CFG format does not
 work in this, but the format has to be [TOML](https://en.wikipedia.org/wiki/TOML).
@@ -248,7 +250,7 @@ shown using DVC:
 Finally commit the changes with `git`:
 
     git add reports/
-    git commit -a -m "set up, train & evaluate projects"
+    git commit -am "set up, train & evaluate projects"
 
 Congratulations, you've completed Exercise 15, you have a working DVC pipeline
 allowing easy and reproducible way to train and evaluate Annif projects!
