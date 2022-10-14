@@ -88,5 +88,6 @@ There is a [multi-label text classification task in Kaggle](https://www.kaggle.c
 ---
 
 <p align="center">
-<a href="/exercises/10_nn_ensemble_project.md">« Previous</a> |
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
