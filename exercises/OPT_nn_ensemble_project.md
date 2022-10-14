@@ -168,6 +168,6 @@ project and you know how well it works compared to the projects it is based on.
 ---
 
 <p align="center">
-<a href="/exercises/09_hogwarts.md">« Previous</a> |
-<a href="/exercises/12_custom_corpus.md">Next »</a>
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
