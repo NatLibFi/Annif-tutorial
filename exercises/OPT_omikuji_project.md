@@ -121,6 +121,6 @@ project and you know how well it works compared to TFIDF and MLLM.
 ---
 
 <p align="center">
-<a href="/exercises/07_rest_api.md">« Previous</a> |
-<a href="/exercises/09_hogwarts.md">Next »</a>
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
