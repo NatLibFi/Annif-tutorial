@@ -47,6 +47,6 @@ project with different input texts using the web UI.
 ---
 
 <p align="center">
-<a href="/exercises/02_tfidf_project.md">« Previous</a> |
-<a href="/exercises/04_evaluate.md">Next »</a>
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
