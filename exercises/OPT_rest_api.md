@@ -73,6 +73,6 @@ fetched via news agency APIs and for texts OCRed from a photo by a webcam.
 ---
 
 <p align="center">
-<a href="/exercises/06_ensemble_project.md">« Previous</a> |
-<a href="/exercises/08_omikuji_project.md">Next »</a>
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
