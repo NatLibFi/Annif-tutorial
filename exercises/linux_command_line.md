@@ -2,12 +2,12 @@
 During the Tutorial Annif will mainly be controlled from Linux command line.
 This document provides an overview of the functionalities used.
 You can return to the examples in this document to better understand the commands used during the tutorial.
-You get access to the commandline by opening the __Terminal__ application.
+You get access to the command line by opening the __Terminal__ application.
 
 ## Directories
 Files in Linux are organized in a hiearchy of directories.
-You can navigate through the hierarchy from the commandline.
-This is simmilar to clicking through folders in a graphical file explorer (i.e., Windows Explorer or Finder on Mac OS).
+You can navigate through the hierarchy from the command line.
+This is similar to clicking through folders in a graphical file explorer (i.e., Windows Explorer or Finder on Mac OS).
 
 ### The Current Directory
 Commands are usually executed relative to a directory.
@@ -56,9 +56,9 @@ This is done using the redirection operators:
 It is also possible to skip the intermediate file.
 When running `cmd_1 | cmd_2` the output of `cmd_1` is used as input to `cmd_2`.
 
-## Text Editor
+## Text Editor Nano
 There are many different text editors for the commandline.
-If you are new to the commandline `nano` is an easy to use choice.
+If you are new to the command line, `nano` is an easy to use choice.
 
 ### Open a File
 You can give an editor program the file you want to edit as an argument.
