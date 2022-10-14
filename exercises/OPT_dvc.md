@@ -258,5 +258,6 @@ allowing easy and reproducible way to train and evaluate Annif projects!
 ---
 
 <p align="center">
-<a href="/exercises/14_custom_corpus.md">« Previous</a> |
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
