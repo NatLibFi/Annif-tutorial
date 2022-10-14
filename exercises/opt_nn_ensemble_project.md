@@ -1,4 +1,4 @@
-# Exercise 13: Set up and train a neural network ensemble
+# Optional exercise: Set up and train a neural network ensemble
 
 In this lesson, we will set up a trainable dynamic neural network ensemble
 model that intelligently combines results from the projects set up in
