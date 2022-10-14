@@ -9,3 +9,11 @@ When `filter_lang` is combined with the `limit` transform, for performance reaso
 There is also the possibility to shorten long texts. ## `limit` transform truncates an input document to a given length. It takes the number of characters to retain as parameter. 
 
 This transform can be advantageous in case of long documents that have an abstract and/or introduction as it enables the backend to consider only those representative parts of the text. For example for [JYU theses](https://github.com/NatLibFi/Annif-corpora/tree/master/fulltext/jyu-theses) a good value for limit is 5000.
+
+
+
+---
+<p align="center">
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
+</p>
