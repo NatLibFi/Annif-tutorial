@@ -203,6 +203,6 @@ and you know how well it performs compared to the TFIDF project!
 ---
 
 <p align="center">
-<a href="/exercises/04_evaluate.md">« Previous</a> |
-<a href="/exercises/06_ensemble_project.md">Next »</a>
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
