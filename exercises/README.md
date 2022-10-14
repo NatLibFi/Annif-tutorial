@@ -6,6 +6,7 @@
 
 - [slides](/presentations/intro-slides.pdf)
 - [transcript of video](/transcripts/intro.md)
+- [introduction to the Linux command line](/exercises/linux_command_line.md)
 
 The exercises drawn with thick borders and a blue background are **core**, the
 others are optional extras.
