@@ -1,4 +1,4 @@
-# Exercise 15: Data Version Control
+# Optional exercise: Data Version Control
 
 In this exercise we will look at how to use [Data Version Control
 (DVC)](https://dvc.org/) with Annif. DVC is a command-line tool designed to ease the
