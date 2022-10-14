@@ -18,7 +18,7 @@ install; the Extension Pack or SDK modules are not necessary.
 The VirtualBox image is a preconfigured virtual machine containing a minimal
 installation of Xubuntu, Annif, and the files needed for this tutorial.
 
-Download the latest available VirtualBox image from the [annif.org/download
+Download the VirtualBox image `annif-tutorial-vbox.zip` from the [annif.org/download
 folder](https://annif.org/download/).  This is a ~2GB
 zip archive so it can take a while to download.  Find the `VirtualBox VMs`
 folder below your home folder; if it doesn't exist yet (i.e. you've just
