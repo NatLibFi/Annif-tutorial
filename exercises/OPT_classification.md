@@ -201,6 +201,6 @@ classification using two different algorithms and compared their results!
 ---
 
 <p align="center">
-<a href="/exercises/08_omikuji_project.md">« Previous</a> |
-<a href="/exercises/06_ensemble_project.md">Next »</a>
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
