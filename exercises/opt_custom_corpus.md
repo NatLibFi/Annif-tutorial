@@ -1,4 +1,4 @@
-# Exercise 14: Custom corpus
+# Optional exercise: Custom corpus
 
 In this lesson we will look at how to make a corpus to use with Annif.
 
