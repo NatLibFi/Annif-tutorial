@@ -9,10 +9,8 @@ to configure it to expose Annif API and/or Web UI to the outside network.
 Annif is based on [Flask](https://flask.palletsprojects.com/en/2.2.x/),
 which is a WSGI (Web Server Gateway Interface) *application framework*
 well suitable for development an debugging, but in production systems
-the best practise is to use a WSGI *server* in front.
-[Flask documentation](https://flask.palletsprojects.com/en/2.2.x/deploying/) states:
-
-> “Production” means “not development”, which applies whether you’re serving your application publicly to millions of users or privately / locally to a single user. Do not use the development server when deploying to production. It is intended for use only during local development. It is not designed to be particularly secure, stable, or efficient.
+[it is recommended](https://flask.palletsprojects.com/en/2.2.x/deploying/)
+to use a WSGI *server* in front.
 
 [Gunicorn](https://gunicorn.org/) is a good choice for the WSGI server. 
 To start Annif behind Gunicorn run 
@@ -20,12 +18,9 @@ To start Annif behind Gunicorn run
 This exposes port 8000, and the timeout allows 600 s for the Annif models to load. 
 
 In addition to a WSGI server, in front of all it is recommended
-to put a dedicated HTTP server to act as a reverse proxy.
+to put a dedicated *HTTP server* to act as a reverse proxy.
 [Gunicorn documentation](https://docs.gunicorn.org/en/stable/deploy.html)
-advices:
-
-> Although there are many HTTP proxies available, we strongly advise that you use [Nginx](https://nginx.org/)
-
+advices to use [Nginx](https://nginx.org/).
 In addition to increasing performance the proxying HTTP server can serve static files for a web page
 (in the case you don't want to use the default Annif Web UI), perform TLS/SLL handling, redirections etc.
 
