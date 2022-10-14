@@ -177,6 +177,6 @@ you know how to use it to suggest subjects for documents!
 ---
 
 <p align="center">
-<a href="/exercises/01_install_annif.md">« Previous</a> |
-<a href="/exercises/03_web_ui.md">Next »</a>
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
