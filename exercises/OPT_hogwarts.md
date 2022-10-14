@@ -107,6 +107,6 @@ House you belong to and know how to use character n-grams in fastText.
 ---
 
 <p align="center">
-<a href="/exercises/08_omikuji_project.md">« Previous</a> |
-<a href="/exercises/10_nn_ensemble_project.md">Next »</a>
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
