@@ -1,4 +1,4 @@
-# Exercise 9: Set up and train an Omikuji project
+# Optional exercise: Set up and train an Omikuji project
 
 In this lesson, we will set up an Omikuji project.
 [Omikuji](https://github.com/tomtung/omikuji) is an implementation of a family of tree-based machine learning algorithms for extreme multilabel classification. 
