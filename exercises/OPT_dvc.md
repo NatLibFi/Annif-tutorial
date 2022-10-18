@@ -5,10 +5,13 @@ In this exercise we will look at how to use [Data Version Control
 version control of machine learning projects. It works on top of [git](https://git-scm.com/).
 
 ## Installing DVC
-
-DVC is included in the Virtualbox image of this tutorial; to your computer it
+DVC is included in the Virtualbox and Docker images of this tutorial; to your computer it
 can be installed using `pip` or `pipx` from [PyPI](https://pypi.org/project/dvc/).
 See details on [dvc.org](https://dvc.org/doc/install). 
+
+Note that when using the Docker image the `Annif-tutorial-dvc/` is not persisted
+if it is not mounted explicitly to host with `docker run` command and git commits won't work as given,
+but for testing the basic DVC functionality the commits can be omitted.
 
 ## About DVC with Annif
 
