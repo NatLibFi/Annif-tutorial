@@ -9,8 +9,9 @@ USER root
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends curl nano wget make poppler-utils git
 
-RUN mkdir -p /Annif-tutorial /home/annif_user \
-	&& chown -R annif_user:annif_user /Annif-tutorial /home/annif_user
+RUN mkdir -p /Annif-tutorial /Annif-tutorial-dvc /home/annif_user \
+	&& chown -R annif_user:annif_user /Annif-tutorial /home/annif_user \
+	&& chmod a+w /Annif-tutorial-dvc
 
 RUN pip install jupyter dvc --no-cache-dir
 
