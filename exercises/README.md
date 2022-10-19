@@ -112,9 +112,9 @@ The principles of the algorithm types used by Annif models are presented.
 
 #### [Optional]
 Slides on associative algorithms for XMTC (by CSC's [@jmakoske](https://github.com/jmakoske) & [@mvsjober](https://github.com/mvsjober)):
-- [Extreme multi-label text classification (XMTC)](/exercises/HPD-XMTC-2020-11-13.pdf)
-- [Tree-based methods for XMTC](/exercises/HPD-TBM-2020-11-13.pdf)
-- [Neural networks for XMTC](/exercises/HPD-NN-2020-11-13.pdf)
+- [Extreme multi-label text classification (XMTC)](/exercises/slides_external/HPD-XMTC-2020-11-13.pdf)
+- [Tree-based methods for XMTC](/exercises/slides_external/HPD-TBM-2020-11-13.pdf)
+- [Neural networks for XMTC](/exercises/slides_external/HPD-NN-2020-11-13.pdf)
 
 
 ## 3. Web UI
@@ -128,7 +128,7 @@ The web user interface of Annif allows quick testing of projects.
 
 ## [Optional] REST API
 The REST API of Annif can be used for integrating Annif with other systems.
-- [exercise](/exercises/07_rest_api.md)
+- [exercise](/exercises/OPT_rest_api.md)
 
 ## [Optional] Production use
 Here is described aspects to consider when going from testing and development phase to a production-ready deployment of Annif.
@@ -146,7 +146,7 @@ Quantitative testing and comparison of projects against standard metrics can be 
 ## [Optional] Omikuji project
 Omikuji is a tree-based associative machine learning model that often produces very good results, but requires more resources than the TFIDF model.
 This exercise is optional, because training an Omikuji model on the full datasets can take around 40 minutes.
-- [exercise](/exercises/08_omikuji_project.md)
+- [exercise](/exercises/OPT_omikuji_project.md)
 
 ## 5. MLLM project
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
@@ -179,12 +179,12 @@ An ensemble project combines results from the projects set up in previous exerci
 ## [Optional] Neural network ensemble project
 A neural network ensemble can be trained to intelligently combine the results from the base projects.
 
-- [exercise](/exercises/10_nn_ensemble_project.md)
+- [exercise](/exercises/OPT_nn_ensemble_project.md)
 
 ## [Optional] Custom corpus
 A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
 
-- [exercise](/exercises/12_custom_corpus.md)
+- [exercise](/exercises/OPT_custom_corpus.md)
 - [Jupyter Notebook](/data-sets/arxiv/create-arxiv-corpus.ipynb)
 
 ## [Optional] Data Version Control
