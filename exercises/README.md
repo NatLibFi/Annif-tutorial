@@ -1,6 +1,8 @@
 # Annif tutorial outline
+This page is an overview of Annif tutorial contents. There are video-only lectures that are prefixed with :film_strip:.
+Exercises marked with :computer: require some coding, and those with :book: are for reading only.
 
-## Introduction and overview
+## :film_strip: Introduction and overview
 
 [![Video](/img/intro-slides-1.png)](https://www.youtube.com/watch?v=h8s3dDYYNP4&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=1)
 
@@ -57,7 +59,7 @@ flowchart TD
     class nn_ensemble optional
 ```
 
-## 1. Installation
+## :computer: 1. Installation
 
 Select your installation type. If you don’t know what to choose, we suggest using VirtualBox.
 - [exercise](/exercises/01_install_annif.md)
@@ -85,7 +87,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 - [transcript of video](/transcripts/annif-install-linux.md)
 - [Annif README file with installation instructions](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
-## Data sets
+## :film_strip: Data sets
 This tutorial provides two example data sets; one of them should be chosen to be used in the exercises.
 
 [![Video](/img/data-sets-slides-1.png)](https://www.youtube.com/watch?v=S4E3d3o5HWg&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=5)
@@ -93,7 +95,7 @@ This tutorial provides two example data sets; one of them should be chosen to be
 - [slides](/presentations/data-sets-slides.pdf)
 - [transcript of video](/transcripts/data-sets.md)
 
-## 2. TFIDF project
+## :computer: 2. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
 [![Video](/img/tfidf-project-slides-1.png)](https://www.youtube.com/watch?v=FOdB3tJNSRM&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=6)
@@ -102,7 +104,7 @@ The basic functionality of Annif is introduced by setting up and training a proj
 - [transcript of video](/transcripts/tfidf-project.md)
 - [exercise](/exercises/02_tfidf_project.md)
 
-## Algorithms
+## :film_strip: Algorithms
 The principles of the algorithm types used by Annif models are presented.
 
 [![Video](/img/algorithms-slides-1.png)](https://www.youtube.com/watch?v=OvPx8Ipe3BU&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=7)
@@ -110,14 +112,14 @@ The principles of the algorithm types used by Annif models are presented.
 - [slides](/presentations/algorithms-slides.pdf)
 - [transcript of video](/transcripts/algorithms.md)
 
-#### [Optional]
+#### :book: [Optional]
 Slides on associative algorithms for XMTC (by CSC's [@jmakoske](https://github.com/jmakoske) & [@mvsjober](https://github.com/mvsjober)):
 - [Extreme multi-label text classification (XMTC)](/exercises/slides_external/HPD-XMTC-2020-11-13.pdf)
 - [Tree-based methods for XMTC](/exercises/slides_external/HPD-TBM-2020-11-13.pdf)
 - [Neural networks for XMTC](/exercises/slides_external/HPD-NN-2020-11-13.pdf)
 
 
-## 3. Web UI
+## :computer: 3. Web UI
 The web user interface of Annif allows quick testing of projects.
 
 [![Video](/img/web-ui-slides-1.png)](https://www.youtube.com/watch?v=wkDbVnkuV6E&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=8)
@@ -126,15 +128,15 @@ The web user interface of Annif allows quick testing of projects.
 - [transcript of video](/transcripts/web-ui.md)
 - [exercise](/exercises/03_web_ui.md)
 
-## [Optional] REST API
+## :computer: [Optional] REST API
 The REST API of Annif can be used for integrating Annif with other systems.
 - [exercise](/exercises/OPT_rest_api.md)
 
-## [Optional] Production use
+## :book: [Optional] Production use
 Here is described aspects to consider when going from testing and development phase to a production-ready deployment of Annif.
 - [exercise](/exercises/OPT_production_use.md)
 
-## Metrics & evaluation
+## :computer: Metrics & evaluation
 Quantitative testing and comparison of projects against standard metrics can be done using the `eval` command.
 
 [![Video](/img/metrics-and-evaluation-slides-1.png)](https://www.youtube.com/watch?v=zWMXUfLJtn0&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=9)
@@ -143,12 +145,12 @@ Quantitative testing and comparison of projects against standard metrics can be 
 - [transcript of video](/transcripts/metrics-and-evaluation.md)
 - [exercise](/exercises/04_evaluate.md)
 
-## [Optional] Omikuji project
+## :computer: [Optional] Omikuji project
 Omikuji is a tree-based associative machine learning model that often produces very good results, but requires more resources than the TFIDF model.
 This exercise is optional, because training an Omikuji model on the full datasets can take around 40 minutes.
 - [exercise](/exercises/OPT_omikuji_project.md)
 
-## 5. MLLM project
+## :computer: 5. MLLM project
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
  
 
@@ -158,16 +160,16 @@ MLLM is a lexical algorithm for matching terms in document text to terms in a co
 - [transcript of video](/transcripts/mllm.md)
 - [exercise](/exercises/05_mllm_project.md)
 
-## [Optional] Hogwarts Sorting Hat using fastText
+## :computer: [Optional] Hogwarts Sorting Hat using fastText
 Yet another algorithm you can try is fastText, which can also work on the level of individual characters.
 - [exercise](/exercises/OPT_hogwarts.md)
 
-## [Optional] Languages and filtering
+## :book: [Optional] Languages and filtering
 The ability of Annif to process text in a given language depends on the choice of the analyzer, which performs text preprocessing.
 Sometimes it might be useful to filter out parts of the document that are not in the main language of the document.
 - [exercise](/exercises/OPT_langfilter.md)
 
-## 6. Ensemble project
+## :computer: 6. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
 
 [![Video](/img/ensemble-project-slides-1.png)](https://www.youtube.com/watch?v=B-YYJqHiJ3k&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=11)
@@ -176,24 +178,24 @@ An ensemble project combines results from the projects set up in previous exerci
 - [transcript of video](/transcripts/ensemble-project.md)
 - [exercise](/exercises/06_ensemble_project.md)
 
-## [Optional] Neural network ensemble project
+## :computer: [Optional] Neural network ensemble project
 A neural network ensemble can be trained to intelligently combine the results from the base projects.
 
 - [exercise](/exercises/OPT_nn_ensemble_project.md)
 
-## [Optional] Custom corpus
+## :computer: [Optional] Custom corpus
 A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
 
 - [exercise](/exercises/OPT_custom_corpus.md)
 - [Jupyter Notebook](/data-sets/arxiv/create-arxiv-corpus.ipynb)
 
-## [Optional] Data Version Control
+## :computer: [Optional] Data Version Control
 
 Data Version Control (DVC) eases maintaining machine learning projects. In this exercise a DVC pipeline is used to set up, train and evaluate Annif projects.
 
 - [exercise](/exercises/OPT_dvc.md)
 
-## Closing
+## :film_strip: Closing
 Summary of the material in the tutorial and some pointers to further information.
 
 [![Video](/img/closing-slides-1.png)](https://www.youtube.com/watch?v=OrScuYCyHGs&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=12)
