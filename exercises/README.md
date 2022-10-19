@@ -130,6 +130,9 @@ The web user interface of Annif allows quick testing of projects.
 The REST API of Annif can be used for integrating Annif with other systems.
 - [exercise](/exercises/07_rest_api.md)
 
+## [Optional] Production use
+Here is described aspects to consider when going from testing and development phase to a production-ready deployment of Annif.
+- [exercise](/exercises/OPT_production_use.md)
 
 ## Metrics & evaluation
 Quantitative testing and comparison of projects against standard metrics can be done using the `eval` command.
