@@ -103,7 +103,7 @@ Annif is the projects configuration file. However, the INI/CFG format does not
 work in this, but the format has to be [TOML](https://en.wikipedia.org/wiki/TOML).
 
 Create a projects configuration file `projects.toml` containing the configurations 
-for tfidf, MLLM, and NN ensemble projects.
+for tfidf, MLLM, and ensemble projects.
 
 <details><summary>
 Show configurations to use with the <code>nlf-yso</code> data set
@@ -124,15 +124,13 @@ backend = "mllm"
 vocab = "yso"
 analyzer = "snowball(english)"
 
-[yso-nn-ensemble-en]
-name = "YSO neural ensemble project"
-language = "en"
-backend = "nn_ensemble"
-vocab = "yso"
-sources = "yso-tfidf-en,yso-mllm-en:2"
-nodes = "100"
-dropout_rate = "0.2"
-epochs = "4"
+[yso-ensemble-en]
+name="YSO ensemble project"
+language="en"
+backend="ensemble"
+vocab="yso"
+sources="yso-tfidf-en,yso-mllm-en:2"
+
 ```
 </details>
 
@@ -155,15 +153,12 @@ backend = "mllm"
 vocab = "stw"
 analyzer = "snowball(english)"
 
-[stw-nn-ensemble-en]
-name = "STW neural ensemble project"
+[stw-ensemble-en]
+name = "STW ensemble project"
 language = "en"
-backend = "nn_ensemble"
+backend = "ensemble"
 vocab = "stw"
 sources = "stw-tfidf-en,stw-mllm-en:2"
-nodes = "100"
-dropout_rate = "0.2"
-epochs = "4"
 ```
 </details>
 
@@ -205,25 +200,17 @@ stages:
       - ${vocab}-mllm-en
     outs:
     - data/projects/${vocab}-mllm-en
-  # Train nn-ensemble project
-  train-nn-ensemble:
-    cmd: annif train ${vocab}-nn-ensemble-en corpora/docs/train -d ${docs}
-    deps:
-    - corpora/docs/train
-    - data/vocabs/${vocab}
-    - data/projects/${vocab}-mllm-en
-    - data/projects/${vocab}-tfidf-en
-    params:
-    - projects.toml:
-      - ${vocab}-nn-ensemble-en
+  # Dummy "train" ensemble, i.e. create the datadir needed as dependency in eval
+  dummy-train-ensemble:
+    cmd: mkdir -p data/projects/${vocab}-ensemble-en
     outs:
-    - data/projects/${vocab}-nn-ensemble-en
+    - data/projects/${vocab}-ensemble-en
   # Evaluate projects in a loop
   eval-en:
     foreach:
     - ${vocab}-mllm-en
     - ${vocab}-tfidf-en
-    - ${vocab}-nn-ensemble-en
+    - ${vocab}-ensemble-en
     do:
       cmd:
       - annif eval ${item} -m F1@5 -m NDCG --metrics-file reports/${item}.json corpora/docs/test/ -d ${docs}
