@@ -10,7 +10,29 @@ There is also the possibility to shorten long texts. ## `limit` transform trunca
 
 This transform can be advantageous in case of long documents that have an abstract and/or introduction as it enables the backend to consider only those representative parts of the text. For example for [JYU theses](https://github.com/NatLibFi/Annif-corpora/tree/master/fulltext/jyu-theses) a good value for limit is 5000.
 
+## Analyzers
+Annif itself is language independent, save for the language support offered by the tools it employs. The analyzers Annif uses to pre-process, tokenize and normalize text are usually language dependendent. You can learn more about the analyzers at the [Annif wiki](https://github.com/NatLibFi/Annif/wiki/Analyzers).  
+You can try different analyzers for the tfidf project by making chances in the `projects.cfg` file:
 
+If you use the `yso-nlf` data set, use the following contents:
+
+    [yso-tfidf-en-2]
+    name=YSO TFIDF project
+    language=en
+    backend=tfidf
+    vocab=yso-en
+    analyzer=simplemma(en)
+
+If you use the `stw-zbw` data set, use the following contents:
+
+    [stw-tfidf-en-2]
+    name=STW TFIDF project
+    language=en
+    backend=tfidf
+    vocab=stw-en
+    analyzer=simplemma(en)
+    
+Did the result change?
 
 ---
 <p align="center">
