@@ -229,8 +229,8 @@ Now the pipeline is set up, and can be executed with one command:
 
     dvc repro
 
-Running the pipeline as such takes only 5-10 min, because the `docs` variable limits the number of documents used in stages to 100.
-When the `docs` is increased e.g. to 10000000 to cover all available (short-text) documents, reproducing the pipeline takes 30-50 min.
+Running the pipeline as such takes only about 10 min, because the `docs` variable limits the number of documents used in stages to 100.
+When the `docs` is increased e.g. to 10000000 to cover all available (short-text) documents, reproducing the pipeline takes 40-50 min.
 
 When finished, the evalution reports can be
 shown using DVC:
