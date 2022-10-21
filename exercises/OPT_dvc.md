@@ -203,6 +203,11 @@ stages:
   # Dummy "train" ensemble, i.e. create the datadir needed as dependency in eval
   dummy-train-ensemble:
     cmd: mkdir -p data/projects/${vocab}-ensemble-en
+    deps:
+    - corpora/docs/train
+    - data/vocabs/${vocab}
+    - data/projects/${vocab}-tfidf-en
+    - data/projects/${vocab}-mllm-en
     outs:
     - data/projects/${vocab}-ensemble-en
   # Evaluate projects in a loop
