@@ -200,6 +200,32 @@ MLLM projects. Which one works best?
 Congratulations, you've completed Exercise 6 for the `stw-zbw` data set! You have a working ensemble
 project and you know how well it works compared to the projects it is based on.
 
+## Extra determining weights of ensemble source
+
+<details>
+<summary>Learn how to automatically test different weights for ensemble sources.</summary>
+
+As seen in the main exercise, an ensemble can combine the strengths of different backends and reduce the effects of their shortcomings.
+However, you still have to select the weights of the sources constituting an ensemble.
+As strength and weaknesses of individual algorithms may have varying effect on distinct documents it is hard to determine the weights manually.
+
+With some time on you hand, Annif can assist you in automatically trying out different weight combinations.
+This is done using [Optuna](https://optuna.org/), a software library for hyperparameter optimization.
+The problem the library tries to solve is called hyper parameter optimization.
+A hyperparamater is considered a parameter that is not learned by the model but set externally.
+As the weights of the ensemble source are not learned, it is possible to use software for hyperparameter optimization to find a good set of weights.
+Generally speaking hyperparameter optimization initially evaluates a few random parameter combinations and then tries to guess good parameters from these starting points.
+For automated subject indexing the evaluation of a parameter combination is done by computing evaluation metrics on a validation set.
+
+If you use the `yso-nlf` data set, hyperparameter optimization can be run with the following command:
+
+    annif hyperopt yso-ensemble-en data-sets/yso-nlf/docs/validate/
+
+If you use the `stw-zbw` data set, hyperparameter optimization can be run with the following command:
+
+    annif hyperopt stw-ensemble-en data-sets/stw-zbw/docs/validate
+
+</details>
 ---
 
 <p align="center">
