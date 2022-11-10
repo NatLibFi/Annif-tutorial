@@ -66,7 +66,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 
 ### 1.1. VirtualBox install
 
-[![Video](/img/annif-install-virtualbox-slides-1.png)](https://www.youtube.com/watch?v=z_Fq-87QbyQ&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=2)
+[![Video](/img/annif-install-virtualbox-slides-1.png)](https://youtu.be/I7oApwl-NFk)
 
 - [slides](/presentations/annif-install-virtualbox-slides.pdf)
 - [transcript of video](/transcripts/annif-install-virtualbox.md)
@@ -98,7 +98,7 @@ This tutorial provides two example data sets; one of them should be chosen to be
 ## :computer: 2. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
-[![Video](/img/tfidf-project-slides-1.png)](https://www.youtube.com/watch?v=FOdB3tJNSRM&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=6)
+[![Video](/img/tfidf-project-slides-1.png)](https://youtu.be/Hwl6PUoG_hc)
 
 - [slides](/presentations/tfidf-project-slides.pdf)
 - [transcript of video](/transcripts/tfidf-project.md)
@@ -154,7 +154,7 @@ This exercise is optional, because training an Omikuji model on the full dataset
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
  
 
-[![Video](/img/mllm-slides-1.png)](https://www.youtube.com/watch?v=kNCW2XF7_ek&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=10)
+[![Video](/img/mllm-slides-1.png)](https://youtu.be/4cblDQ_HA3w)
 
 - [slides](/presentations/mllm-slides.pdf)
 - [transcript of video](/transcripts/mllm.md)
