@@ -3,12 +3,14 @@ Welcome to this Annif tutorial video. In this video, we will set up and train a 
 Since this is our first Annif project, let’s give a brief introduction to Annif projects.
 A project is used to tell Annif which kind of algorithm, vocabulary, language and other settings to use. 
 
-Projects are defined in a file usually called projects.cfg and located in the current directory where Annif is executed. This default file name and location can be overridden using an environment variable or a command line option if necessary.
+Projects are defined in a file usually called projects.cfg - or projects.toml - and located in the current directory where Annif is executed. This default file name and location can be overridden using an environment variable or a command line option if necessary.
 
-In the projects.cfg file a project is identified by a project id, which is typically a short string such as yso-tfidf-en. 
-Annif has a list-projects command to show the projects that have been configured.
+A project is identified by a project id, which is typically a short string. 
+Annif also has a list-projects command to show the configured project..
+
 
 In this exercise, we will create a TFIDF project, which is the simplest type of project in Annif. It’s like the “Hello, World” of automated subject indexing algorithms: it’s quick to set up, train and test. You get to see results quickly, but it’s not the final say when it comes to quality.
+
 
 Now lets see how to define a TFIDF project in the projects.cfg file. On the left there is a configuration suitable for the dataset of the National Library of Finland, and on the right for the dataset of ZBW.
 
@@ -16,11 +18,13 @@ On both configurations the project identifier is at the first line in square bra
 
 The TFIDF algorithm, like most backends, also needs the analyzer setting. The analyzer takes care of the preprocessing, tokenization, and normalization of the input text. We will use the Snowball analyzer for English here, as it helps to normalize unimportant distinctions such as singular vs. plural forms.
 
+The projects.toml file looks the same but requires all string variables to be quoted. In this video we will use the previously mentioned projects.cfg file.
+
 Here are the steps for setting up a new TFIDF project.
 
-The first step is to add the project configuration to the projects.cfg file.
+The first step is to add the project configuration to a file, here projects.cfg.
 
-The second step is to load the vocabulary, which is done using the annif load-vocab command. It takes the vocabulary ID as the first argument, and a path to the vocabulary as the second argument. The vocabulary can be in a TSV file, that is in a simple tab-separated-values format, or in a SKOS/RDF file. However, if the same vocabulary is used in multiple projects, it needs to be loaded only once, as the vocabulary is shared with all the projects that use the same vocabulary identifier.
+The second step is to load the vocabulary, which is done using the annif load-voacab command. The vocabulary can be in a TSV file, that is in a simple tab-separated-values format, or in a SKOS/RDF file. 
 
 The third step is training the project. The command is annif train, which takes the project ID as the first argument, and a path to the training data as the second argument. The training data or training documents can be collected to one TSV file, which can be compressed, or to a directory containing several documents. More information on the formats can be found from the Annif wiki pages. Note that the training step can take a long time, up to several hours in some cases.
 
@@ -63,10 +67,7 @@ The model is now trained with the full training data set. Instead of testing the
 
 I will ask Annif for subject suggestions to the first test document that is in the ZBW data-set:
 annif suggest stw-tfidf-en <data-sets/stw-zbw/docs/test/10008797547.txt
-The suggestions can be compared to the subjects that have been assigned by a human indexer:
 
-cat data-sets/stw-zbw/docs/test/10008797547.tsv
+We will see how to explore the Annif results in more depth in some of the following exercises.
 
-The Annif suggestions were similar, but not identical to the manually assigned ones. We will see how to explore the Annif results in more depth in some of the following exercises.
-
-You have now seen how to create and use a simple TFIDF project. Thank you for watching!
+You have now seen how to create and use a simple TFIDF project. Thank you for watching.
