@@ -7,7 +7,8 @@ Two example [data sets](data-sets) are provided to be used in the exercises.
 The tutorial was initially organized at
 [SWIB19](http://swib.org/swib19/programme.html) 
 and later updated for 
-[DCMI Virtual 2020](http://dublincore.org/conferences/2020/),
+[DCMI Virtual 2020](http://dublincore.org/conferences/2020/)
+and [SWIB22](https://swib.org/swib22/programme.html),
 but the materials are freely available for self-study.
 
 ## Prerequisites
