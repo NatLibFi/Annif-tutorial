@@ -66,7 +66,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 
 ### 1.1. VirtualBox install
 
-[![Video](/img/annif-install-virtualbox-slides-1.png)](https://youtu.be/I7oApwl-NFk)
+[![Video](/img/annif-install-virtualbox-slides-1.png)](https://www.youtube.com/playlist?list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=2)
 
 - [slides](/presentations/annif-install-virtualbox-slides.pdf)
 - [transcript of video](/transcripts/annif-install-virtualbox.md)
@@ -90,7 +90,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 ## :film_strip: Data sets
 This tutorial provides two example data sets; one of them should be chosen to be used in the exercises.
 
-[![Video](/img/data-sets-slides-1.png)](https://www.youtube.com/watch?v=S4E3d3o5HWg&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=5)
+[![Video](/img/data-sets-slides-1.png)]()
 
 - [slides](/presentations/data-sets-slides.pdf)
 - [transcript of video](/transcripts/data-sets.md)
@@ -98,7 +98,7 @@ This tutorial provides two example data sets; one of them should be chosen to be
 ## :computer: 2. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
-[![Video](/img/tfidf-project-slides-1.png)](https://youtu.be/Hwl6PUoG_hc)
+[![Video](/img/tfidf-project-slides-1.png)](https://www.youtube.com/watch?v=S4E3d3o5HWg&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=6)
 
 - [slides](/presentations/tfidf-project-slides.pdf)
 - [transcript of video](/transcripts/tfidf-project.md)
