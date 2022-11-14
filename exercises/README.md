@@ -4,7 +4,7 @@ Exercises marked with :computer: require some coding, and those with :book: are 
 
 ## :film_strip: Introduction and overview
 
-[![Video](/img/intro-slides-1.png)](https://www.youtube.com/watch?v=h8s3dDYYNP4&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=1)
+[![Video](/img/intro-slides-1.png)](https://youtu.be/d9_OUUZhjTM)
 
 - [slides](/presentations/intro-slides.pdf)
 - [transcript of video](/transcripts/intro.md)
@@ -66,7 +66,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 
 ### 1.1. VirtualBox install
 
-[![Video](/img/annif-install-virtualbox-slides-1.png)](https://www.youtube.com/playlist?list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=2)
+[![Video](/img/annif-install-virtualbox-slides-1.png)](https://youtu.be/z_Fq-87QbyQ)
 
 - [slides](/presentations/annif-install-virtualbox-slides.pdf)
 - [transcript of video](/transcripts/annif-install-virtualbox.md)
@@ -74,14 +74,14 @@ Select your installation type. If you don’t know what to choose, we suggest us
 
 ### 1.2. Docker install
 
-[![Video](/img/annif-install-docker-slides-1.png)](https://www.youtube.com/watch?v=j_VeC_NeVcw&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=3)
+[![Video](/img/annif-install-docker-slides-1.png)](https://youtu.be/j_VeC_NeVcw)
 
 - [slides](/presentations/annif-install-docker-slides.pdf)
 - [transcript of video](/transcripts/annif-install-docker.md)
 
 ### 1.3. Linux native install
 
-[![Video](/img/annif-install-linux-slides-1.png)](https://www.youtube.com/watch?v=5a7CJ7JF_Qk&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=4)
+[![Video](/img/annif-install-linux-slides-1.png)](https://youtu.be/I7oApwl-NFk)
 
 - [slides](/presentations/annif-install-linux-slides.pdf)
 - [transcript of video](/transcripts/annif-install-linux.md)
@@ -98,7 +98,7 @@ This tutorial provides two example data sets; one of them should be chosen to be
 ## :computer: 2. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
-[![Video](/img/tfidf-project-slides-1.png)](https://www.youtube.com/watch?v=S4E3d3o5HWg&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=6)
+[![Video](/img/tfidf-project-slides-1.png)](https://youtu.be/Hwl6PUoG_hc)
 
 - [slides](/presentations/tfidf-project-slides.pdf)
 - [transcript of video](/transcripts/tfidf-project.md)
@@ -107,7 +107,7 @@ The basic functionality of Annif is introduced by setting up and training a proj
 ## :film_strip: Algorithms
 The principles of the algorithm types used by Annif models are presented.
 
-[![Video](/img/algorithms-slides-1.png)](https://www.youtube.com/watch?v=OvPx8Ipe3BU&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=7)
+[![Video](/img/algorithms-slides-1.png)](https://youtu.be/OvPx8Ipe3BU)
 
 - [slides](/presentations/algorithms-slides.pdf)
 - [transcript of video](/transcripts/algorithms.md)
@@ -122,7 +122,7 @@ Slides on associative algorithms for XMTC (by CSC's [@jmakoske](https://github.c
 ## :computer: 3. Web UI
 The web user interface of Annif allows quick testing of projects.
 
-[![Video](/img/web-ui-slides-1.png)](https://www.youtube.com/watch?v=wkDbVnkuV6E&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=8)
+[![Video](/img/web-ui-slides-1.png)](https://youtu.be/wkDbVnkuV6E)
 
 - [slides](/presentations/web-ui-slides.pdf)
 - [transcript of video](/transcripts/web-ui.md)
@@ -139,7 +139,7 @@ Here is described aspects to consider when going from testing and development ph
 ## :computer: Metrics & evaluation
 Quantitative testing and comparison of projects against standard metrics can be done using the `eval` command.
 
-[![Video](/img/metrics-and-evaluation-slides-1.png)](https://www.youtube.com/watch?v=zWMXUfLJtn0&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=9)
+[![Video](/img/metrics-and-evaluation-slides-1.png)](https://youtu.be/zWMXUfLJtn0)
 
 - [slides](/presentations/metrics-and-evaluation-slides.pdf)
 - [transcript of video](/transcripts/metrics-and-evaluation.md)
@@ -172,7 +172,7 @@ Sometimes it might be useful to filter out parts of the document that are not in
 ## :computer: 6. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
 
-[![Video](/img/ensemble-project-slides-1.png)](https://www.youtube.com/watch?v=B-YYJqHiJ3k&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=11)
+[![Video](/img/ensemble-project-slides-1.png)](https://youtu.be/0hwB3PwAcUM)
 
 - [slides](/presentations/ensemble-project-slides.pdf)
 - [transcript of video](/transcripts/ensemble-project.md)
@@ -198,7 +198,7 @@ Data Version Control (DVC) eases maintaining machine learning projects. In this 
 ## :film_strip: Closing
 Summary of the material in the tutorial and some pointers to further information.
 
-[![Video](/img/closing-slides-1.png)](https://www.youtube.com/watch?v=OrScuYCyHGs&list=PLa9kvrI3VLf5K-bjvVDaIWMi5CACGjPUM&index=12)
+[![Video](/img/closing-slides-1.png)](https://youtu.be/LEl1fAkLUzA)
 
 - [slides](/presentations/closing-slides.pdf)
 - [transcript of video](/transcripts/closing.md)
