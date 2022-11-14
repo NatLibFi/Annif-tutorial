@@ -20,7 +20,7 @@ Now I can train the project using fulltext documents from the train set. Let’s
 annif train stw-mllm-en data-sets/stw-zbw/docs/validate
 
 Training should take a few minutes. -- Now it’s done.
-Let’s test the project with an example sentence. Again I’m opening the exercise page, and I copy the example command:
+Let’s test the project with an example sentence. Again I’m opening the exercise page, and I select and copy the example command:
 
 echo "frequently occurring or otherwise salient terms in the document are matched with terms in the vocabulary" | annif suggest stw-mllm-en
 
@@ -32,6 +32,8 @@ annif suggest stw-mllm-en <data-sets/stw-zbw/docs/test/10008797547.txt
 
 This time there were a lot more suggestions because it is a long document, so there are many more opportunities for matching subjects from the vocabulary.
 
+
+
 Finally, let’s evaluate the MLLM project on a test collection of documents. Once more I open the exercise page and copy the command:
 
 annif eval stw-mllm-en data-sets/stw-zbw/docs/test/
@@ -39,6 +41,8 @@ annif eval stw-mllm-en data-sets/stw-zbw/docs/test/
 Evaluation should take around 3-4 minutes for the ZBW data set and around 10 minutes for the NLF data set.
 
 Now it’s complete. We can note the F1@5 and NDCG scores and compare them to the scores of the TFIDF project. The scores should be much better for both data sets!
+
+Note that there is also an EXTRA section in the MLLM exercise. This section explains how to create a learning curve, which can be used to investigate how many training documents would be needed in order to get the best possible results. If you have the time, you can follow along the instructions to create your own learning curve. The same can be done for any type of Annif project, not just for MLLM.
 
 Now we have finished setting up, training and evaluating an MLLM project. Thank you for watching!
 

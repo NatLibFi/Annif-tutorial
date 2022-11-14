@@ -16,7 +16,7 @@ If you use the `yso-nlf` data set, use the following snippet:
     name=YSO MLLM project
     language=en
     backend=mllm
-    vocab=yso-en
+    vocab=yso
     analyzer=snowball(english)
 
 If you use the `stw-zbw` data set, use the following snippet:
@@ -25,7 +25,7 @@ If you use the `stw-zbw` data set, use the following snippet:
     name=STW MLLM project
     language=en
     backend=mllm
-    vocab=stw-en
+    vocab=stw
     analyzer=snowball(english)
 
 ## 2. Train the project
@@ -92,6 +92,9 @@ scores and compare them with the scores that the TFIDF project got.
 
 ## EXTRA: Experiment with different amounts of training data
 
+<details>
+<summary>See details of extra section</summary>
+
 In the training step above, we limited the number of documents to 400, but
 there are many more documents available in the corpus. Try retraining with a 
 different number of documents - smaller or larger - and see how it affects the 
@@ -107,6 +110,91 @@ score. Typically, the curve will eventually reach a plateau, at which point any
 additional training data will not substantially improve the results. This kind of
 analysis will help inform decisions about how much training data to collect and use.
 
+### Automating the experiment
+
+To create a learning curve, you need to perform many training and evaluation
+iterations. Doing this manually can be a chore, but with a bit of scripting, we can
+automate it. Here is a little `bash` shell script that will step through the
+different amounts of train documents and then train and evaluate the resulting
+models:
+
+```bash
+#!/bin/bash
+
+# print a usage message if parameters are missing
+if (( $# != 6 )); then
+        print "usage: $0 <project-id> <trainset> <testset> <minlimit> <maxlimit> <step>"
+        exit 1
+fi
+
+project=$1
+trainset=$2
+testset=$3
+minlimit=$4
+maxlimit=$5
+step=$6
+
+for (( limit=$minlimit; limit<=$maxlimit; limit+=$step )); do
+    echo "limit: $limit"
+    time annif train $project --docs-limit $limit $trainset
+    time annif eval $project $testset
+    echo
+done
+```
+
+To use this script, save it as `train-eval-limits.sh` and make sure it is 
+executable (run the command `chmod +x train-eval-limits.sh`). Then you can it
+with a command like this for the `yso-nlf` data set:
+
+    ./train-eval-limits.sh yso-mllm-en data-sets/yso-nlf/docs/train/ data-sets/yso-nlf/docs/test/ 200 1000 200 | tee train-eval-limits.out
+
+and similarly for the `stw-zbw` data set:
+
+    ./train-eval-limits.sh stw-mllm-en data-sets/stw-zbw/docs/train/ data-sets/stw-zbw/docs/test/ 200 1000 200 | tee train-eval-limits.out
+
+The commands above provide the script with all the six(!) parameters it needs: 
+the project ID, the training set path, the test set path, the minimum and maximum 
+limits, and the step size. With the above parameters, it will perform five train/eval 
+cycles with the `docs-limit` set to 200, 400, 600, 800 and 1000 respectively. The 
+output of the script, including the evaluation results, will be stored into the file
+`train-eval-limits.out` in addition to being printed on the console in real time.
+Running this script can take a long time (an hour or two), depending on the number
+of iterations, the limit values and the size of the test set.
+
+To analyze the results, you can use the `grep` command to extract just the numbers you
+need from the output file. To get the sequence of limit values, use a command like
+this to extract them from the output:
+
+    grep limit: train-eval-limits.out | cut -d ' ' -f 2
+
+To extract just the F1@5 scores corresponding to the limit values, use a command
+like this:
+
+    grep F1@5 train-eval-limits.out | cut -c32-
+
+Paste both columns side by side into a spreadsheet table, like this:
+
+| limit | F1@5                |
+| ----- | ------------------- |
+| 200   | 0.3170204745341874  |
+| 400   | 0.34323561922389234 |
+| 600   | 0.35361283894005663 |
+| 800   | 0.360568593082306   |
+| 1000  | 0.3660707186808946  |
+
+Then plot the numbers as a line graph so that you have limit values on the X axis
+and corresponding F1@5 scores on the Y axis, like this:
+
+![learning curve plot](/img/learning-curve.png)
+
+This plot shows that the F1@5 score achieved by the MLLM algorithm is increasing 
+all the way up to 1000 training documents, although the increase in scores is starting
+to peter out. For an optimal result, more than 1000 documents would be needed.
+
+The chart above was created using the XY (Scatter) chart type in LibreOffice Calc.
+
+</details>                                         
+                                         
 ---
 
 Congratulations, you've completed Exercise 5, you have a working MLLM project
@@ -115,6 +203,6 @@ and you know how well it performs compared to the TFIDF project!
 ---
 
 <p align="center">
-<a href="/exercises/04_evaluate.md">« Previous</a> |
-<a href="/exercises/06_ensemble_project.md">Next »</a>
+|
+<a href="/exercises/README.md">Back to table of contents »</a>
 </p>
