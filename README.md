@@ -39,26 +39,26 @@ From time to time, we organize (online) help sessions for people working on the 
 * Annif workshop/tutorial at SWIB22 (from 28 Nov to 2 Dec 2022, online):
   * [https://swib.org/swib22/](https://swib.org/swib22/)
 
-## Past online help sessions
+## Past help sessions
 * [Annif bootcamp at ELAG](https://elag2022.lnb.lv/programme/bootcamps/#Osma_Suominen)
   * ELAG (European Library Automation Group) Conference is in Riga, Latvia (June 8-10 2022). More info: [https://elag2022.lnb.lv/](https://elag2022.lnb.lv/)
-* [Les Futurs Fantastiques conference workshop/tutorial](https://bnf-fr.zoom.us/meeting/register/tJ0vd-qsqTgvGdIOkl2aw4aJl3bOZ--x6zUm)
+* [Les Futurs Fantastiques conference online workshop/tutorial](https://bnf-fr.zoom.us/meeting/register/tJ0vd-qsqTgvGdIOkl2aw4aJl3bOZ--x6zUm)
   * December 7 2021
-* [SWIB21 conference workshop/tutorial](https://swib.org/swib21/programme.html#abs104)
+* [SWIB21 conference online workshop/tutorial](https://swib.org/swib21/programme.html#abs104)
   * November 30 2021 
 * [Baltic Summer School of Digital Humanities 2021: "Digital Methods in Humanities and Social Sciences"](https://www.nlib.ee/et/digital-humanities-tallinn-2021)
-  * Annif workshop August 25 2021     
+  * Annif online workshop August 25 2021     
 * [Metadata workshop by Humlab (Umeå University)](https://www.umu.se/en/events/metadata-workshop_10407034/)
-  * June 9 2021 
-* [Annif tutorial / workshop (NB! Event in Finnish)](https://www.kiwi.fi/x/FwW5D)
+  * June 9 2021 (online)
+* [Annif online tutorial / workshop (NB! Event in Finnish)](https://www.kiwi.fi/x/FwW5D)
   * May 19 2021 
-* [SWIB20 conference workshop/tutorial](https://swib.org/swib20/programme.html#abs05)
+* [SWIB20 online conference workshop/tutorial](https://swib.org/swib20/programme.html#abs05)
   * Tuesday November 24 2020 
 * [DCMI Virtual post-conference tutorial](https://www.dublincore.org/news/2020/09-11-tutorial-on-automated-subject-indexing-with-annif/)
   * Friday October 9 2020 
   * Wednesday October 21 2020
 
-The sessions were held remotely. The number of participants was capped for practical reasons.
+
 
 ## Authors
 
