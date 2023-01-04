@@ -36,10 +36,11 @@ full text documents for either or both data sets. The downloads are automated us
 ## Upcoming help sessions
 
 From time to time, we organize (online) help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Current schedule:
-* Annif workshop/tutorial at SWIB22 (from 28 Nov to 2 Dec 2022, online):
-  * [https://swib.org/swib22/](https://swib.org/swib22/)
+ * (Unknown)
 
 ## Past help sessions
+* [SWIB22 conference online workshop/tutorial](https://swib.org/swib22/)
+  * November 30 2022
 * [Annif bootcamp at ELAG](https://elag2022.lnb.lv/programme/bootcamps/#Osma_Suominen)
   * ELAG (European Library Automation Group) Conference is in Riga, Latvia (June 8-10 2022). More info: [https://elag2022.lnb.lv/](https://elag2022.lnb.lv/)
 * [Les Futurs Fantastiques conference online workshop/tutorial](https://bnf-fr.zoom.us/meeting/register/tJ0vd-qsqTgvGdIOkl2aw4aJl3bOZ--x6zUm)
