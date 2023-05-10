@@ -183,6 +183,11 @@ A neural network ensemble can be trained to intelligently combine the results fr
 
 - [exercise](/exercises/OPT_nn_ensemble_project.md)
 
+## :computer: [Optional] Automated classification
+Annif can also be used for multiclass classification, where the goal is to choose the correct class among mutually exclusive classes. This exercise demonstrates automated classification using the well known "Twenty Newsgroups" data set.
+
+- [exercise](/exercises/OPT_classification.md)
+
 ## :computer: [Optional] Custom corpus
 A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
 
