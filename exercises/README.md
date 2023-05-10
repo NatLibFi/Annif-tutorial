@@ -150,6 +150,11 @@ Omikuji is a tree-based associative machine learning model that often produces v
 This exercise is optional, because training an Omikuji model on the full datasets can take around 40 minutes.
 - [exercise](/exercises/OPT_omikuji_project.md)
 
+## :computer: [Optional] Automated classification
+Annif can also be used for multiclass classification, where the goal is to choose the correct class among mutually exclusive classes. This exercise demonstrates automated classification using the well known "Twenty Newsgroups" data set.
+
+- [exercise](/exercises/OPT_classification.md)
+
 ## :computer: 5. MLLM project
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
  
@@ -182,11 +187,6 @@ An ensemble project combines results from the projects set up in previous exerci
 A neural network ensemble can be trained to intelligently combine the results from the base projects.
 
 - [exercise](/exercises/OPT_nn_ensemble_project.md)
-
-## :computer: [Optional] Automated classification
-Annif can also be used for multiclass classification, where the goal is to choose the correct class among mutually exclusive classes. This exercise demonstrates automated classification using the well known "Twenty Newsgroups" data set.
-
-- [exercise](/exercises/OPT_classification.md)
 
 ## :computer: [Optional] Custom corpus
 A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
