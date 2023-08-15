@@ -95,7 +95,7 @@ This tutorial provides two example data sets; one of them should be chosen to be
 - [slides](/presentations/data-sets-slides.pdf)
 - [transcript of video](/transcripts/data-sets.md)
 
-## :computer: 2. TFIDF project
+## 💻 2. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
 [![Video](/img/tfidf-project-slides-1.png)](https://youtu.be/Hwl6PUoG_hc)
@@ -128,7 +128,7 @@ The web user interface of Annif allows quick testing of projects.
 - [transcript of video](/transcripts/web-ui.md)
 - [exercise](/exercises/03_web_ui.md)
 
-## :computer: [Optional] REST API
+## 💻 [Optional] REST API
 The REST API of Annif can be used for integrating Annif with other systems.
 - [exercise](/exercises/OPT_rest_api.md)
 
@@ -145,7 +145,7 @@ Quantitative testing and comparison of projects against standard metrics can be 
 - [transcript of video](/transcripts/metrics-and-evaluation.md)
 - [exercise](/exercises/04_evaluate.md)
 
-## :computer: [Optional] Omikuji project
+## 💻 [Optional] Omikuji project
 Omikuji is a tree-based associative machine learning model that often produces very good results, but requires more resources than the TFIDF model.
 This exercise is optional, because training an Omikuji model on the full datasets can take around 40 minutes.
 - [exercise](/exercises/OPT_omikuji_project.md)
@@ -155,7 +155,7 @@ Annif can also be used for multiclass classification, where the goal is to choos
 
 - [exercise](/exercises/OPT_classification.md)
 
-## :computer: 5. MLLM project
+## 💻 5. MLLM project
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
  
 
@@ -188,7 +188,7 @@ A neural network ensemble can be trained to intelligently combine the results fr
 
 - [exercise](/exercises/OPT_nn_ensemble_project.md)
 
-## :computer: [Optional] Custom corpus
+## 💻 [Optional] Custom corpus
 A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
 
 - [exercise](/exercises/OPT_custom_corpus.md)
