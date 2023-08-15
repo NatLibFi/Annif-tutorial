@@ -104,7 +104,7 @@ The basic functionality of Annif is introduced by setting up and training a proj
 - [transcript of video](/transcripts/tfidf-project.md)
 - [exercise](/exercises/02_tfidf_project.md)
 
-## :film_strip: Algorithms
+## 🎞️ Algorithms
 The principles of the algorithm types used by Annif models are presented.
 
 [![Video](/img/algorithms-slides-1.png)](https://youtu.be/OvPx8Ipe3BU)
