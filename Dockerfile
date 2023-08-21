@@ -1,7 +1,7 @@
-FROM quay.io/natlibfi/annif:0.59
+FROM quay.io/natlibfi/annif:1.0.0
 # Docker image to use in Annif tutorial, https://github.com/NatLibFi/Annif-tutorial.
 # Build with:
-#     docker build -t quay.io/natlibfi/annif:0.59-tutorial -t quay.io/natlibfi/annif:tutorial .
+#     docker build -t quay.io/natlibfi/annif:1.0-tutorial -t quay.io/natlibfi/annif:tutorial .
 #
 
 USER root
@@ -13,10 +13,13 @@ RUN mkdir -p /Annif-tutorial /Annif-tutorial-dvc /home/annif_user \
 	&& chown -R annif_user:annif_user /Annif-tutorial /home/annif_user \
 	&& chmod a+w /Annif-tutorial-dvc
 
-RUN pip install jupyter dvc --no-cache-dir
+WORKDIR /Annif
+RUN poetry config virtualenvs.create false
+RUN poetry add jupyter dvc --no-cache
 
 USER annif_user
 ENV JUPYTER_DATA_DIR=/tmp
+ENV JUPYTER_CONFIG_DIR=/tmp
 
 WORKDIR /Annif-tutorial
 
