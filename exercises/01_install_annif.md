@@ -118,6 +118,27 @@ window, check that Annif runs using the command:
 
 If you get a usage message, congratulations - you're up and running!
 
+### Shell completions
+You can also check that the tab-key completion works (in the case of local install the support for it first needs to be enabled, [see instructions](https://github.com/NatLibFi/Annif#shell-compeletions)).
+
+You can complete e.g. the `list-*` commands by entering some characters from the beginning of the command and pressing tab, which completes the `list-` part:
+
+    annif li<TAB>
+    annif list-
+
+Then, by pressing tab twice, you get suggestions for possible endings:
+
+    annif list-<TAB><TAB>
+    list-projects  list-vocabs
+    annif list-
+
+Then continuing the command with just `p` character (or by `v` for vocabs) and pressing tab, you get the full command:
+
+    annif list-p<TAB>
+    annif list-projects
+
+The completion works for commands, options and paths as well as for project and vocabulary ids.
+
 ---
 
 <p align="center">
