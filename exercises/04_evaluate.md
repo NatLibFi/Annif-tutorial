@@ -39,6 +39,9 @@ documentation](https://scikit-learn.org/stable/modules/model_evaluation.html#ave
 
 ## EXTRA: Parallel evaluation
 
+<details>
+<summary>See details on how to perform parallel evaluation on multiple CPUs</summary>
+
 Evaluation on a large number of documents can take a long time. You can speed this
 up by making use of parallel processing, especially if your computer has many
 [CPU cores](https://www.tomshardware.com/news/cpu-core-definition,37658.html).
@@ -76,6 +79,8 @@ If you use the `yso-nlf` data set, run this command:
 If you use the `stw-zbw` data set, run this command:
 
     annif eval --jobs 0 stw-tfidf-en data-sets/stw-zbw/docs/test/
+
+</details>
 
 Congratulations, you've completed Exercise 4 and you know how well your
 TFIDF project is doing in terms of quality!
