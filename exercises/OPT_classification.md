@@ -162,6 +162,9 @@ algorithm worked better?
 
 ## EXTRA: Use bigrams for better accuracy
 
+<details>
+<summary>See details on how to use bigrams</summary>
+
 The above defined projects relied on the default value of the `ngram`
 setting, which is 1. This is a setting that affects the vectorizer, i.e. the
 preprocessing of text which turns words into numeric vectors. By changing
@@ -192,6 +195,8 @@ considered:
     min_df=2
 
 Then retrain and evaluate both projects. How did this affect the result?
+
+</details>
 
 ---
 
