@@ -13,7 +13,7 @@ The input is a publication title made up for this exercise.
 
     echo "The History of Salt Prices in Europe" | annif suggest yso-tfidf-en
 
-When trained on the full data fort the tfidf exercise(`yso-finna.tsv.gz`) the output should be similar to the following:
+When trained on the full data for the tfidf exercise (`yso-finna.tsv.gz`) the output should be similar to the following:
 
     <http://www.yso.fi/onto/yso/p10774>	price formation	0.4722590446472168
     <http://www.yso.fi/onto/yso/p1853>	salts	0.46669360995292664
@@ -60,7 +60,7 @@ ensemble. The sources may be given weights: in the above examples, the MLLM
 project has been given twice the normal weight, because it generally gives
 better results than TFIDF and is therefore more important.
 
-If you have created an Omikuji project (see Exercise 8), you can include it
+If you have created an Omikuji project (see [Omikuji exercise](OPT_omikuji_project.md)), you can include it
 as a source as well.
 
 ### 3. Check the output of the ensemble project
@@ -111,7 +111,7 @@ The input is a publication title made up for this exercise.
 
     echo "The History of Salt Prices in Europe" | annif suggest stw-tfidf-en
 
-When trained on the full data fort the tfidf exercise(`stw-econbiz.tsv.gz`) the output should be similar to the following:
+When trained on the full data for the tfidf exercise (`stw-econbiz.tsv.gz`) the output should be similar to the following:
 
     <http://zbw.eu/stw/descriptor/14205-5>	Salt	0.7533037066459656
     <http://zbw.eu/stw/descriptor/26500-1>	Mongolians	0.28582242131233215
@@ -157,7 +157,7 @@ ensemble. The sources may be given weights: in the above examples, the MLLM
 project has been given twice the normal weight, because it generally gives
 better results than TFIDF and is therefore more important.
 
-If you have created an Omikuji project (see Exercise 8), you can include it
+If you have created an Omikuji project (see [Omikuji exercise](OPT_omikuji_project.md)), you can include it
 as a source as well.
 
 ### 3. Check the output of the ensemble project
