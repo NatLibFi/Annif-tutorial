@@ -200,7 +200,7 @@ MLLM projects. Which one works best?
 Congratulations, you've completed Exercise 6 for the `stw-zbw` data set! You have a working ensemble
 project and you know how well it works compared to the projects it is based on.
 
-## Extra determining weights of ensemble source
+## EXTRA: Determining weights of ensemble sources
 
 <details>
 <summary>Learn how to automatically test different weights for ensemble sources.</summary>
