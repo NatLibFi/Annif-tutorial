@@ -35,11 +35,12 @@ full text documents for either or both data sets. The downloads are automated us
 
 ## Upcoming help sessions
 
-From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Current schedule:
- * [SWIB23 conference in-person workshop/tutorial](https://swib.org/swib23/programme.html)
-   * September 11 2023
+From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Info will be posted here.
+
 
 ## Past help sessions
+ * [SWIB23 conference in-person workshop/tutorial](https://swib.org/swib23/programme.html)
+   * September 11 2023
 * [SWIB22 conference online workshop/tutorial](https://swib.org/swib22/)
   * November 30 2022
 * [Annif bootcamp at ELAG](https://elag2022.lnb.lv/programme/bootcamps/#Osma_Suominen)
