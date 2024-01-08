@@ -49,7 +49,7 @@ service](https://ai.finto.fi/), which is run on an OpenShift
 Container Platform environment. The [Finto
 AI's GitHub repository](https://github.com/NatLibFi/FintoAI) contains the code
 and configurations ([helm-charts](https://helm.sh/docs/topics/charts/)) that are used to set up the service.
-See the repository's [README.md](https://github.com/NatLibFi/FintoAI/README.md) for details of the service.
+See the repository's [README.md](https://github.com/NatLibFi/FintoAI/blob/main/README.md) for details of the service.
 
 ## Other material
 See also:
