@@ -34,7 +34,9 @@ full text documents for either or both data sets. The downloads are automated us
 ([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
 
 ## Upcoming help sessions
-
+* [Open Repositories 2024 in-person workshop/tutorial](https://or2024.openrepositories.org/program-registration/workshops-and-tutorials/w07/)
+  * June 3th 2024, Göteborg, Sweden
+  
 From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
 
