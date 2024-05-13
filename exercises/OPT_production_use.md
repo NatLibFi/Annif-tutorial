@@ -25,8 +25,8 @@ to use a WSGI *server* in front.
 
 [Gunicorn](https://gunicorn.org/) is a good choice for the WSGI server. 
 To start Annif behind Gunicorn run e.g.
-`gunicorn "annif:create_app()" --bind 0.0.0.0:8000 --timeout 600`.
-This exposes port 8000, and the timeout allows 600 s for the Annif models to load in case they are large. 
+`gunicorn "annif:create_app()" --bind 0.0.0.0:8000 --timeout 600 --worker-class uvicorn.workers.UvicornWorker`.
+This exposes port 8000, sets the timeout to 600 s to allow the Annif models to load in case they are large, and uses Uvicorn workers (necessitated by [Annif v1.1](https://github.com/NatLibFi/Annif/releases/tag/v1.1.0)). 
 
 In addition to a WSGI server, in front of all it is recommended
 to put a dedicated *HTTP server* to act as a reverse proxy.
