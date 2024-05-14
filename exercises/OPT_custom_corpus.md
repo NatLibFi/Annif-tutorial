@@ -85,6 +85,13 @@ When training you will get many warnings about unknown URIs, because many docume
 
 There is a [multi-label text classification task in Kaggle](https://www.kaggle.com/Cornell-University/arxiv/tasks?taskId=1757) which uses the same dataset and which you can take a look at. That task aims in predicting the general categories, not the detailed categories, so if you want to try the Kaggle task, you need to modify the notebook appropriately.
 
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Subject vocabulary formats](https://github.com/NatLibFi/Annif/wiki/Subject-vocabulary-formats)
+* [Document corpus formats](https://github.com/NatLibFi/Annif/wiki/Document-corpus-formats)
+
 ---
 
 <p align="center">
