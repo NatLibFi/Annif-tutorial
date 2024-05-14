@@ -12,8 +12,6 @@ via Hugging Face Hub model repositories.
 Both upload and download commands expect a glob pattern for project IDs as the first argument (for example `"*"` to match all project IDs) 
 and a Hugging Face Hub repository ID as the second agument.
 
-For more information about the commands see this [Wikipage](https://github.com/NatLibFi/Annif/wiki/Hugging-Face-Hub-integration).
-
 ## 1. Download NN ensemble project
 
 If you use the `yso-nlf` data set, run this command to download the project from [NatLibFi/Annif-tutorial-YSO](https://huggingface.co/NatLibFi/Annif-tutorial-YSO) HFH repository:
@@ -47,3 +45,9 @@ If you use the `stw-zbw` data set, run this command:
 
 ## 3. Upload projects
 WIP
+
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Hugging Face Hub integration](https://github.com/NatLibFi/Annif/wiki/Hugging-Face-Hub-integration)
