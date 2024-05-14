@@ -200,6 +200,12 @@ The chart above was created using the XY (Scatter) chart type in LibreOffice Cal
 Congratulations, you've completed Exercise 5, you have a working MLLM project
 and you know how well it performs compared to the TFIDF project!
 
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Backend: MLLM](https://github.com/NatLibFi/Annif/wiki/Backend%3A-MLLM)
+
 ---
 
 <p align="center">
