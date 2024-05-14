@@ -117,6 +117,12 @@ You can try those, and compare the evaluation results.
 Congratulations, you've completed Exercise 8! You have a working Omikuji
 project and you know how well it works compared to TFIDF and MLLM.
 
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Backend: Omikuji](https://github.com/NatLibFi/Annif/wiki/Backend%3A-Omikuji)
+
 
 ---
 
