@@ -137,6 +137,14 @@ Then continuing the command with just `p` character (or by `v` for vocabs) and p
 
 The completion works for commands, options and paths as well as for project and vocabulary ids.
 
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [System requirements](https://github.com/NatLibFi/Annif/wiki/System-requirements)
+* [Optional features and dependencies](https://github.com/NatLibFi/Annif/wiki/Optional-features-and-dependencies)
+* [Usage with Docker](https://github.com/NatLibFi/Annif/wiki/Usage-with-Docker)
+
 ---
 
 <p align="center">
