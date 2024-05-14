@@ -179,6 +179,7 @@ you know how to use it to suggest subjects for documents!
 For more information, see the documentation in the Annif wiki:
 
 * [Backend: TF-IDF](https://github.com/NatLibFi/Annif/wiki/Backend%3A-TF-IDF)
+* [Project configuration](https://github.com/NatLibFi/Annif/wiki/Project-configuration)
 
 ---
 
