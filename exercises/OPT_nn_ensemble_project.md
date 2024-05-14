@@ -58,7 +58,7 @@ If you use the `stw-zbw` data set, run this command:
 
     annif train stw-nn-ensemble-en data-sets/stw-zbw/docs/train/
 
-Training takes a long time - around 2 hours for `yso-nlf` and 1 hour for
+Training takes a long time - around 20 minutes for `yso-nlf` and 1 hour for
 `stw-zbw`. Most of the time is spent on processing the training documents
 with the source projects/backends; the neural network is only trained at
 the very end and takes only a few minutes.
