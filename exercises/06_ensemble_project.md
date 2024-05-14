@@ -226,6 +226,13 @@ If you use the `stw-zbw` data set, hyperparameter optimization can be run with t
     annif hyperopt stw-ensemble-en data-sets/stw-zbw/docs/validate
 
 </details>
+
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Backend: Ensemble](https://github.com/NatLibFi/Annif/wiki/Backend%3A-Ensemble)
+
 ---
 
 <p align="center">
