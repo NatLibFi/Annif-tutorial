@@ -165,6 +165,12 @@ improve when given additional training documents?
 Congratulations, you've completed Exercise 10! You have a working neural ensemble
 project and you know how well it works compared to the projects it is based on.
 
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Backend: nn_ensemble](https://github.com/NatLibFi/Annif/wiki/Backend%3A-nn_ensemble)
+
 ---
 
 <p align="center">
