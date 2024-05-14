@@ -97,9 +97,7 @@ The `--rm` option in the run commands should ensure that the container is remove
 
 ### 1.3. Local install
 
-For this to work, you will need a Linux operating system (preferably Ubuntu
-or Debian based) and Python 3.8, 3.9 or 3.10 (also 3.11 will in other ways work, but the Omikuji backend cannot be used). This option is only recommended
-if you are used to work with Python packages.
+For this to work, you will need a Linux operating system (preferably Ubuntu or Debian based) and Python 3.9, 3.10, 3.11 or 3.12. This option is only recommended if you are used to work with Python packages.
 
 See the [Annif top level README file](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
