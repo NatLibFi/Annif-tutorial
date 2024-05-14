@@ -200,7 +200,7 @@ Then retrain and evaluate both projects. How did this affect the result?
 
 ---
 
-Congratulations, you've completed Exercise X, you have performed
+Congratulations, you've completed the classification exercise, you have performed
 classification using two different algorithms and compared their results!
 
 ---
