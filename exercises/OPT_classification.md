@@ -203,6 +203,12 @@ Then retrain and evaluate both projects. How did this affect the result?
 Congratulations, you've completed the classification exercise, you have performed
 classification using two different algorithms and compared their results!
 
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Backend: SVC](https://github.com/NatLibFi/Annif/wiki/Backend%3A-SVC)
+
 ---
 
 <p align="center">
