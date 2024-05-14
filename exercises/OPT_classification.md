@@ -156,7 +156,7 @@ Run this command:
 
     annif eval 20news-omikuji-bonsai-en data-sets/20news/20news-test.tsv
 
-Evaluation should take around X minutes. Again, check the *Precision@1* score
+Evaluation should take around 1 minute. Again, check the *Precision@1* score
 and compare it with the result you got from the SVC evaluation above. Which
 algorithm worked better?
 
