@@ -174,6 +174,12 @@ subjects. Was it close? Did Annif come with reasonable suggestions or not?
 Congratulations, you've completed Exercise 2, you have a working project and
 you know how to use it to suggest subjects for documents!
 
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Backend: TF-IDF](https://github.com/NatLibFi/Annif/wiki/Backend%3A-TF-IDF)
+
 ---
 
 <p align="center">
