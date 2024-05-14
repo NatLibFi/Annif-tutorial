@@ -19,7 +19,7 @@ Use a text editor to add a new project definition to the end of the
 If you use the `yso-nlf` data set, use the following snippet:
 
     [yso-omikuji-parabel-en]
-    name=Omikuji Parabel English
+    name=YSO Omikuji Parabel English
     language=en
     backend=omikuji
     analyzer=snowball(english)
@@ -29,7 +29,7 @@ If you use the `yso-nlf` data set, use the following snippet:
 If you use the `stw-zbw` data set, use the following snippet:
 
     [stw-omikuji-parabel-en]
-    name=Omikuji Parabel English
+    name=STW Omikuji Parabel English
     language=en
     backend=omikuji
     analyzer=snowball(english)
