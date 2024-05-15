@@ -1,12 +1,13 @@
-FROM quay.io/natlibfi/annif:1.0.0
+FROM quay.io/natlibfi/annif:1.1
 # Docker image to use in Annif tutorial, https://github.com/NatLibFi/Annif-tutorial.
 # Build with:
-#     docker build -t quay.io/natlibfi/annif:1.0-tutorial -t quay.io/natlibfi/annif:tutorial .
+#     docker build -t quay.io/natlibfi/annif:1.1-tutorial -t quay.io/natlibfi/annif:tutorial .
 #
 
 USER root
 
 RUN apt-get update \
+	&& apt-get upgrade -y \
 	&& apt-get install -y --no-install-recommends curl nano wget make poppler-utils git
 
 RUN mkdir -p /Annif-tutorial /Annif-tutorial-dvc /home/annif_user \
