@@ -100,7 +100,7 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-nn-ensemble-en data-sets/stw-zbw/docs/test/
 
-Evaluation should take around 15-20 minutes.
+Evaluation should take around 5-15 minutes.
 
 Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from other kinds of projects. Is the NN ensemble better
@@ -153,7 +153,7 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-nn-ensemble-en data-sets/stw-zbw/docs/test/
 
-Evaluation should take around 15-20 minutes.
+Again the evaluation should take around 5-15 minutes.
 
 Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from the initial training and evaluation. Did the NN ensemble
