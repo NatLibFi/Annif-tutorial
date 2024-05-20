@@ -36,6 +36,7 @@ flowchart TD
     ensemble --> nn_ensemble([NN ensemble])
     ensemble --> custom([Custom corpus])
     ensemble --> dvc([DVC])
+    ensemble --> huggingfacehub([Hugging Face Hub])
     mllm --> ft([Hogwarts/fastText])
     mllm --> lang_filter([Languages & filtering])
     webui --> rest([REST API])
@@ -56,6 +57,7 @@ flowchart TD
     class classification optional
     class ft optional
     class custom optional
+    class huggingfacehub optional
     class nn_ensemble optional
 ```
 
@@ -199,6 +201,12 @@ A big challenge in applying Annif to own data is gathering documents and convert
 Data Version Control (DVC) eases maintaining machine learning projects. In this exercise a DVC pipeline is used to set up, train and evaluate Annif projects.
 
 - [exercise](/exercises/OPT_dvc.md)
+
+## :computer: [Optional] Hugging Face Hub
+
+🤗 Hugging Face is an ecosystem and collaboration platform for AI use and development. In this exercise ready-to-use Annif projects are downloaded from a Hugging Face Hub repository.
+
+- [exercise](/exercises/OPT_huggingfacehub.md)
 
 ## :film_strip: Closing
 Summary of the material in the tutorial and some pointers to further information.

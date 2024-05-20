@@ -13,7 +13,7 @@ This transform can be advantageous in case of long documents that have an abstra
 When `filter_lang` is combined with the `limit` transform, for performance reasons it can be useful to apply an initial limit transform to avoid passing unnecessary amount of text to the language detection, for example with a transform setting like `transform=limit(15000),filter_lang,limit(5000)`.
 
 ## Analyzers
-Annif itself is language independent, save for the language support offered by the tools it employs. The analyzers Annif uses to pre-process, tokenize and normalize text are usually language dependendent. You can learn more about the analyzers at the [Annif wiki](https://github.com/NatLibFi/Annif/wiki/Analyzers).  
+Annif itself is language independent, save for the language support offered by the tools it employs. The analyzers Annif uses to pre-process, tokenize and normalize text are usually language dependendent.
 You can try different analyzers for the tfidf project by making chances in the `projects.cfg` file:
 
 If you use the `yso-nlf` data set, use the following contents:
@@ -35,6 +35,13 @@ If you use the `stw-zbw` data set, use the following contents:
     analyzer=simplemma(en)
     
 Did the result change?
+
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Analyzers](https://github.com/NatLibFi/Annif/wiki/Analyzers)
+* [Transforms](https://github.com/NatLibFi/Annif/wiki/Transforms)
 
 ---
 <p align="center">

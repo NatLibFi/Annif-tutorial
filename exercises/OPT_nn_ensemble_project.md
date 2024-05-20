@@ -58,8 +58,8 @@ If you use the `stw-zbw` data set, run this command:
 
     annif train stw-nn-ensemble-en data-sets/stw-zbw/docs/train/
 
-Training takes a long time - around 2 hours for `yso-nlf` and 1 hour for
-`stw-zbw`. Most of the time is spent on processing the training documents
+Training takes around 20-30 minutes. 
+Most of the time is spent on processing the training documents
 with the source projects/backends; the neural network is only trained at
 the very end and takes only a few minutes.
 
@@ -100,7 +100,7 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-nn-ensemble-en data-sets/stw-zbw/docs/test/
 
-Evaluation should take around 15-20 minutes.
+Evaluation should take around 5-15 minutes.
 
 Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from other kinds of projects. Is the NN ensemble better
@@ -153,7 +153,7 @@ If you use the `stw-zbw` data set, run this command:
 
     annif eval stw-nn-ensemble-en data-sets/stw-zbw/docs/test/
 
-Evaluation should take around 15-20 minutes.
+Again the evaluation should take around 5-15 minutes.
 
 Take note of the F1@5 and NDCG measures you got and compare them with the
 previous figures from the initial training and evaluation. Did the NN ensemble
@@ -164,6 +164,12 @@ improve when given additional training documents?
 
 Congratulations, you've completed Exercise 10! You have a working neural ensemble
 project and you know how well it works compared to the projects it is based on.
+
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Backend: nn_ensemble](https://github.com/NatLibFi/Annif/wiki/Backend%3A-nn_ensemble)
 
 ---
 

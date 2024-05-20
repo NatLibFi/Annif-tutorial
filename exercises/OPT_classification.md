@@ -156,7 +156,7 @@ Run this command:
 
     annif eval 20news-omikuji-bonsai-en data-sets/20news/20news-test.tsv
 
-Evaluation should take around X minutes. Again, check the *Precision@1* score
+Evaluation should take around 1 minute. Again, check the *Precision@1* score
 and compare it with the result you got from the SVC evaluation above. Which
 algorithm worked better?
 
@@ -200,8 +200,14 @@ Then retrain and evaluate both projects. How did this affect the result?
 
 ---
 
-Congratulations, you've completed Exercise X, you have performed
+Congratulations, you've completed the classification exercise, you have performed
 classification using two different algorithms and compared their results!
+
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Backend: SVC](https://github.com/NatLibFi/Annif/wiki/Backend%3A-SVC)
 
 ---
 

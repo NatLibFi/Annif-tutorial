@@ -104,6 +104,12 @@ character sequences.
 Congratulations, you've completed Exercise 9! You now know which Hogwarts
 House you belong to and know how to use character n-grams in fastText.
 
+## More information
+
+For more information, see the documentation in the Annif wiki:
+
+* [Backend: fastText](https://github.com/NatLibFi/Annif/wiki/Backend%3A-fastText)
+
 ---
 
 <p align="center">
