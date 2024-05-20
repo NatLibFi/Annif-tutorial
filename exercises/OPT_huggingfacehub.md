@@ -13,15 +13,16 @@ via Hugging Face Hub model repositories.
 Both upload and download commands expect a glob pattern for project IDs as the first argument (for example `"*"` to match all project IDs)
 and a Hugging Face Hub repository ID as the second argument (user or organisation name and repository name separated by a slash: `user_or_org/repo`).
 
-## 1. Download NN ensemble project
+## 1. Download Hogwarts project
 
-If you use the `yso-nlf` data set, run this command to download the project from [NatLibFi/Annif-tutorial](https://huggingface.co/NatLibFi/Annif-tutorial) repository:
+In the optional [Hogwarts exercise](/exercises/OPT_hogwarts.md) the aim is to train a project using fastText algorithm to implement a Sorting Hat.
+Whether you have already completed that exercise or not, you can run perform this exercise; existing projects will not be overwritten.
 
-    annif download yso-nn-ensemble-en NatLibFi/Annif-tutorial
+Run this command to download the project from the Hugging Face Hub repository [NatLibFi/Annif-tutorial](https://huggingface.co/NatLibFi/Annif-tutorial) :
 
-If you use the `stw-zbw` data set, run this command to download the project from [TBD]() repository:
+    annif download hogwarts NatLibFi/Annif-tutorial
 
-    TBD
+Note that the repository contains all YSO, 20news, and Hogwarts projects trained in this tutorial (see the ["Files and versions" tab](https://huggingface.co/NatLibFi/Annif-tutorial/tree/main)), and you can download any of them.
 
 ## 2. Test the downloaded project
 
@@ -30,19 +31,12 @@ To access the project, you need use the `--projects` option to make Annif to loo
 
     annif list-projects -p projects.d/
 
-You should see the project you downloaded in the listing.
+Alternatively you could append the configuration from `projects.d/hogwarts.cfg` to `projects.cfg` with the command `cat projects.d/hogwarts.cfg >> projects.cfg`, after which the `-p projects.d/` option is not needed.
 
-_WIP The NN ensemble project uses also the base projects, i.e. TFIDF and MLLM projects, so it it necessary to put all the cofigurations in the same place._
+You should see the project you downloaded in the listing, and now you can use the `hogwarts` project for suggestions. 
+For example, run this command:
 
-Now you can test the NN ensemble project for suggestions.
-
-If you use the `yso-nlf` data set, run this command:
-
-    echo "Hugging Face, Inc. develops computation tools for building applications using machine learning." | annif suggest yso-nn-ensemble-en -p projects.d/
-
-If you use the `stw-zbw` data set, run this command:
-
-    TBD
+    echo "Hugging Face" | annif suggest hogwarts -p projects.d/
 
 ## EXTRA: Upload projects
 <details><summary>
