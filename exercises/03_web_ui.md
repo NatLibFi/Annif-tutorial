@@ -7,7 +7,7 @@ web user interface.
 
 Run the command:
 
-    annif run --host 0.0.0.0
+    annif run
 
 Annif will start up and keep running until you stop it (by pressing Ctrl-C).
 
