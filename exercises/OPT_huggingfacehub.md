@@ -93,10 +93,10 @@ From [Model Cards documentation](https://huggingface.co/docs/hub/model-cards)
 >    - Displaying the model’s license.
 >    - Adding datasets to the metadata will add a message reading Datasets used to train: to your model page and link the relevant datasets, if they’re available on the Hub.
 
-For example, the [NatLibFi/Annif-tutorial](https://huggingface.co/NatLibFi/Annif-tutorial) repository includes a short textual description and metadata,
-which enables the HFH website to display the intended task of the model, some freeform tags and the licence under the repository name:
+For example, the [NatLibFi/Annif-tutorial](https://huggingface.co/NatLibFi/Annif-tutorial) repository includes a short textual description and metadata in YAML format.
+The metadata is shown on the website under the repository name: the intended task of the model, the dataset used to train the model, the language the model is intended for, some freeform tags and the licence of the model:
 
-![image](https://github.com/NatLibFi/Annif-tutorial/assets/34240031/188372ef-2097-45dd-ab65-43ae2776ef3e)
+![image](https://github.com/NatLibFi/Annif-tutorial/assets/34240031/32d5d497-8141-4afd-8ada-dac51473d625)
 
 
 </details>
