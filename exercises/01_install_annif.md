@@ -3,11 +3,12 @@
 ## 1. Install Annif
 
 To be able to complete the exercises you need to install Annif on your own
-computer. There are three options to choose from:
+computer or GitHub Codespaces. There are four options to choose from:
 
 1. VirtualBox virtual machine image with preinstalled Annif
 2. Docker based install
 3. Local install using pip (Linux only)
+4. Install to GitHub Codespaces
 
 ### 1.1. VirtualBox based install
 
@@ -106,6 +107,22 @@ install the Omikuji feature separately to complete the Omikuji based
 exercises and the neural network (nn) feature for the NN ensemble exercises - see [Optional features and
 dependencies](https://github.com/NatLibFi/Annif/wiki/Optional-features-and-dependencies)
 in the Annif wiki for details.
+
+### 1.4. GitHub Codespaces install
+
+In this installation you will be using Annif in a GitHub hosted machine, which you will access via a terminal in your browser.
+For this you are required to have an account on GitHub.
+
+1. Open a page to configure a new codespace by clicking this badge:
+
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/NatLibFi/Annif-tutorial/tree/codespaces)
+
+2. Select "4-core" for "Machine type" (the bottommost menu); other selections can be left to default values
+3. Click the green "Create codespace" button on bottom of the page 
+
+This will start a start a new codespace session, and Annif and some other packages will be installed to it (`Running postCreateCommand...`), which can take about 5 mins.
+
+After this everything is set up: a panel for the terminal screen is on the lower right corner on your browser window; you probably want to make that panel bigger by dragging from its edges.
 
 ## 2. Verify that you can run Annif
 
