@@ -6,7 +6,7 @@
   "features": {
   },
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "sudo apt update && sudo apt upgrade -y && sudo apt install -y --no-install-recommends libvoikko1 voikko-fi -y && pip install annif jupyter dvc",
+  "postCreateCommand": "sudo apt update && sudo apt upgrade -y && sudo apt install -y --no-install-recommends libvoikko1 voikko-fi -y && pip install annif[voikko,fasttext,nn,omikuji,stwfsa] jupyter dvc && python -m nltk.downloader punkt -d /usr/share/nltk_data && annif completion --bash >> /etc/bash.bashrc",
   
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [5000],
