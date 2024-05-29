@@ -1,13 +1,15 @@
 {
   "name": "Annif Tutorial Environment",
-  "image": "quay.io/natlib/annif:tutorial",
+  //"image": "quay.io/natlib/annif:tutorial",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
 
-  // Add the IDs of extensions you want installed when the container is created.
-  "extensions": [
-    "ms-python.python",
-    "visualstudioexptteam.vscodeintellicode"
-  ],
-
+  "features": {
+  },
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "pip install annif jupyter dvc",
+  
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [5000],
+
+  // "remoteUser": "annif-user",
 }
