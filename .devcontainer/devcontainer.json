@@ -1,0 +1,13 @@
+{
+  "name": "Annif Tutorial Environment",
+  "image": "quay.io/natlib/annif:tutorial",
+
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "ms-python.python",
+    "visualstudioexptteam.vscodeintellicode"
+  ],
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [5000],
+}
