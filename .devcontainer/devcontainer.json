@@ -1,8 +1,11 @@
 {
   "name": "Annif Tutorial Environment",
-  "image": "quay.io/natlib/annif:tutorial",
+  //"image": "quay.io/natlib/annif:tutorial",
   //"image": "mcr.microsoft.com/devcontainers/universal:2",
-
+  "build": { 
+    "dockerfile": "Dockerfile"
+  },
+  
   "features": {
   },
   // Use 'postCreateCommand' to run commands after the container is created.
