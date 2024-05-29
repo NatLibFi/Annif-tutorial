@@ -89,6 +89,12 @@ Select your installation type. If you don’t know what to choose, we suggest us
 - [transcript of video](/transcripts/annif-install-linux.md)
 - [Annif README file with installation instructions](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
+### 1.4. GitHub Codespaces install
+
+In this installation you will be using Annif in a GitHub hosted machine, which you will access via a terminal in your browser.
+
+- [exercise section](/exercises/01_install_annif.md#14-github-codespaces-install)
+
 ## :film_strip: Data sets
 This tutorial provides two example data sets; one of them should be chosen to be used in the exercises.
 
