@@ -110,7 +110,7 @@ in the Annif wiki for details.
 
 ### 1.4. GitHub Codespaces install
 
-In this installation you will be using Annif in a GitHub hosted machine, which you will access via a terminal in your browser.
+In this installation you will be using Annif in a GitHub hosted machine, which you will access via a terminal in your browser (in a VS Code editor remote session).
 For this you are required to have an account on GitHub.
 
 1. Open a page to configure a new codespace by clicking this badge:
@@ -120,9 +120,20 @@ For this you are required to have an account on GitHub.
 2. Select "4-core" for "Machine type" (the bottommost menu); other selections can be left to default values
 3. Click the green "Create codespace" button on bottom of the page 
 
-This will start a start a new codespace session, and Annif and some other packages will be installed to it (`Running postCreateCommand...`), which can take about 5 mins.
-
+This will start a start a new codespace session: A screen with title "Setting up your codespace" and a terminal view will be shown indicating that a container is being build. 
+This takes about one minunte.
 After this everything is set up: a panel for the terminal screen is on the lower right corner on your browser window; you probably want to make that panel bigger by dragging from its edges.
+
+#### About using Codespaces
+- It is not necessary to stop an instance, [it happens automatically after 30 min timeout](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#timeouts-for-github-codespaces), but to save your [free given CPU time](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) it is good to stop the instance when you are not using it:
+  - Go to this [page](https://github.com/codespaces?repository_id=212338434) to see a list of all your codespaces of Annit-tutorial. Then follow the [instructions by GitHub](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui):  
+  - To the right of the codespace you want to stop, click the ellipsis (...).
+  - Click Stop codespace.
+- Stopped codespace can be restarted from the same page clicking its name on the list.
+  - If terminal panel does not open on restart, you can manually open one from the menu in top-left, select "Terminal" and "New Terminal".
+- _Just closing the browser tab does not stop the codespace._
+- [When stopping a codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui#about-stopping-and-starting-a-codespace) the data is persisted in it. Terminal window will be cleared.
+  
 
 ## 2. Verify that you can run Annif
 
