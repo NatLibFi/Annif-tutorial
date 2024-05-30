@@ -3,7 +3,12 @@
   //"image": "quay.io/natlib/annif:tutorial",
   //"image": "mcr.microsoft.com/devcontainers/universal:2",
   "build": { 
-    "dockerfile": "Dockerfile"
+    "dockerfile": "../Dockerfile"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    }
   },
   
   "features": {
