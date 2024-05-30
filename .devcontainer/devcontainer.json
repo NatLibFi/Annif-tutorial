@@ -1,0 +1,22 @@
+{
+  "name": "Annif Tutorial Environment",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "customizations": {
+    "codespaces": {
+      // Avoid opening /README.md
+      "openFiles": []
+    },
+    "vscode": {
+      "settings": {
+          "terminal.integrated.defaultProfile.linux": "bash",
+          "terminal.integrated.profiles.linux": { "bash": { "path": "/bin/bash" } }
+      }
+    }
+  },
+  "features": {
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [5000]
+}
