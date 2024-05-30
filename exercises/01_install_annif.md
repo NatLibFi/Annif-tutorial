@@ -121,19 +121,23 @@ For this you are required to have an account on GitHub.
 3. Click the green "Create codespace" button on bottom of the page 
 
 This will start a start a new codespace session: A screen with title "Setting up your codespace" and a terminal view will be shown indicating that a container is being build. 
-This takes about one minunte.
-After this everything is set up: a panel for the terminal screen is on the lower right corner on your browser window; you probably want to make that panel bigger by dragging from its edges.
+This takes about one minute.
+After this everything is set up: a panel for the terminal screen is on the right on browser window, on the bottom; you probably want to make that panel bigger by dragging from its edges.
+
+Now the codespace is running. Annif is already installed there and ready to be used for exercises!
 
 #### About using Codespaces
-- It is not necessary to stop an instance, [it happens automatically after 30 min timeout](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#timeouts-for-github-codespaces), but to save your [free given CPU time](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) it is good to stop the instance when you are not using it:
-  - Go to this [page](https://github.com/codespaces?repository_id=212338434) to see a list of all your codespaces of Annit-tutorial. Then follow the [instructions by GitHub](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui):  
+- It is not necessary to stop an instance, [it happens automatically after 30 min timeout](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#timeouts-for-github-codespaces), but to save your [free given CPU time](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) it is good to [stop the codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui) when you are not using it:
+  - Go to [Your codespaces page](https://github.com/codespaces?repository_id=212338434) to see a list of all your codespaces of Annif-tutorial.  
   - To the right of the codespace you want to stop, click the ellipsis (...).
-  - Click Stop codespace.
+  - Click "Stop" codespace.
 - Stopped codespace can be restarted from the same page clicking its name on the list.
-  - If terminal panel does not open on restart, you can manually open one from the menu in top-left, select "Terminal" and "New Terminal".
+  - If terminal panel does not open on restart, you can manually open one from the hamburger menu in top-left, select "Terminal" and "New Terminal".
 - _Just closing the browser tab does not stop the codespace._
 - [When stopping a codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui#about-stopping-and-starting-a-codespace) the data is persisted in it. Terminal window will be cleared.
-- The same packages are installed in the codespace environment as in the Docker image, so you can use the nano editor, but files can edited also with the VS Code editor: to create a new file, e.g. `projects.cfg`, right click on the Explorer panel on left, select "New File...", and a new panel opens for the file.
+- Once you are finished with Annif-tutorial, and want to [delete your codespace](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#deleting-a-codespace), go to [Your codespaces page](https://github.com/codespaces?repository_id=212338434), and click the ellipsis (...). Select "Delete".
+  - _Note that by default inactive codespaces are deleted after 30 days._
+- The same packages are installed in the codespace environment as in the Docker image, so you can use the nano editor, but files can be edited also with the VS Code editor: to create a new file, e.g. `projects.cfg`, right click on the empty of the opened Explorer panel (on left) , select "New File...", and a new panel opens for the file.
   
 
 ## 2. Verify that you can run Annif
