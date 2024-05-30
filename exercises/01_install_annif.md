@@ -133,6 +133,7 @@ After this everything is set up: a panel for the terminal screen is on the lower
   - If terminal panel does not open on restart, you can manually open one from the menu in top-left, select "Terminal" and "New Terminal".
 - _Just closing the browser tab does not stop the codespace._
 - [When stopping a codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui#about-stopping-and-starting-a-codespace) the data is persisted in it. Terminal window will be cleared.
+- The same packages are installed in the codespace environment as in the Docker image, so you can use the nano editor, but files can edited also with the VS Code editor: to create a new file, e.g. `projects.cfg`, right click on the Explorer panel on left, select "New File...", and a new panel opens for the file.
   
 
 ## 2. Verify that you can run Annif
