@@ -145,7 +145,7 @@ Internet connection and CPU performance. The `-j4` option specifies the number o
 downloads and conversions to perform in parallel.  The final `cd -` command
 should take you back to the `Annif-tutorial` directory.
 
-Pick any document from the `docs/test/` folder of your chosen data set. In
+Pick any document from the `docs/test/` folder **of your chosen data set**. In
 this example we will use the lowest-numbered documents, i.e. `2017-D-52518`
 for `yso-nlf` and `10008797547` for `stw-zbw`. Open the `.txt` file of your
 chosen document in a text editor, or alternately, look at the URL stored in
