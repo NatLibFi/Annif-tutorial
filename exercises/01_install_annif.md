@@ -127,6 +127,7 @@ After this everything is set up: a panel for the terminal screen is on the right
 Now the codespace is running. Annif is already installed there and ready to be used for exercises!
 
 #### About using Codespaces
+- The same packages are installed in the codespace environment as in the Docker image, so you can use the nano editor, but files can be edited also with the VS Code editor: to create a new file, e.g. `projects.cfg`, right click on the empty of the opened Explorer panel (on left) , select "New File...", and a new panel opens for the file.
 - It is not necessary to stop an instance, [it happens automatically after 30 min timeout](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#timeouts-for-github-codespaces), but to save your [free given CPU time](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) it is good to [stop the codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui) when you are not using it:
   - Go to [Your codespaces page](https://github.com/codespaces?repository_id=212338434) to see a list of all your codespaces of Annif-tutorial.  
   - To the right of the codespace you want to stop, click the ellipsis (...).
@@ -137,7 +138,6 @@ Now the codespace is running. Annif is already installed there and ready to be u
 - [When stopping a codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui#about-stopping-and-starting-a-codespace) the data is persisted in it. Terminal window will be cleared.
 - Once you are finished with Annif-tutorial, and want to [delete your codespace](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#deleting-a-codespace), go to [Your codespaces page](https://github.com/codespaces?repository_id=212338434), and click the ellipsis (...). Select "Delete".
   - _Note that by default inactive codespaces are deleted after 30 days._
-- The same packages are installed in the codespace environment as in the Docker image, so you can use the nano editor, but files can be edited also with the VS Code editor: to create a new file, e.g. `projects.cfg`, right click on the empty of the opened Explorer panel (on left) , select "New File...", and a new panel opens for the file.
   
 
 ## 2. Verify that you can run Annif
@@ -147,7 +147,8 @@ window, check that Annif runs using the command:
 
     annif
 
-If you get a usage message, congratulations - you're up and running!
+If you get a usage message, congratulations - you're up and running and can now proceed with the exercises!
+Below are some additional practical hints.
 
 ### Shell completions
 You can also check that the tab-key completion works (in the case of local install the support for it first needs to be enabled, [see instructions](https://github.com/NatLibFi/Annif#shell-compeletions)).
