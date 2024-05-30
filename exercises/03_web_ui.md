@@ -14,7 +14,7 @@ Annif will start up and keep running until you stop it (by pressing Ctrl-C).
 ## 2. Open the UI in the browser
 
 Use your browser to access the URL 
-[localhost:5000/](http://localhost:5000/) or [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
+[localhost:5000/](http://localhost:5000/) or [http://127.0.0.1:5000/](http://127.0.0.1:5000/), or if using Codespace, click the green "Open in Browser" button in the opened window.
 
 You should see a simple user interface with a big empty text field.
 
