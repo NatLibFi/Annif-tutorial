@@ -8,7 +8,7 @@ computer or GitHub Codespaces. There are four options to choose from:
 1. VirtualBox virtual machine image with preinstalled Annif
 2. Docker based install
 3. Local install using pip (Linux only)
-4. Install to GitHub Codespaces
+4. Install to GitHub Codespaces (_experimental_)
 
 ### 1.1. VirtualBox based install
 
@@ -109,6 +109,8 @@ dependencies](https://github.com/NatLibFi/Annif/wiki/Optional-features-and-depen
 in the Annif wiki for details.
 
 ### 1.4. GitHub Codespaces install
+
+_This is experimental: all exercises have not been thoroughly tested._
 
 In this installation you will be using Annif in a GitHub hosted machine, which you will access via a terminal in your browser (in a VS Code editor remote session).
 For this you are required to have an account on GitHub.
