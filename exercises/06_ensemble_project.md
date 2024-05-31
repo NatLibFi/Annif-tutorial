@@ -29,9 +29,11 @@ When trained on the full data for the tfidf exercise (`yso-finna.tsv.gz`) the ou
 As you can see most parts of the input are represented in the ten highest scoring suggestions.
 Surprisingly [Europe](http://www.yso.fi/onto/yso/p94111) is missing.
 
-Now check the output of the `mllm` project by entering `echo "The History of Salt Prices in Europe" | annif suggest yso-mllm-en`.
-When trained as described in the mllm exercise the output should be similar to:
+Now check the output of the `mllm` project by entering:
 
+    echo "The History of Salt Prices in Europe" | annif suggest yso-mllm-en
+
+When trained as described in the mllm exercise the output should be similar to:
 
     <http://www.yso.fi/onto/yso/p1853>	salts	0.6944791078567505
     <http://www.yso.fi/onto/yso/p1780>	history	0.639129638671875
@@ -65,7 +67,11 @@ as a source as well.
 
 ### 3. Check the output of the ensemble project
 
-Entering `echo "The History of Salt Prices in Europe" | annif suggest yso-ensemble-en` should give you results similar to:
+Entering the command:
+
+    echo "The History of Salt Prices in Europe" | annif suggest yso-ensemble-en
+
+should give you results similar to:
 
     <http://www.yso.fi/onto/yso/p1853>	salts	0.6185505986213684
     <http://www.yso.fi/onto/yso/p1780>	history	0.5137295722961426
@@ -128,7 +134,10 @@ Surprisingly [Mongolians](http://zbw.eu/stw/descriptor/26500-1) is found in the 
 It is possible that the algorithm relates [Salt](http://zbw.eu/stw/descriptor/14205-5) to [Mongolians](http://zbw.eu/stw/descriptor/26500-1) due to skew in the training data.
 Additionally the concept [Europe](http://zbw.eu/stw/descriptor/16815-3) is missing from the output.
 
-Now check the output of the `mllm` project by entering `echo "The History of Salt Prices in Europe" | annif suggest stw-mllm-en`.
+Now check the output of the `mllm` project by entering:
+
+    echo "The History of Salt Prices in Europe" | annif suggest stw-mllm-en
+
 When trained as described in the mllm exercise the output should be similar to:
 
     <http://zbw.eu/stw/descriptor/16815-3>	Europe	0.6158202290534973
@@ -162,7 +171,11 @@ as a source as well.
 
 ### 3. Check the output of the ensemble project
 
-Entering `echo "The History of Salt Prices in Europe" | annif suggest stw-ensemble-en` should give you results similar to:
+Entering the command:
+
+    echo "The History of Salt Prices in Europe" | annif suggest stw-ensemble-en
+
+should give you results similar to:
 
 <http://zbw.eu/stw/descriptor/14205-5>	Salt	0.6059554815292358
 <http://zbw.eu/stw/descriptor/16815-3>	Europe	0.48833876848220825
