@@ -15,7 +15,7 @@
       }
     }
   },
-  "postCreateCommand": "code exercises/01_install_annif.md --goto && code --command markdown.showPreview my-file.md",
+  "postCreateCommand": "code exercises/01_install_annif.md --goto && code --command markdown.showPreview exercises/01_install_annif.md",
   "features": {
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
