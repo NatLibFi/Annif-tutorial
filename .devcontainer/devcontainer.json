@@ -4,10 +4,10 @@
     "dockerfile": "../Dockerfile"
   },
   "customizations": {
-    "codespaces": {
+    //"codespaces": {
       // Avoid opening /README.md
-      "openFiles": ["exercises/01_install_annif.md"]
-    },
+    //  "openFiles": ["exercises/01_install_annif.md"]
+    //},
     "vscode": {
       "settings": {
           "terminal.integrated.defaultProfile.linux": "bash",
@@ -15,6 +15,7 @@
       }
     }
   },
+  "postCreateCommand": "code --command markdown.showPreview exercises/01_install_annif.md",
   "features": {
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
