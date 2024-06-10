@@ -34,7 +34,8 @@ full text documents for either or both data sets. The downloads are automated us
 ([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
 
 ## Upcoming help sessions
-* —
+* _To be confirmed:_ [Tiedejulkaisemisen päivät 2024](https://www.tiedejulki.fi/ohjelma)
+  * October 10th 2024, Oulu, Finland
   
 From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
