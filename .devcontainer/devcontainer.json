@@ -6,7 +6,7 @@
   "customizations": {
     "codespaces": {
       // Avoid opening /README.md
-      "openFiles": []
+      "openFiles": ["exercises/01_install_annif.md#additional-notes-about-using-codespaces"]
     },
     "vscode": {
       "settings": {
