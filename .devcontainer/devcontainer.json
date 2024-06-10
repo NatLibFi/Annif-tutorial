@@ -4,10 +4,9 @@
     "dockerfile": "../Dockerfile"
   },
   "customizations": {
-    "codespaces": {
-      // Avoid opening /README.md
-      "openFiles": []
-    },
+    // "codespaces": {
+    //  "openFiles": []  // Uncomment this block to avoid opening /README.md
+    // },
     "vscode": {
       "settings": {
           "terminal.integrated.defaultProfile.linux": "bash",
