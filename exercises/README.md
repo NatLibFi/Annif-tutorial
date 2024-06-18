@@ -1,6 +1,6 @@
 # Annif tutorial outline
 This page is an overview of Annif tutorial contents. There are video-only lectures that are prefixed with :film_strip:.
-Exercises marked with :computer: require some coding, and those with :book: are for reading only.
+Exercises marked with :computer: require some coding, and those with :book: are for reading only. NB! If you have problems with viewing the pdf files on GitHub, you can download them or e.g. try a different browser (see also [discussion about this problem](https://github.com/orgs/community/discussions/64419#)).
 
 ## :film_strip: Introduction and overview
 
