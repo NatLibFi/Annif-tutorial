@@ -34,8 +34,9 @@ full text documents for either or both data sets. The downloads are automated us
 ([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
 
 ## Upcoming help sessions
-* To be confirmed
-  
+* [SWIB24 conference online workshop/tutorial](https://swib.org/swib24/programme.html)
+  * November 25th 2024
+ 
 From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
 
