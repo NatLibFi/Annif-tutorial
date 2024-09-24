@@ -111,3 +111,10 @@ Congratulations, you've completed exercise on Hugging Face Hub integration!
 For more information, see the documentation in the Annif wiki:
 
 * [Hugging Face Hub integration](https://github.com/NatLibFi/Annif/wiki/Hugging-Face-Hub-integration)
+
+---
+
+<p align="center">
+|
+<a href="/README.md">Back to the main page »</a>
+</p>
