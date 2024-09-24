@@ -5,7 +5,7 @@ Two example [data sets](data-sets) are provided to be used in the exercises.
 
 The tutorial was initially organized at
 [SWIB19](http://swib.org/swib19/programme.html) 
-and later updated for other conferences and occasions, the materials are freely available for self-study.
+and later updated for other conferences and occasions, the materials are freely available for self-study; see the [excercises below](#exercises-and-videos).
 
 ## Prerequisites
 
