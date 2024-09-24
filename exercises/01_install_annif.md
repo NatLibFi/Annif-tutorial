@@ -46,17 +46,24 @@ keyboard layout now from the upper right corner (click the US flag). Other
 keyboard layouts can be installed from the top left corner menu 
 (Settings -> Keyboard -> Layout tab, where you can add and remove layouts).
 
-_Troubleshooting:_ If Annif fails to start and the error message shows 
-`Illegal instruction (core dumped)` on a Windows host, the probable cause 
-is that [AVX support](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions) 
-is not available inside the virtual machine. Here are two ways that can be 
-tried solve the problem:
 
-1. Make the AVX support available by tweaking Windows settings ([from VirtualBox forum](https://forums.virtualbox.org/viewtopic.php?f=1&t=62339#p417512), also other messages in the thread can be worth reading): 
-    - Hyper-v competes for resources and needs to be disabled. To check the status of Hyper-v in Windows 10, *right click start | Run | `OptionalFeatures.exe`*, and look for the "Hyper-V" option. The box should be empty, not checked or shaded. If you want to be absolutely sure that Hyper-v is gone then open an administrator command console and type `bcdedit /set hypervisorlaunchtype off`. Make sure to fully power down and reboot the host after changing the Hyper-v setting.
-    - On some Windows hosts with an EFI BIOS, DeviceGuard or CredentialGuard may be active by default, and interferes with OS level virtualization apps in the same way that Hyper-v does. These features also need to be disabled. On Pro versions of Windows you can do this using `gpedit.msc` (set *Local Computer Policy > Computer Configuration > Administrative Templates > System > Device Guard > Turn on Virtualization Based Security* to *Disabled*. CredentialGuard is a subset of DeviceGuard, so disabling the former should be enough. If you cannot use gpedit for some reason then the equivalent registry hack is to find the key *HKLM|SYSTEM|CurrentControlSet|Control|DeviceGuard|EnableVirtualizationBasedSecurity|Enabled* and set it to *0*.
-
-2. Remove the need for AVX by uninstalling TensorFlow package. This is simple, however it means that neural network ensemble models can not be used and (optional) exercises [10](/exercises/10_nn_ensemble_project.md) and [11](/exercises/11_incremental_learning.md) completed. In a terminal window run the command `pip uninstall tensorflow-cpu` and confirm uninstallation by pressing `y`. 
+> [!NOTE]
+> _Troubleshooting:_ Annif fails to start and the error message shows `Illegal instruction (core dumped)` on a Windows host?
+> <details>
+> 
+><summary> Solution! </summary>
+>
+>The probable cause 
+>is that [AVX support](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions) 
+>is not available inside the virtual machine. Here are two ways that can be 
+>tried solve the problem:
+>
+>1. Make the AVX support available by tweaking Windows settings ([from VirtualBox forum](https://forums.virtualbox.org/viewtopic.php?f=1&t=62339#p417512), also other messages in the thread can be worth reading): 
+>    - Hyper-v competes for resources and needs to be disabled. To check the status of Hyper-v in Windows 10, *right click start | Run | `OptionalFeatures.exe`*, and look for the "Hyper-V" option. The box should be empty, not checked or shaded. If you want to be absolutely sure that Hyper-v is gone then open an administrator command console and type `bcdedit /set hypervisorlaunchtype off`. Make sure to fully power down and reboot the host after changing the Hyper-v setting.
+>    - On some Windows hosts with an EFI BIOS, DeviceGuard or CredentialGuard may be active by default, and interferes with OS level virtualization apps in the same way that Hyper-v does. These features also need to be disabled. On Pro versions of Windows you can do this using `gpedit.msc` (set *Local Computer Policy > Computer Configuration > Administrative Templates > System > Device Guard > Turn on Virtualization Based Security* to *Disabled*. CredentialGuard is a subset of DeviceGuard, so disabling the former should be enough. If you cannot use gpedit for some reason then the equivalent registry hack is to find the key *HKLM|SYSTEM|CurrentControlSet|Control|DeviceGuard|EnableVirtualizationBasedSecurity|Enabled* and set it to *0*.
+>
+>2. Remove the need for AVX by uninstalling TensorFlow package. This is simple, however it means that neural network ensemble models can not be used and (optional) exercises [10](/exercises/10_nn_ensemble_project.md) and [11](/exercises/11_incremental_learning.md) completed. In a terminal window run the command `pip uninstall tensorflow-cpu` and confirm uninstallation by pressing `y`. 
+></details>
 
 ### 1.2. GitHub Codespaces install
 
