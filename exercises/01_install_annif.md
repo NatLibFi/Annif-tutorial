@@ -12,6 +12,12 @@ computer or GitHub Codespaces. There are four options to choose from:
 
 ### 1.1. VirtualBox based install
 
+[![Video](/img/annif-install-virtualbox-slides-1.png)](https://youtu.be/z_Fq-87QbyQ)
+
+- [slides](/presentations/annif-install-virtualbox-slides.pdf)
+- [transcript of video](/transcripts/annif-install-virtualbox.md)
+- [VirtualBox image download (~2GB)](https://annif.org/download/)
+
 First make sure that you have the [VirtualBox](https://www.virtualbox.org/)
 host software for your operating system installed. You only need the basic
 install; the Extension Pack or SDK modules are not necessary.
@@ -53,6 +59,11 @@ tried solve the problem:
 2. Remove the need for AVX by uninstalling TensorFlow package. This is simple, however it means that neural network ensemble models can not be used and (optional) exercises [10](/exercises/10_nn_ensemble_project.md) and [11](/exercises/11_incremental_learning.md) completed. In a terminal window run the command `pip uninstall tensorflow-cpu` and confirm uninstallation by pressing `y`. 
 
 ### 1.2. Docker based install
+
+[![Video](/img/annif-install-docker-slides-1.png)](https://youtu.be/j_VeC_NeVcw)
+
+- [slides](/presentations/annif-install-docker-slides.pdf)
+- [transcript of video](/transcripts/annif-install-docker.md)
 
 First, to get the data sets for the exercises (if you do not have them already), either download this GitHub repository as [a zip archive ](https://github.com/NatLibFi/Annif-tutorial/archive/master.zip) or git clone it. Place the `Annif-tutorial` directory in your home directory (in _Windows_ to `C:\Users\your_username`), or to a location of your choice, but in that case change the mount location in below commands appropriately.
 
@@ -96,7 +107,13 @@ You can paste text to the window e.g. by right-clicking on the terminal. Move ar
 
 The `--rm` option in the run commands should ensure that the container is removed when it is exited (but the data in the `Annif-tutorial` directory is retained as it is mounted from the host or from the named volume). However, in _Windows_ the container removing sometimes does not work, and restarting the container fails (`The container name XXX is already in use by...`). In this case, use command `docker rm -f XXX` to manually remove it.
 
-### 1.3. Local install
+### 1.3. Linux native install
+
+[![Video](/img/annif-install-linux-slides-1.png)](https://youtu.be/I7oApwl-NFk)
+
+- [slides](/presentations/annif-install-linux-slides.pdf)
+- [transcript of video](/transcripts/annif-install-linux.md)
+- [Annif README file with installation instructions](https://github.com/NatLibFi/Annif/blob/master/README.md)
 
 For this to work, you will need a Linux operating system (preferably Ubuntu or Debian based) and Python 3.9, 3.10, 3.11 or 3.12. This option is only recommended if you are used to work with Python packages.
 
