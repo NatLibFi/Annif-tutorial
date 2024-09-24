@@ -1,5 +1,10 @@
 # Exercise 5: Set up and train a MLLM project
 
+[![Video](/img/mllm-slides-1.png)](https://youtu.be/4cblDQ_HA3w)
+
+- [slides](/presentations/mllm-slides.pdf)
+- [transcript of video](/transcripts/mllm.md)
+
 In this lesson, we will set up a MLLM project. MLLM is an algorithm for
 lexical automated subject indexing, i.e. matching terms in document text to
 terms in a controlled vocabulary. It is inspired by the Maui algorithm, but
