@@ -97,11 +97,7 @@ Slides on associative algorithms for XMTC (by CSC's [@jmakoske](https://github.c
 ## :computer: 3. Web UI
 The web user interface of Annif allows quick testing of projects.
 
-[![Video](/img/web-ui-slides-1.png)](https://youtu.be/wkDbVnkuV6E)
-
-- [slides](/presentations/web-ui-slides.pdf)
-- [transcript of video](/transcripts/web-ui.md)
-- [exercise](/exercises/03_web_ui.md)
+- [exercise with video](/exercises/03_web_ui.md)
 
 ## 💻 [Optional] REST API
 The REST API of Annif can be used for integrating Annif with other systems.
