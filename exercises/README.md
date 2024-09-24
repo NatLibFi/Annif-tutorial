@@ -77,11 +77,7 @@ This tutorial provides two example data sets; one of them should be chosen to be
 ## 💻 2. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
-[![Video](/img/tfidf-project-slides-1.png)](https://youtu.be/Hwl6PUoG_hc)
-
-- [slides](/presentations/tfidf-project-slides.pdf)
-- [transcript of video](/transcripts/tfidf-project.md)
-- [exercise](/exercises/02_tfidf_project.md)
+- [exercise with video](/exercises/02_tfidf_project.md)
 
 ## 🎞️ Algorithms
 The principles of the algorithm types used by Annif models are presented.
