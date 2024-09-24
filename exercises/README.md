@@ -107,14 +107,10 @@ The REST API of Annif can be used for integrating Annif with other systems.
 Here is described aspects to consider when going from testing and development phase to a production-ready deployment of Annif.
 - [exercise](/exercises/OPT_production_use.md)
 
-## :computer: Metrics & evaluation
+## :computer: 4. Metrics & evaluation
 Quantitative testing and comparison of projects against standard metrics can be done using the `eval` command.
 
-[![Video](/img/metrics-and-evaluation-slides-1.png)](https://youtu.be/zWMXUfLJtn0)
-
-- [slides](/presentations/metrics-and-evaluation-slides.pdf)
-- [transcript of video](/transcripts/metrics-and-evaluation.md)
-- [exercise](/exercises/04_evaluate.md)
+- [exercise with video](/exercises/04_evaluate.md)
 
 ## 💻 [Optional] Omikuji project
 Omikuji is a tree-based associative machine learning model that often produces very good results, but requires more resources than the TFIDF model.
