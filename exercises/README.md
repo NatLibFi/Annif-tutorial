@@ -125,12 +125,7 @@ Annif can also be used for multiclass classification, where the goal is to choos
 ## 💻 5. MLLM project
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
  
-
-[![Video](/img/mllm-slides-1.png)](https://youtu.be/4cblDQ_HA3w)
-
-- [slides](/presentations/mllm-slides.pdf)
-- [transcript of video](/transcripts/mllm.md)
-- [exercise](/exercises/05_mllm_project.md)
+- [exercise with video](/exercises/05_mllm_project.md)
 
 ## :computer: [Optional] Hogwarts Sorting Hat using fastText
 Yet another algorithm you can try is fastText, which can also work on the level of individual characters.
