@@ -1,5 +1,10 @@
 # Exercise 2: Set up and train a TFIDF project
 
+[![Video](/img/tfidf-project-slides-1.png)](https://youtu.be/Hwl6PUoG_hc)
+
+- [slides](/presentations/tfidf-project-slides.pdf)
+- [transcript of video](/transcripts/tfidf-project.md)
+
 Annif requires you to set up one or more **projects** before you can use it.
 A project is a set of configuration settings and (usually) some data files
 such as a trained machine learning model. A project is identified by a
