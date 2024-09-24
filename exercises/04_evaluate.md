@@ -1,5 +1,10 @@
 # Exercise 4: Evaluating quality on document corpora
 
+[![Video](/img/metrics-and-evaluation-slides-1.png)](https://youtu.be/zWMXUfLJtn0)
+
+- [slides](/presentations/metrics-and-evaluation-slides.pdf)
+- [transcript of video](/transcripts/metrics-and-evaluation.md)
+
 Testing on short text snippes only gives a first impression of the quality
 of automated subject indexing. To gain a better understanding of how well
 the Annif models work on real documents, we must test on a collection of
