@@ -69,10 +69,7 @@ Select your installation type. If you don’t know what to choose, we suggest us
 ## :film_strip: Data sets
 This tutorial provides two example data sets; one of them should be chosen to be used in the exercises.
 
-[![Video](/img/data-sets-slides-1.png)](https://youtu.be/S4E3d3o5HWg)
-
-- [slides](/presentations/data-sets-slides.pdf)
-- [transcript of video](/transcripts/data-sets.md)
+- [dataset intro with video](/exercises/data-sets.md)
 
 ## 💻 2. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
