@@ -139,11 +139,7 @@ Sometimes it might be useful to filter out parts of the document that are not in
 ## :computer: 6. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
 
-[![Video](/img/ensemble-project-slides-1.png)](https://youtu.be/0hwB3PwAcUM)
-
-- [slides](/presentations/ensemble-project-slides.pdf)
-- [transcript of video](/transcripts/ensemble-project.md)
-- [exercise](/exercises/06_ensemble_project.md)
+- [exercise with video](/exercises/06_ensemble_project.md)
 
 ## :computer: [Optional] Neural network ensemble project
 A neural network ensemble can be trained to intelligently combine the results from the base projects.
