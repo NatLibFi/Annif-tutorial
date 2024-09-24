@@ -79,10 +79,7 @@ The basic functionality of Annif is introduced by setting up and training a proj
 ## 🎞️ Algorithms
 The principles of the algorithm types used by Annif models are presented.
 
-[![Video](/img/algorithms-slides-1.png)](https://youtu.be/OvPx8Ipe3BU)
-
-- [slides](/presentations/algorithms-slides.pdf)
-- [transcript of video](/transcripts/algorithms.md)
+- [algorithms intro with video](/exercises/algorithms.md)
 
 #### :book: [Optional]
 Slides on associative algorithms for XMTC (by CSC's [@jmakoske](https://github.com/jmakoske) & [@mvsjober](https://github.com/mvsjober)):
