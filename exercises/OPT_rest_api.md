@@ -74,5 +74,5 @@ fetched via news agency APIs and for texts OCRed from a photo by a webcam.
 
 <p align="center">
 |
-<a href="/exercises/README.md">Back to table of contents »</a>
+<a href="/README.md">Back to the main page »</a>
 </p>
