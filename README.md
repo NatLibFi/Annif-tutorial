@@ -1,7 +1,6 @@
 # Annif tutorial
 
-The tutorial includes short **video presentatios** and **hands-on exercises**, which 
-can be explored via [the outline page](exercises/README.md). 
+The tutorial includes short **video presentatios** and **hands-on exercises**. 
 Two example [data sets](data-sets) are provided to be used in the exercises.
 
 The tutorial was initially organized at
@@ -36,13 +35,10 @@ From time to time, we organize (online or in-person) help sessions for people wo
   * [SWIB24 conference online workshop/tutorial](https://swib.org/swib24/programme.html)
     * Nov 25th 2024
  
-
-
-
-## Past help sessions
+### Past help sessions
 <details>
  
- <summary> Click here </summary>
+ <summary> See here </summary>
  
 * [Open Repositories 2024 in-person workshop/tutorial](https://or2024.openrepositories.org/program-registration/workshops-and-tutorials/w07/)
   * June 3th 2024, Göteborg, Sweden
