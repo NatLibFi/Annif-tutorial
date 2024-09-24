@@ -215,5 +215,5 @@ For more information, see the documentation in the Annif wiki:
 
 <p align="center">
 |
-<a href="/exercises/README.md">Back to table of contents »</a>
+<a href="/README.md">Back to the main page »</a>
 </p>
