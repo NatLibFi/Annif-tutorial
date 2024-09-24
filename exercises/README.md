@@ -64,36 +64,7 @@ flowchart TD
 ## :computer: 1. Installation
 
 Select your installation type. If you don’t know what to choose, we suggest using VirtualBox.
-- [exercise](/exercises/01_install_annif.md)
-
-### 1.1. VirtualBox install
-
-[![Video](/img/annif-install-virtualbox-slides-1.png)](https://youtu.be/z_Fq-87QbyQ)
-
-- [slides](/presentations/annif-install-virtualbox-slides.pdf)
-- [transcript of video](/transcripts/annif-install-virtualbox.md)
-- [VirtualBox image download (~2GB)](https://annif.org/download/)
-
-### 1.2. Docker install
-
-[![Video](/img/annif-install-docker-slides-1.png)](https://youtu.be/j_VeC_NeVcw)
-
-- [slides](/presentations/annif-install-docker-slides.pdf)
-- [transcript of video](/transcripts/annif-install-docker.md)
-
-### 1.3. Linux native install
-
-[![Video](/img/annif-install-linux-slides-1.png)](https://youtu.be/I7oApwl-NFk)
-
-- [slides](/presentations/annif-install-linux-slides.pdf)
-- [transcript of video](/transcripts/annif-install-linux.md)
-- [Annif README file with installation instructions](https://github.com/NatLibFi/Annif/blob/master/README.md)
-
-### 1.4. GitHub Codespaces install
-
-In this installation you will be using Annif in a GitHub hosted machine, which you will access via a terminal in your browser.
-
-- [exercise section](/exercises/01_install_annif.md#14-github-codespaces-install)
+- [exercise with videos](/exercises/01_install_annif.md)
 
 ## :film_strip: Data sets
 This tutorial provides two example data sets; one of them should be chosen to be used in the exercises.
