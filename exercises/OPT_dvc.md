@@ -254,5 +254,5 @@ allowing easy and reproducible way to train and evaluate Annif projects!
 
 <p align="center">
 |
-<a href="/exercises/README.md">Back to table of contents »</a>
+<a href="/README.md">Back to the main page »</a>
 </p>
