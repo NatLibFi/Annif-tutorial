@@ -1,5 +1,10 @@
 # Exercise 6: Set up and train a simple ensemble
 
+[![Video](/img/ensemble-project-slides-1.png)](https://youtu.be/0hwB3PwAcUM)
+
+- [slides](/presentations/ensemble-project-slides.pdf)
+- [transcript of video](/transcripts/ensemble-project.md)
+
 In this lesson, we will set up a simple ensemble which combines results from
 the projects set up in previous exercises.
 There will be two variants of the exercise. One for the `yso-nlf` data set and one for `stw-zbw`.
