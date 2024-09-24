@@ -6,10 +6,7 @@ Two example [data sets](data-sets) are provided to be used in the exercises.
 
 The tutorial was initially organized at
 [SWIB19](http://swib.org/swib19/programme.html) 
-and later updated for 
-[DCMI Virtual 2020](http://dublincore.org/conferences/2020/)
-and [SWIB22](https://swib.org/swib22/programme.html),
-but the materials are freely available for self-study.
+and later updated for other conferences and occasions, the materials are freely available for self-study.
 
 ## Prerequisites
 
@@ -34,13 +31,19 @@ full text documents for either or both data sets. The downloads are automated us
 ([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
 
 ## Upcoming help sessions
-* [SWIB24 conference online workshop/tutorial](https://swib.org/swib24/programme.html)
-  * November 25th 2024
+From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  register, you must have watched the videos and at least attempted to complete the exercises. Info will be posted here.
+
+  * [SWIB24 conference online workshop/tutorial](https://swib.org/swib24/programme.html)
+    * Nov 25th 2024
  
-From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To register, you must have watched the videos and at least attempted to complete the exercises. Info will be posted here.
+
 
 
 ## Past help sessions
+<details>
+ 
+ <summary> Click here </summary>
+ 
 * [Open Repositories 2024 in-person workshop/tutorial](https://or2024.openrepositories.org/program-registration/workshops-and-tutorials/w07/)
   * June 3th 2024, Göteborg, Sweden
  * [SWIB23 conference in-person workshop/tutorial](https://swib.org/swib23/programme.html)
@@ -63,9 +66,9 @@ From time to time, we organize (online or in-person) help sessions for people wo
   * Tuesday November 24 2020 
 * [DCMI Virtual post-conference tutorial](https://www.dublincore.org/news/2020/09-11-tutorial-on-automated-subject-indexing-with-annif/)
   * Friday October 9 2020 
-  * Wednesday October 21 2020
+  * Wednesday October 21 2020</summary>
 
-
+</details>
 
 ## Authors
 
