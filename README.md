@@ -137,27 +137,27 @@ Select your installation type. If you don’t know what to choose, we suggest us
 
 ## :film_strip: Data sets
 This tutorial provides two example data sets; one of them should be chosen to be used in the exercises.
-
-- [dataset intro with video](/exercises/data-sets.md)
+ 
+- [dataset intro with video ➡️](/exercises/data-sets.md)
 
 ## 💻 2. TFIDF project
 The basic functionality of Annif is introduced by setting up and training a project using a TFIDF model.
 
-- [exercise with video](/exercises/02_tfidf_project.md)
+- [exercise with video ➡️](/exercises/02_tfidf_project.md)
 
 ## 🎞️ Algorithms
 The principles of the algorithm types used by Annif models are presented.
 
-- [algorithms intro with video](/exercises/algorithms.md)
+- [algorithms intro with video ➡️](/exercises/algorithms.md)
 
 ## :computer: 3. Web UI
 The web user interface of Annif allows quick testing of projects.
 
-- [exercise with video](/exercises/03_web_ui.md)
+- [exercise with video ➡️](/exercises/03_web_ui.md)
 
 ## 💻 [Optional] REST API
 The REST API of Annif can be used for integrating Annif with other systems.
-- [exercise](/exercises/OPT_rest_api.md)
+- [exercise ➡️](/exercises/OPT_rest_api.md)
 
 ## :book: [Optional] Production use
 Here is described aspects to consider when going from testing and development phase to a production-ready deployment of Annif.
@@ -166,59 +166,59 @@ Here is described aspects to consider when going from testing and development ph
 ## :computer: 4. Metrics & evaluation
 Quantitative testing and comparison of projects against standard metrics can be done using the `eval` command.
 
-- [exercise with video](/exercises/04_evaluate.md)
+- [exercise with video ➡️](/exercises/04_evaluate.md)
 
 ## 💻 [Optional] Omikuji project
 Omikuji is a tree-based associative machine learning model that often produces very good results, but requires more resources than the TFIDF model.
 This exercise is optional, because training an Omikuji model on the full datasets can take around 40 minutes.
-- [exercise](/exercises/OPT_omikuji_project.md)
+- [exercise ➡️](/exercises/OPT_omikuji_project.md)
 
 ## :computer: [Optional] Automated classification
 Annif can also be used for multiclass classification, where the goal is to choose the correct class among mutually exclusive classes. This exercise demonstrates automated classification using the well known "Twenty Newsgroups" data set.
 
-- [exercise](/exercises/OPT_classification.md)
+- [exercise ➡️](/exercises/OPT_classification.md)
 
 ## 💻 5. MLLM project
 MLLM is a lexical algorithm for matching terms in document text to terms in a controlled vocabulary.
  
-- [exercise with video](/exercises/05_mllm_project.md)
+- [exercise with video ➡️](/exercises/05_mllm_project.md)
 
 ## :computer: [Optional] Hogwarts Sorting Hat using fastText
 Yet another algorithm you can try is fastText, which can also work on the level of individual characters.
-- [exercise](/exercises/OPT_hogwarts.md)
+- [exercise ➡️](/exercises/OPT_hogwarts.md)
 
 ## :book: [Optional] Languages and filtering
 The ability of Annif to process text in a given language depends on the choice of the analyzer, which performs text preprocessing.
 Sometimes it might be useful to filter out parts of the document that are not in the main language of the document.
-- [exercise](/exercises/OPT_langfilter.md)
+- [exercise ➡️](/exercises/OPT_langfilter.md)
 
 ## :computer: 6. Ensemble project
 An ensemble project combines results from the projects set up in previous exercises.
 
-- [exercise with video](/exercises/06_ensemble_project.md)
+- [exercise with video ➡️](/exercises/06_ensemble_project.md)
 
 ## :computer: [Optional] Neural network ensemble project
 A neural network ensemble can be trained to intelligently combine the results from the base projects.
 
-- [exercise](/exercises/OPT_nn_ensemble_project.md)
+- [exercise ➡️](/exercises/OPT_nn_ensemble_project.md)
 
 ## 💻 [Optional] Custom corpus
 A big challenge in applying Annif to own data is gathering documents and converting them to form a corpus in suitable format. In this exercise metadata from arXiv articles are used to form a corpus, which can be used to train Annif models.
 
-- [exercise](/exercises/OPT_custom_corpus.md)
-- [Jupyter Notebook](/data-sets/arxiv/create-arxiv-corpus.ipynb)
+- [exercise ➡️](/exercises/OPT_custom_corpus.md)
+- [Jupyter Notebook ➡️](/data-sets/arxiv/create-arxiv-corpus.ipynb)
 
 ## :computer: [Optional] Data Version Control
 
 Data Version Control (DVC) eases maintaining machine learning projects. In this exercise a DVC pipeline is used to set up, train and evaluate Annif projects.
 
-- [exercise](/exercises/OPT_dvc.md)
+- [exercise ➡️](/exercises/OPT_dvc.md)
 
 ## :computer: [Optional] Hugging Face Hub
 
 🤗 Hugging Face is an ecosystem and collaboration platform for AI use and development. In this exercise ready-to-use Annif projects are downloaded from a Hugging Face Hub repository.
 
-- [exercise](/exercises/OPT_huggingfacehub.md)
+- [exercise ➡️](/exercises/OPT_huggingfacehub.md)
 
 ## :film_strip: Closing
 Summary of the material in the tutorial and some pointers to further information.
