@@ -4,7 +4,7 @@ Annif will be running in a GitHub-hosted machine, which you will access via a te
 For this setup you are required to have an account on GitHub.
 
 Let's configure a New Codespace.
-First, click the following badge to on the tutorial web page to go to the configuration of a new codespace.
+First, click the following badge on the tutorial web page to go to the configuration of a new codespace.
 On the codespace configuration page,
 Choose “4-core” for the "Machine type" (from the bottommost menu).
 Leave other selections at their default values.
