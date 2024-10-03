@@ -20,9 +20,14 @@ Whether you have already completed that exercise or not, you can run perform thi
 
 Run this command to download the project from the Hugging Face Hub repository [NatLibFi/Annif-tutorial](https://huggingface.co/NatLibFi/Annif-tutorial) :
 
-    annif download hogwarts NatLibFi/Annif-tutorial
+    annif download hogwarts NatLibFi/Annif-tutorial --trust-repo  # the option is needed only for the first download 
 
 Note that the repository contains all YSO, 20news, and Hogwarts projects trained in this tutorial (see the ["Files and versions" tab](https://huggingface.co/NatLibFi/Annif-tutorial/tree/main)), and you can download any of them.
+
+> [!CAUTION]
+> The `annif download` command has a `--trust-repo` option, which needs to be used if the repository to download from has not been used previously (that is if the repository does not appear in the local Hugging Face Hub cache).
+> This option is to remind of the risks of using models from the internet; _the project downloads should only be done from trusted sources_.
+> For more information of the risks see the [Hugging Face Hub documentation](https://huggingface.co/docs/hub/en/security-pickle).
 
 ## 2. Test the downloaded project
 
