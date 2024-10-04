@@ -10,10 +10,13 @@ and later updated for other conferences and occasions, the materials are freely 
 ## Prerequisites
 
 You will need a computer with sufficient resources (at least 8GB RAM and 20GB free disk space) to be
-able to install Annif and complete the exercises. Installation of Annif is one topic of the exercises.
+able to install Annif and complete the exercises on your own computer. Installation of Annif is one topic of the exercises.
 
 Note also that it might be convenient to have either Docker or VirtualBox
 installed beforehand.
+
+However, if you cannot install Annif on your own computer, you can use the GitHub Codespaces installation, which is described in [Exercise 1.2](exercises/01_install_annif.md#12-github-codespaces-install).
+In this setup Annif will be running in a GitHub-hosted machine, which you will access via a remote terminal running in your browser. For this you are required to have an account on GitHub.
 
 ## Getting the tutorial materials
 
@@ -28,7 +31,7 @@ full text documents for either or both data sets. The downloads are automated us
 ([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
 
 ## Upcoming help sessions
-From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  register, you must have watched the videos and at least attempted to complete the exercises. Info will be posted here.
+From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  register, you should have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
   * [SWIB24 conference online workshop/tutorial](https://swib.org/swib24/programme.html)
     * Nov 25th 2024
