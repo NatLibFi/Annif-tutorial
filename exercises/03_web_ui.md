@@ -3,6 +3,11 @@
 Testing on the command line can be tedious, so Annif also provides a simple
 web user interface.
 
+[![Video](/img/web-ui-slides-1.png)](https://youtu.be/wkDbVnkuV6E)
+
+- [slides](/presentations/web-ui-slides.pdf)
+- [transcript of video](/transcripts/web-ui.md)
+
 ## 1. Start up the web UI
 
 Run the command:
@@ -48,5 +53,5 @@ project with different input texts using the web UI.
 
 <p align="center">
 |
-<a href="/exercises/README.md">Back to table of contents »</a>
+<a href="/README.md">Back to the main page »</a>
 </p>

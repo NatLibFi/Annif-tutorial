@@ -20,9 +20,14 @@ Whether you have already completed that exercise or not, you can run perform thi
 
 Run this command to download the project from the Hugging Face Hub repository [NatLibFi/Annif-tutorial](https://huggingface.co/NatLibFi/Annif-tutorial) :
 
-    annif download hogwarts NatLibFi/Annif-tutorial
+    annif download hogwarts NatLibFi/Annif-tutorial --trust-repo  # the option is needed only for the first download 
 
 Note that the repository contains all YSO, 20news, and Hogwarts projects trained in this tutorial (see the ["Files and versions" tab](https://huggingface.co/NatLibFi/Annif-tutorial/tree/main)), and you can download any of them.
+
+> [!CAUTION]
+> The `annif download` command has a `--trust-repo` option, which needs to be used if the repository to download from has not been used previously (that is if the repository does not appear in the local Hugging Face Hub cache).
+> This option is to remind of the risks of using models from the internet; _the project downloads should only be done from trusted sources_.
+> For more information of the risks see the [Hugging Face Hub documentation](https://huggingface.co/docs/hub/en/security-pickle).
 
 ## 2. Test the downloaded project
 
@@ -42,11 +47,11 @@ For example, run this command:
 <details><summary>
 See details of extra section
 </summary>
-    
+
+### Create a new model repository 
 For uploading projects you need to have an account on the Hugging Face Hub; you can create one [here](https://huggingface.co/join).
 You also need to be logged in to service, and the repository to upload to needs to exist.
 
-### Create a new model repository 
 To create a new model repository you can use [this link](https://huggingface.co/new) 
 or navigate to it via your Hugging Face Hub profile (the round profile image in the upper right corner on the HFH website).
 Give the repository the name `Annif-tutorial`; the repository can be either private or public.
@@ -83,21 +88,16 @@ e.g. the 20news projects of the [classification exercise](exercises/OPT_classifi
 
     annif upload 20news-* <your-username>/Annif-tutorial
 
-### Create a model card in your repository
-HFH model repositories have `README.md` files that can contain human readable description of the model and some metadata in YAML format, which offers valuable features.
+### Automatic creation and update of Model Card
+HFH model repositories have `README.md` files, called [Model Cards](https://huggingface.co/docs/hub/model-cards), that can contain human readable description of the model and some metadata in YAML format.
 
-From [Model Cards documentation](https://huggingface.co/docs/hub/model-cards)
-
-> The metadata you add to the model card supports discovery and easier use of your model. For example:
->    - Allowing users to filter models at https://huggingface.co/models.
->    - Displaying the model’s license.
->    - Adding datasets to the metadata will add a message reading Datasets used to train: to your model page and link the relevant datasets, if they’re available on the Hub.
-
-For example, the [NatLibFi/Annif-tutorial](https://huggingface.co/NatLibFi/Annif-tutorial) repository includes a short textual description and metadata in YAML format.
+For example, the [NatLibFi/Annif-tutorial](https://huggingface.co/NatLibFi/Annif-tutorial) repository includes a short textual description including a list of the projects contained in the repository and metadata in YAML format.
 The metadata is shown on the website under the repository name: the intended task of the model, the dataset used to train the model, the language the model is intended for, some freeform tags and the licence of the model:
 
 ![image](https://github.com/NatLibFi/Annif-tutorial/assets/34240031/32d5d497-8141-4afd-8ada-dac51473d625)
 
+By default, when running `annif upload` Annif automatically creates or updates some information of the Model Card.
+This behaviour can be turn offf with the `--no-modelcard` option.
 
 </details>
 
@@ -111,3 +111,10 @@ Congratulations, you've completed exercise on Hugging Face Hub integration!
 For more information, see the documentation in the Annif wiki:
 
 * [Hugging Face Hub integration](https://github.com/NatLibFi/Annif/wiki/Hugging-Face-Hub-integration)
+
+---
+
+<p align="center">
+|
+<a href="/README.md">Back to the main page »</a>
+</p>

@@ -58,3 +58,10 @@ of the [publications archive of University of Vaasa](https://osuva.uwasa.fi/).
   AI](https://www.jlis.it/index.php/jlis/article/view/437) published on
   JLIS.it in 2022.
 - [The presentation at LIBER 2022](https://zenodo.org/record/6811550) and [the paper and presentation at IFLA 2022](https://repository.ifla.org/handle/123456789/2047) by Anna Kasprzik about automating subject indexing process at ZBW.
+
+---
+
+<p align="center">
+|
+<a href="/README.md">Back to the main page »</a>
+</p>
