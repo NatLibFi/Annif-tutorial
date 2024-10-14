@@ -14,3 +14,5 @@ Once you’ve created the codespace, a new session will start in your browser.
 
 Now the codespace is running. 
 Annif is already installed there and ready to be used for exercises!
+
+You can find additional information on the tutorial web page.
