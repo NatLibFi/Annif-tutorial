@@ -67,8 +67,6 @@ keyboard layouts can be installed from the top left corner menu
 
 ### 1.2. GitHub Codespaces install
 
-_Note: This way of using Annif for the tutorial is experimental and not all exercises have been thoroughly tested._
-
 In this setup you will be using [GitHub Codespaces](https://docs.github.com/en/codespaces). Annif will be running in a GitHub-hosted machine, which you will access via a terminal in your browser (within a VS Code editor remote session).
 For setup this you are required to have an account on GitHub.
 
@@ -89,22 +87,27 @@ For setup this you are required to have an account on GitHub.
 
 Now the codespace is running. Annif is already installed there and ready to be used for exercises!
 
-#### Additional notes about using Codespaces
-- You can edit files using either the nano editor or the VS Code editor of the codespace session:
-    - To create a new file with the VS Code editor (e.g., `projects.cfg`), right-click on the empty space in the opened Explorer panel (on the left). Then select "New File…" to open a new panel for the file.
-- The same packages are installed in the codespace environment as in the Docker image, e.g. Jupyter and DVC.
-- [Codespace lifecycles](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle):
-  - Codespaces automatically stop after 30 minutes of inactivity. However, to save your [free CPU time](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts), consider manually stopping the codespace when you’re not using it: 
-    - Go to [Your codespaces page](https://github.com/codespaces?repository_id=212338434) to see a list of all your codespaces of Annif-tutorial.
-    - To stop a specific codespace, click the ellipsis (…) to the right of its name and select "Stop codespace."
-  - You can resume your most recent stopped codespace from this [page](https://github.com/codespaces/new/NatLibFi/Annif-tutorial?quickstart=1).
-    - Alternatively, you car restart any stopped codespace from the [Your codespaces page](https://github.com/codespaces?repository_id=212338434) by clicking its name in the list.
-    - If the terminal panel doesn’t open upon restart, manually open one from the hamburger menu in the top-left corner. Select "Terminal" and then "New Terminal."
-  - Note that simply closing the browser tab won’t stop the codespace.
-  - When you stop a codespace, the data within it is persisted, but the terminal window will be cleared.
-  - If you’ve finished with the Annif tutorial and want to delete your codespace, go to your Your codespaces page, click the ellipsis (…), and select "Delete."
-    - Deleting a codespace will also delete all files saved to it.
-    - By default, inactive codespaces are deleted after 30 days.  
+> [!TIP]
+><details>
+><summary><b>Additional notes about using Codespaces</b></summary>
+>
+>- You can edit files using either the nano editor or the VS Code editor of the codespace session:
+>    - To create a new file with the VS Code editor (e.g., `projects.cfg`), right-click on the empty space in the opened Explorer panel (on the left). Then select "New File…" to open a new panel for the file.
+>- The same packages are installed in the codespace environment as in the Docker image, e.g. Jupyter and DVC.
+>- [Codespace lifecycles](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle):
+>  - Codespaces automatically stop after 30 minutes of inactivity. However, to save your [free CPU time](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts), consider manually stopping the codespace when you’re not using it: 
+>    - Go to [Your codespaces page](https://github.com/codespaces?repository_id=212338434) to see a list of all your codespaces of Annif-tutorial.
+>    - To stop a specific codespace, click the ellipsis (…) to the right of its name and select "Stop codespace."
+>  - You can resume your most recent stopped codespace from this [page](https://github.com/codespaces/new/NatLibFi/Annif-tutorial?quickstart=1).
+>    - Alternatively, you car restart any stopped codespace from the [Your codespaces page](https://github.com/codespaces?repository_id=212338434) by clicking its name in the list.
+>    - If the terminal panel doesn’t open upon restart, manually open one from the hamburger menu in the top-left corner. Select "Terminal" and then "New Terminal."
+>  - Note that simply closing the browser tab won’t stop the codespace.
+>  - When you stop a codespace, the data within it is persisted, but the terminal window will be cleared.
+>  - If you’ve finished with the Annif tutorial and want to delete your codespace, go to your Your codespaces page, click the ellipsis (…), and select "Delete."
+>    - Deleting a codespace will also delete all files saved to it.
+>    - By default, inactive codespaces are deleted after 30 days.  
+>
+></details>
 
 ### 1.3. Docker based install
 
