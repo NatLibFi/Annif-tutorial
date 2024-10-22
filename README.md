@@ -75,7 +75,7 @@ Exercises marked with :computer: require some coding, and those with :book: are 
 
 ## :film_strip: Introduction and overview
 
-[![Video](/img/intro-slides-1.png)](https://youtu.be/d9_OUUZhjTM)
+[![Video](/img/intro-slides-1.png)](https://youtu.be/qqSrVXEzKjw)
 
 - [slides](/presentations/intro-slides.pdf)
 - [transcript of video](/transcripts/intro.md)
