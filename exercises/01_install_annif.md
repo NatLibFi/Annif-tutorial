@@ -67,6 +67,11 @@ keyboard layouts can be installed from the top left corner menu
 
 ### 1.2. GitHub Codespaces install
 
+[![Video](/img/annif-install-codespaces-slides-1.png)](https://youtu.be/-rwuaBIGzqc)
+
+- [transcript of video](/transcripts/annif-install-codespaces.md)
+
+
 In this setup you will be using [GitHub Codespaces](https://docs.github.com/en/codespaces). Annif will be running in a GitHub-hosted machine, which you will access via a terminal in your browser (within a VS Code editor remote session).
 For setup this you are required to have an account on GitHub.
 
