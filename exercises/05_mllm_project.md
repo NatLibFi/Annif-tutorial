@@ -128,7 +128,7 @@ models:
 
 # print a usage message if parameters are missing
 if (( $# != 6 )); then
-        print "usage: $0 <project-id> <trainset> <testset> <minlimit> <maxlimit> <step>"
+        echo "usage: $0 <project-id> <trainset> <testset> <minlimit> <maxlimit> <step>"
         exit 1
 fi
 
