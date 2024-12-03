@@ -20,6 +20,7 @@ creator:
     type: Person
     affiliation:
       name: National Library of Finland
+      id: https://ror.org/03qr6jw57
       type: Organization
   - givenName: Osma
     familyName: Suominen
@@ -27,14 +28,15 @@ creator:
     type: Person
     affiliation:
       name: National Library of Finland
+      id: https://ror.org/03qr6jw57
       type: Organization
   - givenName: Mona
     familyName: Lehtinen
     id: https://orcid.org/0009-0004-1260-823X
     type: Person
     affiliation:
-      name: University of Turku
-      id: https://ror.org/05vghhr25
+      name: National Library of Finland
+      id: https://ror.org/03qr6jw57
       type: Organization
   - givenName: Moritz
     familyName: Fürneisen
