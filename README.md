@@ -1,6 +1,6 @@
 # Annif tutorial
 
-The tutorial includes short **video presentatios** and **hands-on exercises**. 
+The tutorial includes short **video presentations** and **hands-on exercises**. 
 Two example [data sets](data-sets) are provided to be used in the exercises.
 
 The tutorial was initially organized at
