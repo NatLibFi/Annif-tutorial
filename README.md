@@ -33,14 +33,15 @@ full text documents for either or both data sets. The downloads are automated us
 ## Upcoming help sessions
 From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  register, you should have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
-  * [SWIB24 conference online workshop/tutorial](https://swib.org/swib24/programme.html)
-    * Nov 25th 2024
+- TBA
  
 ### Past help sessions
 <details>
  
  <summary> See here </summary>
- 
+
+* [SWIB24 conference online workshop/tutorial](https://swib.org/swib24/programme.html)
+  * Nov 25th 2024
 * [Open Repositories 2024 in-person workshop/tutorial](https://or2024.openrepositories.org/program-registration/workshops-and-tutorials/w07/)
   * June 3th 2024, Göteborg, Sweden
  * [SWIB23 conference in-person workshop/tutorial](https://swib.org/swib23/programme.html)
