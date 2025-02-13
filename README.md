@@ -1,6 +1,7 @@
 # Annif tutorial
 
-The tutorial includes short **video presentations** and **hands-on exercises**. 
+The tutorial includes short **video presentations** and **hands-on exercises**
+to help you learn how to use the [Annif](https://github.com/NatLibFi/Annif) tool for automated subject indexing and classification.
 Two example [data sets](data-sets) are provided to be used in the exercises.
 
 The tutorial was initially organized at
@@ -64,9 +65,14 @@ From time to time, we organize (online or in-person) help sessions for people wo
   * Tuesday November 24 2020 
 * [DCMI Virtual post-conference tutorial](https://www.dublincore.org/news/2020/09-11-tutorial-on-automated-subject-indexing-with-annif/)
   * Friday October 9 2020 
-  * Wednesday October 21 2020</summary>
-
+  * Wednesday October 21 2020
+* [SWIB19 conference workshop/tutorial](https://swib.org/swib19/programme.html#abs05)
+  *  November 25 2019 
+</summary>
 </details>
+
+## Feedback and support
+If you have any problems regarding this tutorial, please [open a GitHub issue](https://github.com/NatLibFi/Annif-tutorial/issues/new).
 
 ---
 
