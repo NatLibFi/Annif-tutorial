@@ -6,9 +6,9 @@ To be able to complete the exercises you need to install Annif on your own
 computer or GitHub Codespaces. There are four options to choose from:
 
 1. VirtualBox virtual machine image with preinstalled Annif
-2. Docker based install
-3. Local install using pip (Linux only)
-4. Install to GitHub Codespaces (_experimental_)
+2. Install to GitHub Codespaces
+3. Docker based install
+4. Local install using pip (Linux only)
 
 ### 1.1. VirtualBox based install
 
