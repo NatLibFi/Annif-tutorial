@@ -248,7 +248,7 @@ The tutorial material was created by:
 * Osma Suominen, National Library of Finland
 * Mona Lehtinen, National Library of Finland
 * Juho Inkinen, National Library of Finland
-* Anna Kasprzik, ZBW - Leibniz Information Centre for Economics
+* Argie Kasprzik, ZBW - Leibniz Information Centre for Economics
 * Moritz Fürneisen, ZBW - Leibniz Information Centre for Economics
 
 ## License
