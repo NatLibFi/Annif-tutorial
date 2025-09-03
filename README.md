@@ -34,7 +34,9 @@ full text documents for either or both data sets. The downloads are automated us
 ## Upcoming help sessions
 From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  register, you should have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
-- TBA
+* SWIB25
+   * Program will be published & registration begins on 15th September
+   * [SWIB25 site / forum](https://swib.org)  
  
 ### Past help sessions
 <details>
