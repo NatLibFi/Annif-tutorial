@@ -178,6 +178,8 @@ subjects. Was it close? Did Annif come with reasonable suggestions or not?
 
 Congratulations, you've completed Exercise 2, you have a working project and
 you know how to use it to suggest subjects for documents!
+> [!NOTE]  
+> TFIDF is best used for simple testing and as a baseline. For better quality, use other algorithms.
 
 ## More information
 
