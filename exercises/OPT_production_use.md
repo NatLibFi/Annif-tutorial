@@ -10,7 +10,11 @@ it is best to have a separate computer for that with adequote resources.
 From that training computer the ready-made models (the `data/` directory and the projects configuration file)
 can be transferred to the server where an Annif instance is run for the API and/or Web UI.
 
-For a reference value, the memory consumption of the current (in 2022) Annif models run for [Finto AI](https://ai.finto.fi/)
+> [!TIP]
+> The trained projects can be transferred from a training server to the production server via the 🤗 Hugging Face Hub
+> by using `annif upload` and `annif download` commands, see [this exercise](https://github.com/NatLibFi/Annif-tutorial/blob/main/exercises/OPT_huggingfacehub.md).
+
+For a reference value, the memory consumption of the current (in the year 2022) Annif models run for [Finto AI](https://ai.finto.fi/)
 is ~25 GB (there are [12 projects](https://annif.org/download/models/finto-ai-2022-06/projects.cfg)).
 Note that the memory consumption of a model of a given backend/algorithm
 depends on the hyperparameters and the data the model is trained on.
@@ -25,15 +29,17 @@ to use a WSGI *server* in front.
 
 [Gunicorn](https://gunicorn.org/) is a good choice for the WSGI server. 
 To start Annif behind Gunicorn run e.g.
-`gunicorn "annif:create_app()" --bind 0.0.0.0:8000 --timeout 600 --worker-class uvicorn.workers.UvicornWorker`.
-This exposes port 8000, sets the timeout to 600 s to allow the Annif models to load in case they are large, and uses Uvicorn workers (necessitated by [Annif v1.1](https://github.com/NatLibFi/Annif/releases/tag/v1.1.0)). 
+
+    gunicorn "annif:create_app()" --bind 0.0.0.0:8000 --timeout 600 --worker-class uvicorn.workers.UvicornWorker
+
+This exposes port 8000, sets the timeout to 600 s to allow the Annif models to load in case they are large, and uses Uvicorn workers. 
 
 In addition to a WSGI server, in front of all it is recommended
 to put a dedicated *HTTP server* to act as a reverse proxy.
 [Gunicorn documentation](https://docs.gunicorn.org/en/stable/deploy.html)
 advices to use [NGINX](https://nginx.org/).
 In addition to increasing performance the proxying HTTP server can serve static files for a web page
-(in the case you don't want to use the default Annif Web UI), perform TLS/SLL handling, redirections etc.
+(in the case you don't want to use the default Annif Web UI), perform TLS/SSL handling, redirections etc.
 
 ## Server platform 
 The platform to run the above components can be a traditional server, but nowdays
