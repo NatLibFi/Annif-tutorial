@@ -1,9 +1,32 @@
 # Optional exercise: Annif REST API
 
-Annif provides a simple REST API which can be used to integrate other
-systems with Annif. The REST API provides automated subject indexing
-services. In this exercise, we will look at the basics of the REST API. Some
+In this exercise, we will look at the basics of the REST API. Some
 familiarity with REST-style API services and JSON data is expected.
+
+Annif provides a simple REST API which can be used to integrate other
+systems with Annif. The main function of Annif, automated subject indexing,
+can be used by the `suggest` and `suggest-batch` methods.
+There are also other methods, see below.
+
+## Annif REST API Methods
+### API Information
+- **GET /v1/**: Get basic information about the API service.
+### Vocabulary Information
+- **GET /v1/vocabs**: Retrieve a list of available vocabularies.
+### Project Administration
+- **GET /v1/projects**: List all projects.
+- **GET /v1/projects/{project_id}**: Get details of a specific project.
+### Automatic Subject Indexing
+- **POST /v1/projects/{project_id}/suggest**: Suggest subjects for a single input text.
+- **POST /v1/projects/{project_id}/suggest-batch**: Suggest subjects for a batch of up to 32 documents.
+### Learning from Feedback
+- **POST /v1/projects/{project_id}/learn**: Submit manually indexed documents for incremental/online learning (see the [extra section of the NN ensemble exercise](https://github.com/NatLibFi/Annif-tutorial/blob/main/exercises/OPT_nn_ensemble_project.md#extra-incremental-learning)).
+### Language Detection
+- **POST /v1/detect-language**: Detect the language of a given text from a list of candidate languages (see the [Languages and filtering exercise](exercises/OPT_langfilter.md)).
+
+--- 
+
+Swagger UI of the Annif instance of the website [annif.org](https://annif.org) can be accessed at https://api.annif.org/v1/ui/.
 
 ## 1. Start up Annif as a web server
 
@@ -29,10 +52,10 @@ In case of connection problems and you are using Docker, try using
 You should see a Swagger UI user interface with a green bar on top and a
 list of method categories in the middle.
 
-## 3. List the projects
+## 3. List the projects and vocabularies
 
-Open the first category *Project administration*, click on the `projects/`
-method name, and then press the *Try it out* button. You should see a JSON
+Under the category *Project administration*, click on the `projects/`
+method name, the *Try it out* button, and finally the *Execute* button. You should see a JSON
 response detailing all the projects defined in `projects.cfg` in the
 *Response Body* section. The other sections show the actual URL that was
 called, the HTTP headers received and a recipe for using `curl` to access
@@ -40,6 +63,10 @@ the method from the CLI.
 
 Copy the `curl` recipe to a terminal window and press Enter. You should see
 the same JSON response body.
+
+Similarly, using the `vocabs` method under the category *Vocabulary information*
+you can get a list of all the vocabularies that defined in the `projects.cfg`
+including information about the languages they support etc.
 
 ## 4. Test automated subject indexing
 
