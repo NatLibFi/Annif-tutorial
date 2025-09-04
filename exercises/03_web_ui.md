@@ -36,6 +36,8 @@ Press the "Get suggestions" button.
 
 You should see a list of results on the bottom right.
 
+Information about the selected project, like its backend, vocabulary and training timestamp, can be seen in the collapsible section below the project menu.
+
 ## 4. Test on an example document
 
 Open up the example document (PDF or txt) that you used for testing the
