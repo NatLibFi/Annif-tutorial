@@ -32,11 +32,11 @@ full text documents for either or both data sets. The downloads are automated us
 ([yso-nlf](data-sets/yso-nlf), [stw-zbw](data-sets/stw-zbw)) for details.
 
 ## Upcoming help sessions
-From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  register, you should have watched the videos and at least attempted to complete the exercises. Info will be posted here.
+From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  participate, you should have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
-* SWIB25
-   * Program will be published & registration begins on 15th September
-   * [SWIB25 site / forum](https://swib.org)  
+* [SWIB25 conference online workshop/tutorial](https://swib.org/swib25/programme.html)
+   * Mon, Nov 17th 2025, [6:00 PM (Berlin)](https://www.timeanddate.com/worldclock/converter.html?iso=20251117T170000&p1=37)
+   * **Register here :point_right: https://forum.swib.org/t/introduction-to-the-annif-automated-indexing-tool/1456** 
  
 ### Past help sessions
 <details>
