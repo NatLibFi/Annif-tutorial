@@ -243,6 +243,8 @@ If you use the `stw-zbw` data set, hyperparameter optimization can be run with t
 
     annif hyperopt stw-ensemble-en data-sets/stw-zbw/docs/validate
 
+**Parallel processing:** You can use the option `--jobs X` to spread out the processing on multiple CPU cores, which should help complete the task faster. See the [EXTRA section in the evaluation exercise](https://github.com/NatLibFi/Annif-tutorial/blob/main/exercises/04_evaluate.md#extra-parallel-evaluation) for details.
+
 </details>
 
 ## More information
