@@ -108,6 +108,46 @@ When training you will get many warnings about unknown URIs, because many docume
 
 There is a [multi-label text classification task in Kaggle](https://www.kaggle.com/Cornell-University/arxiv/tasks?taskId=1757) which uses the same dataset and which you can take a look at. That task aims in predicting the general categories, not the detailed categories, so if you want to try the Kaggle task, you need to modify the notebook appropriately.
 
+## EXTRA: Document metadata & `select` transform
+
+<details>
+<summary>See details on how to use document metadata and the `select` transform</summary>
+
+Some of the document [corpus formats](https://github.com/NatLibFi/Annif/wiki/Corpus-formats) support additional metadata fields for documents. The metadata is a collection of keys (e.g. `title`, `abstract`) and corresponding values representing aspects or parts of the document that could be useful for subject indexing. This allows setting up projects that operate on the document metadata fields instead of, or in addition to, the main text.
+
+A project can be configured to operate on specific metadata fields using the [`select` transform](https://github.com/NatLibFi/Annif/wiki/Transforms#select-transform) with configuration like this:
+
+```
+[myproject]
+transform=select(title,description,text)
+```
+
+In some cases, it has been demonstrated that subject indexing quality increases when e.g. titles and fulltext are processed separately and the predictions merged for the final result. The document metadata support and the `select` transform can be used to create an ensemble project that combines predictions from two separate projects: one that uses titles and another that uses fulltext. Here is such an example configuration:
+
+```
+[gnd-ensemble-en]
+vocab=gnd
+language=en
+backend=ensemble
+sources=gnd-omikuji-title-en,gnd-omikuji-text-en
+
+[gnd-omikuji-title-en]
+vocab=gnd
+language=en
+backend=omikuji
+analyzer=snowball(english)
+transform=select(title)
+
+[gnd-omikuji-text-en]
+vocab=gnd
+language=en
+backend=omikuji
+analyzer=snowball(english)
+transform=select(text)  # not really necessary since this is the default...
+```
+
+</details>
+
 ## More information
 
 For more information, see the documentation in the Annif wiki:
