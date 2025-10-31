@@ -6,7 +6,7 @@ In this lesson we will look at how to make a corpus to use with Annif.
 The Merriam-Webster Dictionary defines a corpus as "all the writings or works of a particular kind or on a particular subject" or a "collection or body of knowledge or evidence".
 Various corpora are widely used in language and literature research. In this case we use the term to refer to a data collection used to train or evaluate Annif models.
 
-For training Annif projects two document corpus formats are supported: one for full-text or longer documents and another for metadata or very short texts. Annif corpora are usually divided into three sets, train, validate and test. The training and testing corpora are used as they are named - the validation set can be used for fine-tuning model hyperparameters.
+For training Annif projects two kinds of document corpus formats are supported: some formats are intended for full-text or longer documents and others for metadata or very short texts. Annif corpora are usually divided into three subsets: train, validate and test. The training and testing corpora are used as they are named - the validation set can be used for fine-tuning model hyperparameters.
 
 All Annif projects need a subject vocabulary, which defines the subjects available for automated indexing or classification. Typically this will be a thesaurus, a classification or a list of subject headings. Annif doesn't care much about the internal structure of a subject vocabulary, it just needs to know the URIs and preferred labels (a.k.a. terms or descriptors) of each subject/class/concept. If the vocabulary includes also notion codes, e.g. as in [UDC](https://en.wikipedia.org/wiki/Universal_Decimal_Classification), also they can be given.
 
@@ -38,7 +38,7 @@ http://example.org/thesaurus/subj3,Internet Protocol,Internet Protocol,42.42
 A subject vocabulary can also be given as a SKOS/RDF file. All common RDF serializations (i.e. those supported by rdflib) are supported, including RDF/XML, Turtle and N-Triples.
 
 ### Document corpus formats
-#### Full-text document corpus
+#### Full-text TXT+TSV/TSV document corpus
 A full-text corpus is a directory containing (UTF-8 encoded) document and subject files. The document files should have `.txt` extension, and 
 for each document file there should be a subject file with the same (base) name, but with the extension `.tsv` or `.key`. The main distinction between the two is whether or not subject URIs are included. 
 
@@ -68,7 +68,11 @@ vocabulary.
 
 In this tutorial full-text corpora (e.g. the train set [`data-sets/stw-zbw/docs/train`](/data-sets/stw-zbw/docs/train), after downloading PDFs and converting them to text files) are used for evaluating models and training MLLM and NN ensemble models.
 
-#### Short text document corpus 
+#### Full-text JSON document corpus
+
+The JSON corpus format is a directory of files with the extension .json, each representing one document. See the [Annif documentation about the JSON full-text corpus format](https://github.com/NatLibFi/Annif/wiki/Corpus-formats#json-files) for details.
+
+#### Short text TSV document corpus 
 
 A document corpus can be given in a single UTF-8 encoded TSV file. This format is especially useful for metadata about documents, when only titles are known, or for very short documents. The first column contains the text of the document (e.g. title or title + abstract) while the second column contains a whitespace-separated list of subject URIs (again within angle brackets) for that document. For example:
 
@@ -82,6 +86,13 @@ Note that it is also possible to separate the subjects with tabs, thus creating 
 
 In this tutorial short-text corpora (e.g. [`/data-sets/stw-zbw/stw-econbiz.tsv.gz`](/data-sets/stw-zbw/stw-econbiz.tsv.gz)) are used for training associative models.
 
+#### Short text CSV document corpus 
+
+The short-text CSV document corpus format is similar to the TSV format, but supports extended metadata. See the [Annif documentation about the CSV short-text corpus format](https://github.com/NatLibFi/Annif/wiki/Corpus-formats#csv-file) for details.
+
+#### Short text JSON Lines document corpus 
+
+The short-text JSON Lines document corpus format is another option for representing short text documents. See the [Annif documentation about the JSON Lines short-text corpus format]([https://github.com/NatLibFi/Annif/wiki/Corpus-formats#csv-file](https://github.com/NatLibFi/Annif/wiki/Corpus-formats#json-lines-file)) for details.
 
 ## 2. Create corpus
 In this exercise you create a subject vocabulary and document corpus from metadata (titles and abstracts) of scientific articles. The full articles in question are deposited in the [arXiv archive](https://arxiv.org/) and the metadata set is distributed by [Kaggle](https://www.kaggle.com/Cornell-University/arxiv). The [Jupyter Notebook (data-sets/arxiv/create-arxiv-corpus.ipynb)](/data-sets/arxiv/create-arxiv-corpus.ipynb) demonstrates how to construct a subject vocabulary, and short-text document corpus from the JSON formatted metadata file.
@@ -102,7 +113,7 @@ There is a [multi-label text classification task in Kaggle](https://www.kaggle.c
 For more information, see the documentation in the Annif wiki:
 
 * [Subject vocabulary formats](https://github.com/NatLibFi/Annif/wiki/Subject-vocabulary-formats)
-* [Document corpus formats](https://github.com/NatLibFi/Annif/wiki/Document-corpus-formats)
+* [Corpus formats](https://github.com/NatLibFi/Annif/wiki/Corpus-formats)
 
 ---
 
