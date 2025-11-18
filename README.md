@@ -34,15 +34,15 @@ full text documents for either or both data sets. The downloads are automated us
 ## Upcoming help sessions
 From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  participate, you should have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
-* [SWIB25 conference online workshop/tutorial](https://swib.org/swib25/programme.html)
-   * Mon, Nov 17th 2025, [6:00 PM (Berlin)](https://www.timeanddate.com/worldclock/converter.html?iso=20251117T170000&p1=37)
-   * **Register here :point_right: https://forum.swib.org/t/introduction-to-the-annif-automated-indexing-tool/1456** 
+* TBA
  
 ### Past help sessions
 <details>
  
  <summary> See here </summary>
-
+ 
+* [SWIB25 conference online workshop/tutorial](https://swib.org/swib25/programme.html)
+  * Nov 17th 2025
 * [SWIB24 conference online workshop/tutorial](https://swib.org/swib24/programme.html)
   * Nov 25th 2024
 * [Open Repositories 2024 in-person workshop/tutorial](https://or2024.openrepositories.org/program-registration/workshops-and-tutorials/w07/)
