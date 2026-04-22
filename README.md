@@ -34,7 +34,8 @@ full text documents for either or both data sets. The downloads are automated us
 ## Upcoming help sessions
 From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  participate, you should have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
-* TBA
+* [Open Repositories 2026 online workshop/tutorial](https://www.conftool.net/or2026/index.php?page=browseSessions&form_session=537)
+  * June 8th 2026
  
 ### Past help sessions
 <details>
