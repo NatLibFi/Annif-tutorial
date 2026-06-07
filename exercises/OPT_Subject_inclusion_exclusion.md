@@ -88,8 +88,8 @@ analyzer = "snowball(english, token_min_length=2)"
 To compare how suggestions differ from a full-vocabulary baseline:
 
 ```bash
-echo "The economic policy debate in the United States" | annif suggest stw-tfidf-tail
-echo "The economic policy debate in the United States" | annif suggest stw-tfidf-en
+echo "The economic policy debate in the United States" | annif suggest stw-tfidf-no-thsys
+echo "The economic policy debate in the United States" | annif suggest stw-tfidf
 ```
 
 ---
