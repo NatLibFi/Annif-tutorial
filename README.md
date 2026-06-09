@@ -34,14 +34,15 @@ full text documents for either or both data sets. The downloads are automated us
 ## Upcoming help sessions
 From time to time, we organize (online or in-person) help sessions for people working on the tutorial exercises. To  participate, you should have watched the videos and at least attempted to complete the exercises. Info will be posted here.
 
-* [Open Repositories 2026 online workshop/tutorial](https://www.conftool.net/or2026/index.php?page=browseSessions&form_session=537)
-  * June 8th 2026
+* TBA
  
 ### Past help sessions
 <details>
  
  <summary> See here </summary>
  
+* [Open Repositories 2026 online workshop/tutorial](https://www.conftool.net/or2026/index.php?page=browseSessions&form_session=537)
+  * June 8th 2026
 * [SWIB25 conference online workshop/tutorial](https://swib.org/swib25/programme.html)
   * Nov 17th 2025
 * [SWIB24 conference online workshop/tutorial](https://swib.org/swib24/programme.html)
